@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (5.0.0.beta.1)
+  - Restofire (5.0.0-alpha.1):
+    - Restofire/Core (= 5.0.0-alpha.1)
+  - Restofire/Core (5.0.0-alpha.1):
+    - Alamofire (~> 5.0.0-beta.1)
+
+DEPENDENCIES:
+  - Restofire (~> 5.0.0-alpha.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Restofire
+
+SPEC CHECKSUMS:
+  Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  Restofire: 63166058c390fa75b511241ad58168fff09e2cb4
+
+PODFILE CHECKSUM: 3024bf7521419899545ea10b9a800c322e5004c5
+
+COCOAPODS: 1.5.3
