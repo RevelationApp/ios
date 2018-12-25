@@ -1,0 +1,12 @@
+public struct {{ name }}: Codable {
+    {% for property in props %}
+    public let {{property.name}}: {{property.type}}
+    {% endfor %}
+
+    public init({% for property in props %}{{property.name}}: {{property.type}}{% if not forloop.last %}, {% endif %}{% endfor %}) {
+        {% for property in props %}
+        self.{{property.name}} = {{property.name}}
+        {% endfor %}
+    }
+
+}

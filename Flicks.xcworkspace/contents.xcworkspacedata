@@ -5,6 +5,21 @@
       location = "group:Flicks.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Flicks.playground">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AarKay">
+   </FileRef>
+   <FileRef
+      location = "group:AarKay/aarkay-plugin-personal/AarKayPersonal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile.lock">
    </FileRef>
 </Workspace>

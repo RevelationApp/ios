@@ -1,0 +1,12 @@
+[submodule "Shared/FlicksAPI"]
+	path = Shared/FlicksAPI
+	url = https://github.com/FlicksApp/FlicksAPI.git
+[submodule "Shared/FlicksUI"]
+	path = Shared/FlicksUI
+	url = https://github.com/FlicksApp/FlicksUI.git
+[submodule "Shared/FlicksCoreData"]
+	path = Shared/FlicksCoreData
+	url = https://github.com/FlicksApp/FlicksCoreData.git
+[submodule "Shared/FlicksDomain"]
+	path = Shared/FlicksDomain
+	url = https://github.com/FlicksApp/FlicksDomain.git

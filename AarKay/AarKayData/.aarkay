@@ -1,0 +1,11 @@
+projectName: Flicks
+providers:
+  - CoreData
+  - Realm
+api: true
+restofireSources: "Shared/FlicksAPI/Sources/Core"
+restofireTests: "Shared/FlicksAPI/Tests"
+rfcdSources: "Shared/FlicksCoreData/Sources"
+rfcdTests: "Shared/FlicksCoreData/Tests"
+uikitSource: "Shared/FlicksUI/Source"
+uikitTests: "Shared/FlicksUI/Tests"

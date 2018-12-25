@@ -1,0 +1,5 @@
+name: Mux
+isTemplate: true
+properties:
+  - name|String
+  - root|String

@@ -1,0 +1,7 @@
+# {{name}}.yml
+
+name: {{name}}
+root: ~/{{root}}
+windows:
+  - editor:
+  - work:

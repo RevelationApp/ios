@@ -1,0 +1,17 @@
+import UIKit
+
+class {{name}}: {% block type %}{% if base %}{{base}}{% else %}UIView{% endif %}{% endblock %} {
+    {% block init %}{% endblock %}
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        init{{name}}()
+    }
+
+    func init{{name}}() {
+        /// <aarkay init{{name}}>
+
+        /// </aarkay>
+    }
+
+}

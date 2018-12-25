@@ -1,0 +1,7 @@
+# AarKay.yml
+
+name: AarKay
+root: ~/Developer/AarKay
+windows:
+  - editor:
+  - work:

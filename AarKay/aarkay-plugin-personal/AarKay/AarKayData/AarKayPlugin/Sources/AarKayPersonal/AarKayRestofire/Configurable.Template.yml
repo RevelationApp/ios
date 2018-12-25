@@ -1,0 +1,7 @@
+name: Configurable
+properties:
+  - rfConfigurablePrefix|String?
+  - protocols|String?
+  - name|String
+  - host|String?
+  - path|String?

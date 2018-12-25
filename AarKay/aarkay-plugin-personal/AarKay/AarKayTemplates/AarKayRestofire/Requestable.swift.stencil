@@ -1,0 +1,55 @@
+import Foundation
+import Restofire
+import Alamofire
+
+public struct {{ name }}{{ method|uppercase }}Service: Requestable{% if allProtocols %}, {{ allProtocols }}{% endif %} {
+
+    public typealias Response = {{ response }}
+    public let uuid: UUID = UUID()
+    public let path: String?{% if not paramsPath %} = "{{ path }}"{% endif %}
+    {% if version %}
+    public let version: String? = "{{ version }}"
+    {% endif %}
+    {% if method %}
+    public let method: HTTPMethod = .{{ method }}
+    {% endif %}
+    {% if requestModel or parameters %}
+    public var parameters: Any?
+    {% endif %}
+    {% if queryModel or queryParameters %}
+    public var queryParameters: [String: Any]?
+    {% endif %}
+
+    {% if initParams %}
+    public init({{ initParams }}) {
+        {% if paramsPath %}
+        self.path = "{{ paramsPath }}"
+        {% endif %}
+        {% if requestModel %}
+        self.parameters = parameters.any()
+        {% elif parameters %}
+        self.parameters = parameters
+        {% endif %}
+        {% if queryModel %}
+        self.queryParameters = queryParameters.any() as? [String : Any]
+        {% elif queryParameters %}
+        self.queryParameters = queryParameters
+        {% endif %}
+    }
+    {% else %}
+    public init() {}
+    {% endif %}
+
+}
+{% if allCodables %}
+{% for codable in allCodables %}
+
+{% include "Codable.swift.stencil" codable %}
+{% endfor %}
+{% endif %}
+{% if enums %}
+{% for enum in enums %}
+
+{% include "Enum.swift.stencil" enum %}
+{% endfor %}
+{% endif %}

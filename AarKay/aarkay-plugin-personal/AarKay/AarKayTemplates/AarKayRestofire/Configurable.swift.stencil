@@ -1,0 +1,17 @@
+import Restofire
+
+protocol {{ name }}Configurable: {% if rfConfigurablePrefix %}{{rfConfigurablePrefix}}{% endif %}Configurable{% if protocols %}, {{ protocols }}{% endif %} {}
+
+extension {{ name }}Configurable {
+
+    static var {{ name|lowerFirstLetter }}Configuration: Configuration {
+        var config = Restofire.Configuration.default
+        config.host = {% if host %}"{{ host }}"{% else %}config.host{% endif %}{% if path %} + "/{{ path }}"{% endif %}
+        return config
+    }
+
+    public var configuration: Configuration {
+        return Self.{{ name|lowerFirstLetter }}Configuration
+    }
+
+}

@@ -1,0 +1,26 @@
+name: Requestable
+isTemplate: true
+properties:
+  - protocols|String?
+  - name|String
+  - configurable|String?
+  - response|String!|"Any"
+  - method|String!|"get"
+  - version|String?
+  - path|String
+  - parameters|Bool!|false
+  - queryParameters|Bool!|false
+  - isCollection|Bool!|false
+  - requestModel|[ArgModel]?
+  - responseModel|[ArgModel]?
+  - subModels|[RFCodableModel]?
+  - queryModel|[ArgModel]?
+  - tests|[RequestableTestModel]?
+  - enums|[RFEnumModel]?
+computedProperties:
+  - initParams|String
+  - testInitParams|[String]?
+  - paramsPath|String?
+  - allCodables|[RFCodableModel]?
+  - allProtocols|String?
+  - allTests|[RequestableTestModel]?

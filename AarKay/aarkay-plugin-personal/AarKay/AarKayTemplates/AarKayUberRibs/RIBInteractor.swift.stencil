@@ -1,0 +1,87 @@
+import RIBs
+{% if not isRoot %}
+
+protocol {{name}}Listener: class {
+    func didUpdateRootViewController(_ viewController: UIViewController)
+    func didDismiss{{name}}()
+    /// <aarkay {{name}}Listener>
+    /// </aarkay>
+}
+{% endif %}
+
+protocol {{name}}Interactable: Interactable{% for child in children %}, {{child.name}}Listener{% endfor %} {
+    // swiftlint:disable implicitly_unwrapped_optional
+    var rootViewController: UIViewController! { get set }
+    var dependency: {{name}}Dependency! { get set }
+    var router: {{name}}Routing! { get set }
+    {% if not isRoot %}
+    var listener: {{name}}Listener! { get set }
+    {% endif %}
+    // swiftlint:enable implicitly_unwrapped_optional
+}
+{% if viewable and not isRoot and not vcable %}
+
+protocol {{name}}Presentable: Presentable {
+    var listener: {{name}}PresentableListener! { get set }
+}
+{% endif %}
+
+final class {{name}}Interactor: {% if viewable and not isRoot %}Presentable{% endif %}Interactor{% if viewable and not isRoot %}<{% if not vcable %}{{name}}{% endif %}Presentable>{% endif %}, {{name}}Interactable{% if viewable and not isRoot and not vcable %}, {{name}}PresentableListener{% endif %} {
+    {% if depsIR %}
+
+    {% for dep in depsIR %}
+    var {{dep.name}}: {{dep.type}}
+    {% endfor %}
+    {% endif %}
+
+    // swiftlint:disable implicitly_unwrapped_optional
+    weak var rootViewController: UIViewController!
+    weak var dependency: {{name}}Dependency!
+    weak var router: {{name}}Routing!
+    {% if not isRoot %}
+    weak var listener: {{name}}Listener!
+    {% endif %}
+    // swiftlint:enable implicitly_unwrapped_optional
+
+    /// <aarkay {{name}}Interactor>
+    /// </aarkay>
+    {% if viewable and not isRoot and not vcable %}
+
+    override init(presenter: {{name}}Presentable) {
+        super.init(presenter: presenter)
+        presenter.listener = self
+    }
+    {% endif %}
+
+    @objc override func didBecomeActive() {
+        /// <aarkay didBecomeActive>
+        /// </aarkay>
+    }
+
+    @objc override func willResignActive() {
+        /// <aarkay willResignActive>
+        /// </aarkay>
+    }
+
+    func didUpdateRootViewController(_ viewController: UIViewController) {
+        rootViewController = viewController
+        {% if not isRoot %}
+        listener.didUpdateRootViewController(viewController)
+        {% endif %}
+    }
+    {% if not isRoot %}
+
+    func didDismiss{{name}}() {
+        listener.didDismiss{{name}}()
+    }
+    {% endif %}
+    {% if children %}
+    {% for child in children %}
+
+    func didDismiss{{child.name}}() {
+        router.detach{{child.name}}()
+    }
+    {% endfor %}
+    {% endif %}
+
+}

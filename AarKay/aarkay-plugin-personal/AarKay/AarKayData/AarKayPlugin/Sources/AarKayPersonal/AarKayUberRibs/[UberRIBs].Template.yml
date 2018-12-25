@@ -1,0 +1,23 @@
+- name: RIBs
+  properties:
+    - root|SceneModel
+    - shared|[SceneModel]?
+- name: Scene
+  isTemplate: false
+  properties:
+    - name|String
+    - routeTypes|[String]?
+    - children|[SceneModel]?
+    - viewable|Bool!|true
+    - vcable|String?
+    - deps|[ArgModel]!|[]
+    - create|Bool!|true
+    - sb|Bool!|true
+    - depsVC|[ArgModel]?
+    - depsIR|[ArgModel]?
+    - vcType|String!|"UIView"
+    - imports|[String]?
+  computedProperties:
+    - isRoot|Bool
+    - isPresentable|Bool
+    - allDeps|[ArgModel]?

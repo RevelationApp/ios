@@ -6,7 +6,16 @@ target 'Flicks' do
   use_frameworks!
 
   # Pods for Flicks
-  pod "Restofire", '~> 5.0.0-alpha.1'
+  pod "Restofire", '~> 5.0.0-alpha.2'
+  pod "AnyCodable"
+  pod "ReactiveCocoa"
+  pod "Reusable"
+  pod "SnapKit"
+  pod "Firebase/Core"
+
+  # Dev Tools
+  pod "SwiftFormat/CLI"
+  pod "SwiftLint"
 
   target 'FlicksTests' do
     inherit! :search_paths

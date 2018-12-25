@@ -1,0 +1,14 @@
+name: RegisterDevice
+path: pa/{id}
+version: v3
+method: post
+queryModel:
+  - id|String
+requestModel:
+  - _os|String|"iOS"
+  - _os_version|String
+  - app_version|String
+  - dev_id|String
+  - dev_type|String|"iPhone"
+  - device_key|String
+  - deviceversion|String

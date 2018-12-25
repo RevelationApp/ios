@@ -1,0 +1,70 @@
+import Foundation
+import Quick
+import Nimble
+import Restofire
+import Alamofire
+@testable import {{ projectName }}
+
+class {{ name }}{{ method|uppercase }}ServiceSpec: {{ projectName }}Spec {
+
+    override func spec() {
+        super.spec()
+
+        describe("{{ name }}{{ method|uppercase }}Service") {
+            {% for test in allTests %}
+            
+            it("request should succeed") {
+
+                // Given
+                waitUntil(timeout: self.timeout) { done in
+                    {% if test.testQueryModel %}
+
+                    let queryString = 
+                    """
+                    {{ test.testQueryModel }}
+                    """
+                    let queryData = queryString.data(using: .utf8)!
+                    let queryModel = try! JSONDecoder().decode({{ name }}RequestModel.self, from: queryData)
+                    {% endif %}
+                    {% if test.testRequestModel %}
+
+                    let requestString = 
+                    """
+                    {{ test.testRequestModel }}
+                    """
+                    let requestData = requestString.data(using: .utf8)!
+                    let requestModel = try! JSONDecoder().decode({{ name }}RequestModel.self, from: requestData)
+                    {% endif %}
+
+                    let request = {{ name }}{{ method|uppercase }}Service({{ test.testInitParams }})
+
+                    // When
+                    do {
+                        let operation = try request.execute { response in
+                            defer { done() }
+
+                            // Then
+                            if let statusCode = response.response?.statusCode,
+                                statusCode != 200 {
+                                fail("Response status code should be 200")
+                            }
+
+                            expect(response.request).toNot(beNil())
+                            expect(response.response).toNot(beNil())
+                            expect(response.data).toNot(beNil())
+                            expect(response.error).to(beNil())
+
+                            print(response.result.value ?? "None")
+
+                        }
+                    } catch {
+                        fail(error.localizedDescription)
+                    }
+                }
+
+            } 
+            {% endfor %}
+        }
+    }
+
+}
