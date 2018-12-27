@@ -259,7 +259,7 @@ extension Requestable {
         var generatedFiles: [Generatedfile] = []
         
         var sourceFile = rk_generatedfile()
-        sourceFile.directory = "Sources/Requestables"
+        sourceFile.directory = "Shared/RevelationAPI/Sources/Requestables"
         if let configurable = model.configurable {
             sourceFile.directory = (sourceFile.directory ?? "") +  "/\(configurable)"
         }
@@ -269,7 +269,7 @@ extension Requestable {
             var specFile = rk_generatedfile()
             specFile.template = "RequestableSpec"
             specFile.name += "Spec"
-            specFile.directory = "Tests/Requestables"
+            specFile.directory = "Shared/RevelationAPI/Tests/Requestables"
             if let configurable = model.configurable {
                 specFile.directory = (specFile.directory ?? "") + "/\(configurable)"
             }

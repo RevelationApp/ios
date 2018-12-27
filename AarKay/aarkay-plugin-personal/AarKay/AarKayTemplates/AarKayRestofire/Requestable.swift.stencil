@@ -5,7 +5,7 @@ import Alamofire
 public struct {{ name }}{{ method|uppercase }}Service: Requestable{% if allProtocols %}, {{ allProtocols }}{% endif %} {
 
     public typealias Response = {{ response }}
-    public let uuid: UUID = UUID()
+
     public let path: String?{% if not paramsPath %} = "{{ path }}"{% endif %}
     {% if version %}
     public let version: String? = "{{ version }}"

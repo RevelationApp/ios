@@ -1,0 +1,1396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A03117A0D6967117E4FAC6E /* Pods_RevelationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */; };
+		B58CD682F5E82C60BEEF70BE /* Pods_Revelation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */; };
+		D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; };
+		D923746121D2D37100B3FE6B /* RevelationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */; };
+		D9B3A61A21D2DCB4006879DE /* RevelationCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9B9DDF421D29B10004EB8A1 /* RevelationAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */; };
+		D9B9DDF521D29B10004EB8A1 /* RevelationAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C3F93721D4AAB300131D29 /* AppProvider.swift */; };
+		D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */; };
+		D9F2D18421D25B3100CD3AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D18321D25B3100CD3AAC /* Assets.xcassets */; };
+		D9F2D18721D25B3100CD3AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D18521D25B3100CD3AAC /* LaunchScreen.storyboard */; };
+		D9F2D19221D25B3100CD3AAC /* RevelationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D19121D25B3100CD3AAC /* RevelationTests.swift */; };
+		D9F2D19D21D25B3100CD3AAC /* RevelationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */; };
+		D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */; };
+		D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */; };
+		D9FD7B7521D4131700F425D0 /* GoogleService-DevInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */; };
+		D9FD7B7621D4131700F425D0 /* GoogleService-ProdInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */; };
+		D9FD7B8E21D4181D00F425D0 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */; };
+		D9FD7B9021D4182600F425D0 /* TvListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */; };
+		D9FD7C6721D4215C00F425D0 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7C6621D4215C00F425D0 /* AppService.swift */; };
+		FE32F2D984B93474004F10F1 /* Pods_RevelationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D923745021D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB211DA389CD00C63030;
+			remoteInfo = "RevelationUI-iOS";
+		};
+		D923745221D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
+			remoteInfo = "RevelationUITests-iOS";
+		};
+		D923745421D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
+			remoteInfo = "RevelationUI-macOS";
+		};
+		D923745621D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
+			remoteInfo = "RevelationUITests-macOS";
+		};
+		D923745821D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB481DA389F300C63030;
+			remoteInfo = "RevelationUI-tvOS";
+		};
+		D923745A21D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
+			remoteInfo = "RevelationUITests-tvOS";
+		};
+		D923745C21D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
+			remoteInfo = "RevelationUI-watchOS";
+		};
+		D923745E21D2D36600B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationUI-iOS";
+		};
+		D923746221D2D37100B3FE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationUI-iOS";
+		};
+		D9B3A5FD21D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB211DA389CD00C63030;
+			remoteInfo = "RevelationCoreData-iOS";
+		};
+		D9B3A5FF21D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
+			remoteInfo = "RevelationCoreDataTests-iOS";
+		};
+		D9B3A60121D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
+			remoteInfo = "RevelationCoreData-macOS";
+		};
+		D9B3A60321D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
+			remoteInfo = "RevelationCoreDataTests-macOS";
+		};
+		D9B3A60521D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB481DA389F300C63030;
+			remoteInfo = "RevelationCoreData-tvOS";
+		};
+		D9B3A60721D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
+			remoteInfo = "RevelationCoreDataTests-tvOS";
+		};
+		D9B3A60921D2DC88006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
+			remoteInfo = "RevelationCoreData-watchOS";
+		};
+		D9B3A61721D2DCA4006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationCoreData-iOS";
+		};
+		D9B3A61B21D2DCB4006879DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationCoreData-iOS";
+		};
+		D9B9DDE421D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB211DA389CD00C63030;
+			remoteInfo = "RevelationAPI-iOS";
+		};
+		D9B9DDE621D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
+			remoteInfo = "RevelationAPITests-iOS";
+		};
+		D9B9DDE821D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
+			remoteInfo = "RevelationAPI-macOS";
+		};
+		D9B9DDEA21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
+			remoteInfo = "RevelationAPITests-macOS";
+		};
+		D9B9DDEC21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB481DA389F300C63030;
+			remoteInfo = "RevelationAPI-tvOS";
+		};
+		D9B9DDEE21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
+			remoteInfo = "RevelationAPITests-tvOS";
+		};
+		D9B9DDF021D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
+			remoteInfo = "RevelationAPI-watchOS";
+		};
+		D9B9DDF221D29B09004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationAPI-iOS";
+		};
+		D9B9DDF621D29B10004EB8A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationAPI-iOS";
+		};
+		D9D0AD5621D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB211DA389CD00C63030;
+			remoteInfo = "RevelationDomain-iOS";
+		};
+		D9D0AD5821D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
+			remoteInfo = "RevelationDomainTests-iOS";
+		};
+		D9D0AD5A21D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
+			remoteInfo = "RevelationDomain-macOS";
+		};
+		D9D0AD5C21D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
+			remoteInfo = "RevelationDomainTests-macOS";
+		};
+		D9D0AD5E21D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB481DA389F300C63030;
+			remoteInfo = "RevelationDomain-tvOS";
+		};
+		D9D0AD6021D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
+			remoteInfo = "RevelationDomainTests-tvOS";
+		};
+		D9D0AD6221D38B1E00297E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
+			remoteInfo = "RevelationDomain-watchOS";
+		};
+		D9F2D18E21D25B3100CD3AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F2D16E21D25B2F00CD3AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F2D17521D25B2F00CD3AAC;
+			remoteInfo = Revelation;
+		};
+		D9F2D19921D25B3100CD3AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F2D16E21D25B2F00CD3AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F2D17521D25B2F00CD3AAC;
+			remoteInfo = Revelation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9B9DDAA21D2991C004EB8A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9B3A61A21D2DCB4006879DE /* RevelationCoreData.framework in Embed Frameworks */,
+				D923746121D2D37100B3FE6B /* RevelationUI.framework in Embed Frameworks */,
+				D9B9DDF521D29B10004EB8A1 /* RevelationAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.debug.xcconfig"; sourceTree = "<group>"; };
+		37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Revelation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.release.xcconfig"; sourceTree = "<group>"; };
+		7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.release.xcconfig"; sourceTree = "<group>"; };
+		D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationUI.xcodeproj; path = RevelationUI/RevelationUI.xcodeproj; sourceTree = "<group>"; };
+		D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationCoreData.xcodeproj; path = RevelationCoreData/RevelationCoreData.xcodeproj; sourceTree = "<group>"; };
+		D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revelation.entitlements; sourceTree = "<group>"; };
+		D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationAPI.xcodeproj; path = RevelationAPI/RevelationAPI.xcodeproj; sourceTree = "<group>"; };
+		D9C3F93721D4AAB300131D29 /* AppProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
+		D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationDomain.xcodeproj; path = RevelationDomain/RevelationDomain.xcodeproj; sourceTree = "<group>"; };
+		D9F2D17621D25B2F00CD3AAC /* Revelation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revelation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9F2D18321D25B3100CD3AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F2D18621D25B3100CD3AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F2D18821D25B3100CD3AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F2D18D21D25B3100CD3AAC /* RevelationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevelationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F2D19121D25B3100CD3AAC /* RevelationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationTests.swift; sourceTree = "<group>"; };
+		D9F2D19321D25B3100CD3AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F2D19821D25B3100CD3AAC /* RevelationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevelationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationUITests.swift; sourceTree = "<group>"; };
+		D9F2D19E21D25B3100CD3AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-DevInfo.plist"; sourceTree = "<group>"; };
+		D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-ProdInfo.plist"; sourceTree = "<group>"; };
+		D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
+		D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvListRouter.swift; sourceTree = "<group>"; };
+		D9FD7C6621D4215C00F425D0 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9F2D17321D25B2F00CD3AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B9DDF421D29B10004EB8A1 /* RevelationAPI.framework in Frameworks */,
+				D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */,
+				D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */,
+				B58CD682F5E82C60BEEF70BE /* Pods_Revelation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D18A21D25B3100CD3AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE32F2D984B93474004F10F1 /* Pods_RevelationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D19521D25B3100CD3AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A03117A0D6967117E4FAC6E /* Pods_RevelationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A40CB154DDC35916A1FD9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */,
+				474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */,
+				E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76BD1F3FF853E3B464CBC117 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */,
+				52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */,
+				499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */,
+				B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */,
+				43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */,
+				7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D923744121D2D35A00B3FE6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D923745121D2D35B00B3FE6B /* RevelationUI.framework */,
+				D923745321D2D35B00B3FE6B /* RevelationUITests-iOS.xctest */,
+				D923745521D2D35B00B3FE6B /* RevelationUI.framework */,
+				D923745721D2D35B00B3FE6B /* RevelationUITests-macOS.xctest */,
+				D923745921D2D35B00B3FE6B /* RevelationUI.framework */,
+				D923745B21D2D35B00B3FE6B /* RevelationUITests-tvOS.xctest */,
+				D923745D21D2D35B00B3FE6B /* RevelationUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D92E38C821D267CD0077FB8A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */,
+				D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */,
+				D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */,
+				D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D9B3A5EE21D2DC88006879DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */,
+				D9B3A60021D2DC88006879DE /* RevelationCoreDataTests-iOS.xctest */,
+				D9B3A60221D2DC88006879DE /* RevelationCoreData.framework */,
+				D9B3A60421D2DC88006879DE /* RevelationCoreDataTests-macOS.xctest */,
+				D9B3A60621D2DC88006879DE /* RevelationCoreData.framework */,
+				D9B3A60821D2DC88006879DE /* RevelationCoreDataTests-tvOS.xctest */,
+				D9B3A60A21D2DC88006879DE /* RevelationCoreData.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9B9DDDA21D29AE4004EB8A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */,
+				D9B9DDE721D29AE4004EB8A1 /* RevelationAPITests-iOS.xctest */,
+				D9B9DDE921D29AE4004EB8A1 /* RevelationAPI.framework */,
+				D9B9DDEB21D29AE4004EB8A1 /* RevelationAPITests-macOS.xctest */,
+				D9B9DDED21D29AE4004EB8A1 /* RevelationAPI.framework */,
+				D9B9DDEF21D29AE4004EB8A1 /* RevelationAPITests-tvOS.xctest */,
+				D9B9DDF121D29AE4004EB8A1 /* RevelationAPI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C3F93621D4AAB300131D29 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				D9C3F93721D4AAB300131D29 /* AppProvider.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		D9D0AD4121D38B1E00297E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9D0AD5721D38B1E00297E7C /* RevelationDomain.framework */,
+				D9D0AD5921D38B1E00297E7C /* RevelationDomainTests-iOS.xctest */,
+				D9D0AD5B21D38B1E00297E7C /* RevelationDomain.framework */,
+				D9D0AD5D21D38B1E00297E7C /* RevelationDomainTests-macOS.xctest */,
+				D9D0AD5F21D38B1E00297E7C /* RevelationDomain.framework */,
+				D9D0AD6121D38B1E00297E7C /* RevelationDomainTests-tvOS.xctest */,
+				D9D0AD6321D38B1E00297E7C /* RevelationDomain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9D9F17821D25CCA00B34238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */,
+				D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */,
+				D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */,
+				D9F2D18521D25B3100CD3AAC /* LaunchScreen.storyboard */,
+				D9F2D18321D25B3100CD3AAC /* Assets.xcassets */,
+				D9F2D18821D25B3100CD3AAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D9F17C21D25D5400B34238 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */,
+				D9FD7C6621D4215C00F425D0 /* AppService.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D9F2D16D21D25B2F00CD3AAC = {
+			isa = PBXGroup;
+			children = (
+				D9F2D17821D25B2F00CD3AAC /* Revelation */,
+				D9F2D19021D25B3100CD3AAC /* RevelationTests */,
+				D9F2D19B21D25B3100CD3AAC /* RevelationUITests */,
+				D92E38C821D267CD0077FB8A /* Shared */,
+				D9F2D17721D25B2F00CD3AAC /* Products */,
+				76BD1F3FF853E3B464CBC117 /* Pods */,
+				2A40CB154DDC35916A1FD9EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F2D17721D25B2F00CD3AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D17621D25B2F00CD3AAC /* Revelation.app */,
+				D9F2D18D21D25B3100CD3AAC /* RevelationTests.xctest */,
+				D9F2D19821D25B3100CD3AAC /* RevelationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9F2D17821D25B2F00CD3AAC /* Revelation */ = {
+			isa = PBXGroup;
+			children = (
+				D9D9F17C21D25D5400B34238 /* Application */,
+				D9FD7B1B21D3F43E00F425D0 /* Router */,
+				D9C3F93621D4AAB300131D29 /* Platform */,
+				D9D9F17821D25CCA00B34238 /* Supporting Files */,
+			);
+			path = Revelation;
+			sourceTree = "<group>";
+		};
+		D9F2D19021D25B3100CD3AAC /* RevelationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D19121D25B3100CD3AAC /* RevelationTests.swift */,
+				D9F2D19321D25B3100CD3AAC /* Info.plist */,
+			);
+			path = RevelationTests;
+			sourceTree = "<group>";
+		};
+		D9F2D19B21D25B3100CD3AAC /* RevelationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */,
+				D9F2D19E21D25B3100CD3AAC /* Info.plist */,
+			);
+			path = RevelationUITests;
+			sourceTree = "<group>";
+		};
+		D9FD7B1B21D3F43E00F425D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */,
+				D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */,
+				D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */,
+				D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9F2D17521D25B2F00CD3AAC /* Revelation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F2D1A121D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "Revelation" */;
+			buildPhases = (
+				0EB86FF82F295963A862E74C /* [CP] Check Pods Manifest.lock */,
+				D9F2D17221D25B2F00CD3AAC /* Sources */,
+				D9F2D17321D25B2F00CD3AAC /* Frameworks */,
+				D9F2D17421D25B2F00CD3AAC /* Resources */,
+				D9B9DDAA21D2991C004EB8A1 /* Embed Frameworks */,
+				809057FF8A15722828A16316 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9B3A61821D2DCA4006879DE /* PBXTargetDependency */,
+				D923745F21D2D36600B3FE6B /* PBXTargetDependency */,
+				D9B9DDF321D29B09004EB8A1 /* PBXTargetDependency */,
+				D9B9DDF721D29B10004EB8A1 /* PBXTargetDependency */,
+				D923746321D2D37100B3FE6B /* PBXTargetDependency */,
+				D9B3A61C21D2DCB4006879DE /* PBXTargetDependency */,
+			);
+			name = Revelation;
+			productName = Revelation;
+			productReference = D9F2D17621D25B2F00CD3AAC /* Revelation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9F2D18C21D25B3100CD3AAC /* RevelationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F2D1A421D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationTests" */;
+			buildPhases = (
+				B3ADE94FB1DC5E6D12485E58 /* [CP] Check Pods Manifest.lock */,
+				D9F2D18921D25B3100CD3AAC /* Sources */,
+				D9F2D18A21D25B3100CD3AAC /* Frameworks */,
+				D9F2D18B21D25B3100CD3AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F2D18F21D25B3100CD3AAC /* PBXTargetDependency */,
+			);
+			name = RevelationTests;
+			productName = RevelationTests;
+			productReference = D9F2D18D21D25B3100CD3AAC /* RevelationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9F2D19721D25B3100CD3AAC /* RevelationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F2D1A721D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationUITests" */;
+			buildPhases = (
+				1E136DDFD1E768364DD10D92 /* [CP] Check Pods Manifest.lock */,
+				D9F2D19421D25B3100CD3AAC /* Sources */,
+				D9F2D19521D25B3100CD3AAC /* Frameworks */,
+				D9F2D19621D25B3100CD3AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F2D19A21D25B3100CD3AAC /* PBXTargetDependency */,
+			);
+			name = RevelationUITests;
+			productName = RevelationUITests;
+			productReference = D9F2D19821D25B3100CD3AAC /* RevelationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F2D16E21D25B2F00CD3AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = RahulKatariya;
+				TargetAttributes = {
+					D9F2D17521D25B2F00CD3AAC = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					D9F2D18C21D25B3100CD3AAC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D9F2D17521D25B2F00CD3AAC;
+					};
+					D9F2D19721D25B3100CD3AAC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D9F2D17521D25B2F00CD3AAC;
+					};
+				};
+			};
+			buildConfigurationList = D9F2D17121D25B2F00CD3AAC /* Build configuration list for PBXProject "Revelation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F2D16D21D25B2F00CD3AAC;
+			productRefGroup = D9F2D17721D25B2F00CD3AAC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D9B9DDDA21D29AE4004EB8A1 /* Products */;
+					ProjectRef = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = D9B3A5EE21D2DC88006879DE /* Products */;
+					ProjectRef = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
+				},
+				{
+					ProductGroup = D9D0AD4121D38B1E00297E7C /* Products */;
+					ProjectRef = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
+				},
+				{
+					ProductGroup = D923744121D2D35A00B3FE6B /* Products */;
+					ProjectRef = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D9F2D17521D25B2F00CD3AAC /* Revelation */,
+				D9F2D18C21D25B3100CD3AAC /* RevelationTests */,
+				D9F2D19721D25B3100CD3AAC /* RevelationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D923745121D2D35B00B3FE6B /* RevelationUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationUI.framework;
+			remoteRef = D923745021D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745321D2D35B00B3FE6B /* RevelationUITests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationUITests-iOS.xctest";
+			remoteRef = D923745221D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745521D2D35B00B3FE6B /* RevelationUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationUI.framework;
+			remoteRef = D923745421D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745721D2D35B00B3FE6B /* RevelationUITests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationUITests-macOS.xctest";
+			remoteRef = D923745621D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745921D2D35B00B3FE6B /* RevelationUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationUI.framework;
+			remoteRef = D923745821D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745B21D2D35B00B3FE6B /* RevelationUITests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationUITests-tvOS.xctest";
+			remoteRef = D923745A21D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D923745D21D2D35B00B3FE6B /* RevelationUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationUI.framework;
+			remoteRef = D923745C21D2D35B00B3FE6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationCoreData.framework;
+			remoteRef = D9B3A5FD21D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60021D2DC88006879DE /* RevelationCoreDataTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationCoreDataTests-iOS.xctest";
+			remoteRef = D9B3A5FF21D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60221D2DC88006879DE /* RevelationCoreData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationCoreData.framework;
+			remoteRef = D9B3A60121D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60421D2DC88006879DE /* RevelationCoreDataTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationCoreDataTests-macOS.xctest";
+			remoteRef = D9B3A60321D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60621D2DC88006879DE /* RevelationCoreData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationCoreData.framework;
+			remoteRef = D9B3A60521D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60821D2DC88006879DE /* RevelationCoreDataTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationCoreDataTests-tvOS.xctest";
+			remoteRef = D9B3A60721D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B3A60A21D2DC88006879DE /* RevelationCoreData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationCoreData.framework;
+			remoteRef = D9B3A60921D2DC88006879DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationAPI.framework;
+			remoteRef = D9B9DDE421D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDE721D29AE4004EB8A1 /* RevelationAPITests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationAPITests-iOS.xctest";
+			remoteRef = D9B9DDE621D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDE921D29AE4004EB8A1 /* RevelationAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationAPI.framework;
+			remoteRef = D9B9DDE821D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDEB21D29AE4004EB8A1 /* RevelationAPITests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationAPITests-macOS.xctest";
+			remoteRef = D9B9DDEA21D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDED21D29AE4004EB8A1 /* RevelationAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationAPI.framework;
+			remoteRef = D9B9DDEC21D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDEF21D29AE4004EB8A1 /* RevelationAPITests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationAPITests-tvOS.xctest";
+			remoteRef = D9B9DDEE21D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9B9DDF121D29AE4004EB8A1 /* RevelationAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationAPI.framework;
+			remoteRef = D9B9DDF021D29AE4004EB8A1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD5721D38B1E00297E7C /* RevelationDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationDomain.framework;
+			remoteRef = D9D0AD5621D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD5921D38B1E00297E7C /* RevelationDomainTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationDomainTests-iOS.xctest";
+			remoteRef = D9D0AD5821D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD5B21D38B1E00297E7C /* RevelationDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationDomain.framework;
+			remoteRef = D9D0AD5A21D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD5D21D38B1E00297E7C /* RevelationDomainTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationDomainTests-macOS.xctest";
+			remoteRef = D9D0AD5C21D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD5F21D38B1E00297E7C /* RevelationDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationDomain.framework;
+			remoteRef = D9D0AD5E21D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD6121D38B1E00297E7C /* RevelationDomainTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RevelationDomainTests-tvOS.xctest";
+			remoteRef = D9D0AD6021D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9D0AD6321D38B1E00297E7C /* RevelationDomain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RevelationDomain.framework;
+			remoteRef = D9D0AD6221D38B1E00297E7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9F2D17421D25B2F00CD3AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F2D18721D25B3100CD3AAC /* LaunchScreen.storyboard in Resources */,
+				D9F2D18421D25B3100CD3AAC /* Assets.xcassets in Resources */,
+				D9FD7B7621D4131700F425D0 /* GoogleService-ProdInfo.plist in Resources */,
+				D9FD7B7521D4131700F425D0 /* GoogleService-DevInfo.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D18B21D25B3100CD3AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D19621D25B3100CD3AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB86FF82F295963A862E74C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Revelation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E136DDFD1E768364DD10D92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809057FF8A15722828A16316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnyCodable/AnyCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3ADE94FB1DC5E6D12485E58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9F2D17221D25B2F00CD3AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */,
+				D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */,
+				D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */,
+				D9FD7C6721D4215C00F425D0 /* AppService.swift in Sources */,
+				D9FD7B8E21D4181D00F425D0 /* MovieListRouter.swift in Sources */,
+				D9FD7B9021D4182600F425D0 /* TvListRouter.swift in Sources */,
+				D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D18921D25B3100CD3AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F2D19221D25B3100CD3AAC /* RevelationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F2D19421D25B3100CD3AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F2D19D21D25B3100CD3AAC /* RevelationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D923745F21D2D36600B3FE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationUI-iOS";
+			targetProxy = D923745E21D2D36600B3FE6B /* PBXContainerItemProxy */;
+		};
+		D923746321D2D37100B3FE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationUI-iOS";
+			targetProxy = D923746221D2D37100B3FE6B /* PBXContainerItemProxy */;
+		};
+		D9B3A61821D2DCA4006879DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationCoreData-iOS";
+			targetProxy = D9B3A61721D2DCA4006879DE /* PBXContainerItemProxy */;
+		};
+		D9B3A61C21D2DCB4006879DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationCoreData-iOS";
+			targetProxy = D9B3A61B21D2DCB4006879DE /* PBXContainerItemProxy */;
+		};
+		D9B9DDF321D29B09004EB8A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationAPI-iOS";
+			targetProxy = D9B9DDF221D29B09004EB8A1 /* PBXContainerItemProxy */;
+		};
+		D9B9DDF721D29B10004EB8A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RevelationAPI-iOS";
+			targetProxy = D9B9DDF621D29B10004EB8A1 /* PBXContainerItemProxy */;
+		};
+		D9F2D18F21D25B3100CD3AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F2D17521D25B2F00CD3AAC /* Revelation */;
+			targetProxy = D9F2D18E21D25B3100CD3AAC /* PBXContainerItemProxy */;
+		};
+		D9F2D19A21D25B3100CD3AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F2D17521D25B2F00CD3AAC /* Revelation */;
+			targetProxy = D9F2D19921D25B3100CD3AAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9F2D18521D25B3100CD3AAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F2D18621D25B3100CD3AAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9F2D19F21D25B3100CD3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9F2D1A021D25B3100CD3AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9F2D1A221D25B3100CD3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Revelation/Revelation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38J456QQ7Z;
+				GOOGLE_SERVICE_INFO_PLIST = "GoogleService-DevInfo";
+				INFOPLIST_FILE = Revelation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.Revelation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9F2D1A321D25B3100CD3AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Revelation/Revelation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38J456QQ7Z;
+				GOOGLE_SERVICE_INFO_PLIST = "GoogleService-ProdInfo";
+				INFOPLIST_FILE = Revelation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.Revelation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9F2D1A521D25B3100CD3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RevelationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revelation.app/Revelation";
+			};
+			name = Debug;
+		};
+		D9F2D1A621D25B3100CD3AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RevelationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Revelation.app/Revelation";
+			};
+			name = Release;
+		};
+		D9F2D1A821D25B3100CD3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RevelationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revelation;
+			};
+			name = Debug;
+		};
+		D9F2D1A921D25B3100CD3AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RevelationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Revelation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9F2D17121D25B2F00CD3AAC /* Build configuration list for PBXProject "Revelation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F2D19F21D25B3100CD3AAC /* Debug */,
+				D9F2D1A021D25B3100CD3AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F2D1A121D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "Revelation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F2D1A221D25B3100CD3AAC /* Debug */,
+				D9F2D1A321D25B3100CD3AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F2D1A421D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F2D1A521D25B3100CD3AAC /* Debug */,
+				D9F2D1A621D25B3100CD3AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F2D1A721D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F2D1A821D25B3100CD3AAC /* Debug */,
+				D9F2D1A921D25B3100CD3AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9F2D16E21D25B2F00CD3AAC /* Project object */;
+}

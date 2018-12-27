@@ -1,0 +1,4 @@
+#!bin/bash
+
+cd AarKay/aarkay-plugin-personal
+sh scripts/run

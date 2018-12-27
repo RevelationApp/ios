@@ -1,0 +1,24 @@
+import Foundation
+import CoreData
+
+@objc({{ prefix }}{{ name }})
+class {{ prefix }}{{ name }}: NSManagedObject {
+    {% for attribute in attributes %}
+    @NSManaged var {{ attribute.property.name }}: {{ attribute.property.type }}
+    {% endfor %}
+    {% for relationship in relationships %}
+    @NSManaged var {{ relationship.property.name }}: {% if relationship.toMany %}}NSSet<{% endif %}{{ relationship.property.type }}>{% endif %}
+    {% endfor %}
+    {% for relationship in relationships %}
+    {% if relationship.toMany %}
+    @objc(add{{ relationship.property.name }}Object:)
+    @NSManaged public func addTo{{ relationship.property.name }}(_ value: {{ relationship.property.name }})
+    @objc(remove{{ relationship.property.name }}Object:)
+    @NSManaged public func removeFrom{{ relationship.property.name }}(_ value: {{ relationship.property.name }})
+    @objc(add{{ relationship.property.name }}:)
+    @NSManaged public func addTo{{ relationship.property.name }}(_ values: NSSet)
+    @objc(remove{{ relationship.property.name }}:)
+    @NSManaged public func removeFrom{{ relationship.property.name }}(_ values: NSSet)
+    {% endif %}
+    {% endfor %}
+}

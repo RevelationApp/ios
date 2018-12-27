@@ -1,0 +1,25 @@
+- name: CoreData
+  properties:
+    - name|String
+    - prefix|String!|"CD"
+    - entities|[EntityModel]
+- name: Entity
+  isTemplate: false
+  properties:
+    - name|String
+    - isAbstract|Bool!|false
+    - attributes|[AttributeModel]!|[]
+    - relationships|[RelationshipModel]!|[]
+- name: Attribute
+  isTemplate: false
+  properties:
+    - property|ArgModel
+    - isTransient|Bool!|false
+    - isUnique|Bool!|false
+  computedProperties:
+    - isScalarType|Bool
+- name: Relationship
+  isTemplate: false
+  properties:
+    - property|ArgModel
+    - toMany|Bool!|false

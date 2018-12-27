@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Flicks' do
+target 'Revelation' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Flicks
+  # Pods for Revelation
   pod "Restofire", '~> 5.0.0-alpha.2'
   pod "AnyCodable"
   pod "ReactiveCocoa"
@@ -17,12 +17,12 @@ target 'Flicks' do
   pod "SwiftFormat/CLI"
   pod "SwiftLint"
 
-  target 'FlicksTests' do
+  target 'RevelationTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'FlicksUITests' do
+  target 'RevelationUITests' do
     inherit! :search_paths
     # Pods for testing
   end

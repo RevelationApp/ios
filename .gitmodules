@@ -1,12 +1,12 @@
-[submodule "Shared/FlicksAPI"]
-	path = Shared/FlicksAPI
-	url = https://github.com/FlicksApp/FlicksAPI.git
-[submodule "Shared/FlicksUI"]
-	path = Shared/FlicksUI
-	url = https://github.com/FlicksApp/FlicksUI.git
-[submodule "Shared/FlicksCoreData"]
-	path = Shared/FlicksCoreData
-	url = https://github.com/FlicksApp/FlicksCoreData.git
-[submodule "Shared/FlicksDomain"]
-	path = Shared/FlicksDomain
-	url = https://github.com/FlicksApp/FlicksDomain.git
+[submodule "Shared/RevelationAPI"]
+	path = Shared/RevelationAPI
+	url = https://github.com/RevelationApp/RevelationAPI.git
+[submodule "Shared/RevelationUI"]
+	path = Shared/RevelationUI
+	url = https://github.com/RevelationApp/RevelationUI.git
+[submodule "Shared/RevelationCoreData"]
+	path = Shared/RevelationCoreData
+	url = https://github.com/RevelationApp/RevelationCoreData.git
+[submodule "Shared/RevelationDomain"]
+	path = Shared/RevelationDomain
+	url = https://github.com/RevelationApp/RevelationDomain.git

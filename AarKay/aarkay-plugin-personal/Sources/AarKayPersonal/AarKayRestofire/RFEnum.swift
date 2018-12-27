@@ -61,3 +61,12 @@ public class RFEnumModel: Codable {
     }
 
 }
+
+/// AarKayEnd: -
+extension RFEnum {
+
+    public func rk_directory() -> String? {
+        return "Shared/RevelationAPI/Sources/ResponseModels"
+    }
+
+}

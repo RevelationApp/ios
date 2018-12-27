@@ -1,0 +1,148 @@
+- name: FailureResponseModel
+  props:
+    - statusCode|Int
+    - statusMessage|String
+- name: PageResponseModel
+  generics: "T: Codable"
+  props:
+    - page|Int
+    - totalResults|Int
+    - totalPages|Int
+    - results|[T]
+- name: GenreModel
+  props:
+    - id|Int
+    - name|String
+- name: ProductionCompanyModel
+  props:
+    - id|Int
+    - name|String
+    - logoPath|String?
+    - originCountry|String
+- name: ProductionCountry
+  props:
+    - iso31661|String
+    - name|String
+- name: SpokenLanguageModel
+  props:
+    - iso6391|String
+    - name|String
+- name: MovieModel
+  props:
+    - id|Int
+    - title|String
+    - overview|String
+    - voteCount|Int
+    - video|Bool
+    - voteAverage|Float
+    - popularity|Float
+    - posterPath|String?
+    - originalLanguage|String
+    - originalTitle|String
+    - genreIds|[Int]
+    - backdropPath|String?
+    - adult|Bool
+    - releaseDate|String
+- name: CrewModel
+  props:
+    - creditId|String
+    - department|String
+    - gender|Int
+    - id|Int
+    - name|String
+    - job|String
+    - profilePath|String?
+- name: TvModel
+  props:
+    - backdropPath|String?
+    - firstAirDate|String
+    - genreIds|[Int]
+    - id|Int
+    - name|String
+    - originCountry|[String]
+    - originalLanguage|String
+    - originalName|String
+    - overview|String
+    - popularity|Float
+    - posterPath|String?
+    - voteAverage|Float
+    - voteCount|Int
+- name: TvDetailsModel
+  props:
+    - backdropPath|String?
+    - firstAirDate|String
+    - genres|[GenreModel]
+    - id|Int
+    - homepage|String
+    - inProduction|Bool
+    - languages|[String]
+    - episodeRunTime|[Int]
+    - lastAirDate|String
+    - name|String
+    - overview|String
+    - originalName|String
+    - numberOfEpisodes|Int
+    - numberOfSeasons|Int
+    - originalLanguage|String
+    - originCountry|[String]
+    - type|String
+    - popularity|Float
+    - posterPath|String?
+    - productionCompanies|[ProductionCompanyModel]
+    - status|String
+    - voteAverage|Float
+    - voteCount|Int
+    - nextEpisodeToAir|EpisodeAirModel?
+    - lastEpisodeToAir|EpisodeAirModel?
+    - seasons|[SeasonModel]
+    - createdBy|[CreatedByModel]
+    - networks|[NetworkModel]
+- name: EpisodeAirModel
+  props:
+    - airDate|String
+    - episodeNumber|Int
+    - id|Int
+    - name|String
+    - overview|String
+    - productionCode|String?
+    - showId|Int
+    - seasonNumber|Int
+    - stillPath|String?
+    - voteAverage|Float
+    - voteCount|Int
+- name: SeasonModel
+  props:
+    - airDate|String?
+    - episodeCount|Int
+    - id|Int
+    - name|String
+    - overview|String
+    - seasonNumber|Int
+    - posterPath|String?
+- name: CreatedByModel
+  props:
+    - creditId|String
+    - gender|Int
+    - id|Int
+    - name|String
+    - profilePath|String?
+- name: NetworkModel
+  props:
+    - originCountry|String
+    - id|Int
+    - name|String
+    - logoPath|String?
+- name: VideoModel
+  props:
+    - id|Int
+    - results|[VideoModelItem]
+- name: VideoModelItem
+  props:
+    - id|String
+    - iso31661|String
+    - iso6391|String
+    - key|String
+    - name|String
+    - site|String
+    - size|Int
+    - type|String
