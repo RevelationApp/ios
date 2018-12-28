@@ -46,10 +46,11 @@ public class RequestableModel: Codable {
     public var queryModel: [ArgModel]?
     public var tests: [RequestableTestModel]?
     public var enums: [RFEnumModel]?
+    public var coreDataSync: Bool!
 
     public var initParams: String {
         /// <aarkay initParams>
-        var paramsDict: [[String: String]] = pathParams()
+        var paramsDict: [[String: String]] = pathParams
         
         if let _ = queryModel {
             paramsDict.append(["queryParameters": name + "QueryModel"])
@@ -74,10 +75,37 @@ public class RequestableModel: Codable {
         /// </aarkay>
     }
 
+    public var initExecParams: String {
+        /// <aarkay initExecParams>
+        var paramsDict: [[String: String]] = pathParams
+        
+        if let _ = queryModel {
+            paramsDict.append(["queryParameters": "queryParameters"])
+        } else if let qp = queryParameters, qp {
+            paramsDict.append(["queryParameters": "queryParameters"])
+        }
+        
+        if isCollection {
+            paramsDict.append(["parameters": "parameters"])
+        } else if let _ = requestModel {
+            paramsDict.append(["parameters": "parameters"])
+        } else if let p = parameters, p {
+            paramsDict.append(["parameters": "parameters"])
+        }
+        
+        var paramsArray: [String] = []
+        for i in 0..<paramsDict.count {
+            paramsArray.append(paramsDict[i].map { "\($0.key): \($0.key)" }.first!)
+        }
+        let paramsString = paramsArray.joined(separator: ", ")
+        return paramsString
+        /// </aarkay>
+    }
+
     public var testInitParams: [String]? {
         /// <aarkay testInitParams>
         return tests?.map { test in
-            var paramsDict: [[String: String]] = pathParams()
+            var paramsDict: [[String: String]] = pathParams
             let initParamsCount = paramsDict.count
             
             if let _ = queryModel {
@@ -112,10 +140,19 @@ public class RequestableModel: Codable {
         /// </aarkay>
     }
 
+    public var pathParams: [[String: String]] {
+        /// <aarkay pathParams>
+        let regex = try! NSRegularExpression(pattern: "\\{(.*?)\\}", options: [.caseInsensitive])
+        return regex.matches(in: path, options: [], range: NSMakeRange(0, path.count))
+            .map { NSMakeRange($0.range.location+1, $0.range.length-2) }
+            .map { String(path[Range($0, in: path)!]) }
+            .reduce([]) { var d = $0; d.append([$1: "String"]); return d }
+        /// </aarkay>
+    }
+
     public var paramsPath: String? {
         /// <aarkay paramsPath>
-        let updatedParams = pathParams()
-        if updatedParams.count > 0 {
+        if pathParams.count > 0 {
             return path
                 .replacingOccurrences(of: "{", with: "\\(")
                 .replacingOccurrences(of: "}", with: ")")
@@ -134,7 +171,7 @@ public class RequestableModel: Codable {
             allCodables.append(RFCodableModel(name: name + "RequestModel", props: requestModel))
         }
         if let responseModel = responseModel {
-            allCodables.append(RFCodableModel(name: name + "ResponseModel", props: responseModel))
+            allCodables.append(RFCodableModel(name: name + "Model", props: responseModel))
         }
         if let subModels = subModels {
             subModels.forEach { allCodables.append($0) }
@@ -160,7 +197,13 @@ public class RequestableModel: Codable {
 
     public var allTests: [RequestableTestModel]? {
         /// <aarkay allTests>
-        guard let tests = tests else { return nil }
+        guard let tests = tests else {
+            if initParams.isEmpty {
+                return [RequestableTestModel()]
+            } else {
+                return nil
+            }
+        }
         var allTests: [RequestableTestModel] = []
         for (index, test) in tests.enumerated() {
             test.testInitParams = testInitParams?[index]
@@ -187,8 +230,11 @@ public class RequestableModel: Codable {
         case queryModel
         case tests
         case enums
+        case coreDataSync
         case initParams
+        case initExecParams
         case testInitParams
+        case pathParams
         case paramsPath
         case allCodables
         case allProtocols
@@ -218,6 +264,7 @@ public class RequestableModel: Codable {
         self.queryModel = try container.decodeIfPresent([ArgModel].self, forKey: .queryModel)
         self.tests = try container.decodeIfPresent([RequestableTestModel].self, forKey: .tests)
         self.enums = try container.decodeIfPresent([RFEnumModel].self, forKey: .enums)
+        self.coreDataSync = try container.decodeIfPresent(Bool.self, forKey: .coreDataSync) ?? false 
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -238,8 +285,11 @@ public class RequestableModel: Codable {
         try container.encodeIfPresent(queryModel, forKey: .queryModel)
         try container.encodeIfPresent(tests, forKey: .tests)
         try container.encodeIfPresent(enums, forKey: .enums)
+        try container.encode(coreDataSync, forKey: .coreDataSync)
         try container.encode(initParams, forKey: .initParams)
+        try container.encode(initExecParams, forKey: .initExecParams)
         try container.encodeIfPresent(testInitParams, forKey: .testInitParams)
+        try container.encode(pathParams, forKey: .pathParams)
         try container.encodeIfPresent(paramsPath, forKey: .paramsPath)
         try container.encodeIfPresent(allCodables, forKey: .allCodables)
         try container.encodeIfPresent(allProtocols, forKey: .allProtocols)
@@ -265,7 +315,15 @@ extension Requestable {
         }
         generatedFiles.append(sourceFile)
         
-        if model.tests != nil {
+        if model.coreDataSync {
+            var cdFile = rk_generatedfile()
+            cdFile.template = "CoreDataSync"
+            cdFile.name = "\(model.name)Sync"
+            cdFile.directory = "Shared/RevelationCoreData/Sources/Sync"
+            generatedFiles.append(cdFile)
+        }
+        
+        if model.allTests != nil {
             var specFile = rk_generatedfile()
             specFile.template = "RequestableSpec"
             specFile.name += "Spec"
@@ -277,18 +335,6 @@ extension Requestable {
         }
         
         return generatedFiles
-    }
-    
-}
-
-extension RequestableModel {
-    
-    func pathParams() -> [[String: String]] {
-        let regex = try! NSRegularExpression(pattern: "\\{(.*?)\\}", options: [.caseInsensitive])
-        return regex.matches(in: path, options: [], range: NSMakeRange(0, path.count))
-            .map { NSMakeRange($0.range.location+1, $0.range.length-2) }
-            .map { String(path[Range($0, in: path)!]) }
-            .reduce([]) { var d = $0; d.append([$1: "String"]); return d }
     }
     
 }

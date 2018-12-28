@@ -1,10 +1,7 @@
 name: Revelation
-prefix: CD
 entities:
-  - name: CDMovie
   - name: CDMovieDetail
-  - name: CDTv
-  - name: CDTvDetai
+  - name: CDTvDetail
   - name: CDString
   - name: CDInt
   - name: CDPerson

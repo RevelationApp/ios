@@ -1,25 +1,42 @@
 - name: CoreData
   properties:
     - name|String
-    - prefix|String!|"CD"
+    - version|Int!|1
     - entities|[EntityModel]
+  computedProperties:
+    - allEntities|[EntityModel]
 - name: Entity
   isTemplate: false
   properties:
     - name|String
-    - isAbstract|Bool!|false
+    - domainModel|String?
+    - parentEntity|String?
     - attributes|[AttributeModel]!|[]
     - relationships|[RelationshipModel]!|[]
+    - children|[EntityModel]!|[]
+  computedProperties:
+    - isAbstract|Bool
+    - constraints|[AttributeModel]?
+    - indexes|[AttributeModel]?
+    - singleRelationships|[RelationshipModel]
+    - collectionRelationships|[RelationshipModel]
 - name: Attribute
   isTemplate: false
   properties:
     - property|ArgModel
+    - minValue|String?
+    - maxValue|String?
+    - regex|String?
+    - fetchOrder|Bool?
     - isTransient|Bool!|false
     - isUnique|Bool!|false
   computedProperties:
-    - isScalarType|Bool
+    - usesScalarValueType|String?
+    - cdType|String
 - name: Relationship
   isTemplate: false
   properties:
     - property|ArgModel
-    - toMany|Bool!|false
+  computedProperties:
+    - strippedType|String
+    - toMany|Bool

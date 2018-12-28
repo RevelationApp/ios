@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDMovieDetail" representedClassName="CDCDMovieDetail" syncable="YES">
+    </entity>
+    <entity name="CDTvDetail" representedClassName="CDCDTvDetail" syncable="YES">
+    </entity>
+    <entity name="CDString" representedClassName="CDCDString" syncable="YES">
+    </entity>
+    <entity name="CDInt" representedClassName="CDCDInt" syncable="YES">
+    </entity>
+    <entity name="CDPerson" representedClassName="CDCDPerson" syncable="YES">
+    </entity>
+    <elements>
+        <element name="CDMovieDetail" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CDTvDetail" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CDString" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CDInt" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CDPerson" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

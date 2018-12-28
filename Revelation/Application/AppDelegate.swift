@@ -10,26 +10,25 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-    var appService: AppService = AppProvider()
+    var appService = AppProvider()
     var router: AppRouter!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        router = AppRouter(
-            window: window!,
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+
+        self.router = AppRouter(
+            window: self.window!,
             launchOptions: launchOptions,
-            appService: appService
+            appService: self.appService
         )
-        appService.setup { [weak self] in
-            guard let _self = self else { return }
-            _self.router.start()
+
+        self.appService.setup { [unowned self] in
+            self.router.start()
         }
-        
+
         return true
     }
-    
 }

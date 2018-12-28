@@ -3,12 +3,32 @@ dir: View
 properties:
   - name|String
   - prefix|String!|"UI"
+  - presenter|Bool!|false
+  - component|[ArgModel]?
+  - useNib|Bool!|false
 templates:
   - ext: swift
     string: |
       import UIKit
+      {% if useNib %}import Reusable{% endif %}
+      import RxSwift
+      import RxCocoa
 
-      class {{name}}: {% block type %}{% if base %}{{base}}{% else %}UIView{% endif %}{% endblock %} {
+      public class {{name}}Component {
+          public init() {}
+      }
+
+      public class {{name}}Builder {
+          public static func build(with component: {{name}}Component) -> {{name}} {
+              let {{ name|lowerFirstLetter }} = {{name}}{% if useNib %}.loadFromNib{% endif %}()
+              {{ name|lowerFirstLetter }}.component = component
+              return {{ name|lowerFirstLetter }}
+          }
+      }
+
+      public class {{name}}: {% block type %}{% if base %}{{base}}{% else %}UIView{% endif %}{% endblock %} {
+          var disposeBag = DisposeBag()
+          var component: {{name}}Component!
           {% block init %}{% endblock %}
 
           required init?(coder aDecoder: NSCoder) {
@@ -21,7 +41,6 @@ templates:
 
               /// </aarkay>
           }
-
       }
     subString: |
       {% extends "View.swift.stencil" %}

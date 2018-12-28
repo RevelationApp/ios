@@ -1,6 +1,7 @@
 - name: RFCodable
   properties:
     - name|String
+    - generics|String?
     - props|[ArgModel]
 - name: RFEnum
   properties:

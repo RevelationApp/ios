@@ -1,4 +1,4 @@
-public struct {{ name }}: Codable {
+public struct {{ name }}{% if generics %}<{{ generics }}>{% endif %}: Codable {
     {% for property in props %}
     public let {{property.name}}: {{property.type}}
     {% endfor %}
@@ -8,5 +8,4 @@ public struct {{ name }}: Codable {
         self.{{property.name}} = {{property.name}}
         {% endfor %}
     }
-
 }

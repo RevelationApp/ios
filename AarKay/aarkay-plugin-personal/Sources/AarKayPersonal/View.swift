@@ -32,10 +32,16 @@ public class View: NSObject, Templatable {
 public class ViewModel: Codable {
     public var name: String
     public var prefix: String!
+    public var presenter: Bool!
+    public var component: [ArgModel]?
+    public var useNib: Bool!
 
     private enum CodingKeys: String, CodingKey {
         case name
         case prefix
+        case presenter
+        case component
+        case useNib
     }
 
     public init(name: String) {
@@ -46,12 +52,27 @@ public class ViewModel: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
         self.prefix = try container.decodeIfPresent(String.self, forKey: .prefix) ?? "UI" 
+        self.presenter = try container.decodeIfPresent(Bool.self, forKey: .presenter) ?? false 
+        self.component = try container.decodeIfPresent([ArgModel].self, forKey: .component)
+        self.useNib = try container.decodeIfPresent(Bool.self, forKey: .useNib) ?? false 
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
         try container.encode(prefix, forKey: .prefix)
+        try container.encode(presenter, forKey: .presenter)
+        try container.encodeIfPresent(component, forKey: .component)
+        try container.encode(useNib, forKey: .useNib)
     }
 
+}
+
+/// AarKayEnd:-
+extension View {
+    
+    public func rk_directory() -> String? {
+        return "Shared/RevelationUI/Sources/Views/\(String(describing: type(of: self)))"
+    }
+    
 }

@@ -1,0 +1,3 @@
+projectName: Revelation
+apiModuleName: RevelationAPI
+domainModuleName: RevelationDomain

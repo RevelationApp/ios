@@ -50,20 +50,22 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - ReactiveCocoa (8.0.2):
-    - ReactiveSwift (~> 4.0)
-  - ReactiveSwift (4.0.0):
-    - Result (~> 4.0)
   - Restofire (5.0.0-alpha.2):
     - Restofire/Core (= 5.0.0-alpha.2)
   - Restofire/Core (5.0.0-alpha.2):
     - Alamofire (~> 5.0.0-beta.1)
-  - Result (4.0.0)
   - Reusable (4.0.5):
     - Reusable/Storyboard (= 4.0.5)
     - Reusable/View (= 4.0.5)
   - Reusable/Storyboard (4.0.5)
   - Reusable/View (4.0.5)
+  - RIBs (0.9.1):
+    - RxSwift (~> 4.0)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
   - SnapKit (4.2.0)
   - SwiftFormat/CLI (0.37.1)
   - SwiftLint (0.29.2)
@@ -71,9 +73,10 @@ PODS:
 DEPENDENCIES:
   - AnyCodable
   - Firebase/Core
-  - ReactiveCocoa
   - Restofire (~> 5.0.0-alpha.2)
   - Reusable
+  - RIBs
+  - RxCocoa
   - SnapKit
   - SwiftFormat/CLI
   - SwiftLint
@@ -89,11 +92,12 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
-    - ReactiveCocoa
-    - ReactiveSwift
     - Restofire
-    - Result
     - Reusable
+    - RIBs
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
     - SnapKit
     - SwiftFormat
     - SwiftLint
@@ -108,15 +112,16 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
-  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Restofire: b4c3405820271a21871dfc8ef05f229c3dbd05a0
-  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
+  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftFormat: 550bd718695b44b1f0cbb0185b8b713fa8c137ac
   SwiftLint: 47df60bdea6e7e902b193b6596db8683aafd86a3
 
-PODFILE CHECKSUM: c3a03ec7612ddba56a8c7bf731f6273ef7575420
+PODFILE CHECKSUM: 9efaf655d3ecdce061b8d183a80e24d9d078c6f9
 
 COCOAPODS: 1.5.3

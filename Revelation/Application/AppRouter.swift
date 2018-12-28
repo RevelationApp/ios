@@ -6,20 +6,19 @@
 //  Copyright © 2018 RahulKatariya. All rights reserved.
 //
 
-import UIKit
 import RevelationDomain
+import UIKit
 
 class AppRouter {
-    
     let window: UIWindow
     let launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    let appService: AppService
+    let appService: ServiceProvider
     let launchRouter: LaunchRouter
-    
+
     init(
         window: UIWindow,
         launchOptions: [UIApplication.LaunchOptionsKey: Any]?,
-        appService: AppService
+        appService: ServiceProvider
     ) {
         self.window = window
         self.launchOptions = launchOptions
@@ -30,9 +29,8 @@ class AppRouter {
         window.rootViewController = viewController
         window.makeKeyAndVisible()
     }
-    
+
     func start() {
-        window.rootViewController = launchRouter.rootViewController()
+        self.window.rootViewController = self.launchRouter.rootViewController()
     }
-    
 }

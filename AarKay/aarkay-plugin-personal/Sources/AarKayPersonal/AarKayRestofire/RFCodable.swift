@@ -31,10 +31,12 @@ public class RFCodable: NSObject, Templatable {
 
 public class RFCodableModel: Codable {
     public var name: String
+    public var generics: String?
     public var props: [ArgModel]
 
     private enum CodingKeys: String, CodingKey {
         case name
+        case generics
         case props
     }
 
@@ -46,12 +48,14 @@ public class RFCodableModel: Codable {
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
+        self.generics = try container.decodeIfPresent(String.self, forKey: .generics)
         self.props = try container.decode([ArgModel].self, forKey: .props)
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(name, forKey: .name)
+        try container.encodeIfPresent(generics, forKey: .generics)
         try container.encode(props, forKey: .props)
     }
 

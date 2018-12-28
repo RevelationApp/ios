@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    {% for entity in allEntities %}
+    <entity name="{{ entity.name }}" representedClassName="CD{{ entity.name }}"{% if entity.isAbstract %} isAbstract="YES"{% endif %}{% if entity.parentEntity %} parentEntity="{{ entity.parentEntity }}"{% endif %} syncable="YES">
+        {% for attribute in entity.attributes %}
+        <attribute name="{{ attribute.property.name }}"{% if attribute.property.isOptional %} optional="YES"{% endif %}{% if attribute.isTransient %} transient="YES"{% endif %} attributeType="{{ attribute.cdType }}"{% if attribute.minValue %} minValueString="{{ attribute.minValue }}"{% endif %}{% if attribute.maxValue %} maxValueString="{{ attribute.maxValue }}"{% endif %}{% if attribute.property.value %} defaultValueString="{{ attribute.property.value }}"{% endif %}{% if attribute.regex %} regularExpressionString="{{ attribute.regex }}"{% endif %}{% if attribute.usesScalarValueType %} usesScalarValueType="{{ attribute.usesScalarValueType }}"{% endif %} syncable="YES"/>
+        {% endfor %}
+        {% for relationship in entity.relationships %}
+        <relationship name="{{ relationship.property.name }}" optional="YES" {% if relationship.toMany %}toMany="YES"{% else%}maxCount="1"{% endif %} destinationEntity="{{ relationship.strippedType }}" inverseName="{{ relationship.property.value }}" inverseEntity="{{ relationship.strippedType }}" deletionRule="Nullify" syncable="YES"/>
+        {% endfor %}
+        {% for attribute in entity.indexes %}
+        <fetchIndex name="by{{ attribute.property.name|upperFirstLetter }}Index">
+            <fetchIndexElement property="{{ attribute.property.name }}" type="Binary" order="{% if attribute.fetchOrder %}ascending{% else %}descending{% endif %}"/>
+        </fetchIndex>
+        {% endfor %}
+        {% if entity.constraints %}
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                {% for constraint in entity.constraints %}
+                <constraint value="{{ constraint.property.name }}"/>
+                {% endfor %}
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+        {% endif %}
+    </entity>
+    {% endfor %}
+    <elements>
+        {% for entity in allEntities %}
+        <element name="{{ entity.name }}" positionX="-63" positionY="-18" width="128" height="75"/>
+        {% endfor %}
+    </elements>
+</model>

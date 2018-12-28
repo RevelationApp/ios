@@ -2,6 +2,7 @@
   path: movie
   configurable: Discover
   response: ResultResponseModel<PageResponseModel<MovieModel>>
+  coreDataSync: true
 - name: DiscoverTv
   path: tv
   configurable: Discover

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A03117A0D6967117E4FAC6E /* Pods_RevelationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */; };
-		B58CD682F5E82C60BEEF70BE /* Pods_Revelation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */; };
+		5FC59B44990F59A4D2B457A6 /* Pods_RevelationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BB921F2F638EBA8375FA11 /* Pods_RevelationUITests.framework */; };
+		837FB74FADF6921A63A7F2E5 /* Pods_Revelation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7133941C323BA1515C6EEE /* Pods_Revelation.framework */; };
+		916AA67A0B82CB7045D4BF1F /* Pods_RevelationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731DC72C2A2C0CBD85E9E776 /* Pods_RevelationTests.framework */; };
 		D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; };
 		D923746121D2D37100B3FE6B /* RevelationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */; };
@@ -23,12 +24,7 @@
 		D9F2D19D21D25B3100CD3AAC /* RevelationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */; };
 		D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */; };
 		D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */; };
-		D9FD7B7521D4131700F425D0 /* GoogleService-DevInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */; };
-		D9FD7B7621D4131700F425D0 /* GoogleService-ProdInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */; };
 		D9FD7B8E21D4181D00F425D0 /* MovieListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */; };
-		D9FD7B9021D4182600F425D0 /* TvListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */; };
-		D9FD7C6721D4215C00F425D0 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7C6621D4215C00F425D0 /* AppService.swift */; };
-		FE32F2D984B93474004F10F1 /* Pods_RevelationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,14 +299,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.debug.xcconfig"; sourceTree = "<group>"; };
-		37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Revelation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.release.xcconfig"; sourceTree = "<group>"; };
-		7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.release.xcconfig"; sourceTree = "<group>"; };
+		1523FBA411557FCD3B3357E8 /* Pods-RevelationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60351D4A80998A5A4A9C6E2D /* Pods-RevelationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		664129A1380AF814837A1624 /* Pods-RevelationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationTests/Pods-RevelationTests.release.xcconfig"; sourceTree = "<group>"; };
+		731DC72C2A2C0CBD85E9E776 /* Pods_RevelationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE0C48B83BCDF1A6F9B1330 /* Pods-RevelationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevelationUITests/Pods-RevelationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E7133941C323BA1515C6EEE /* Pods_Revelation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Revelation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BB921F2F638EBA8375FA11 /* Pods_RevelationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05408EB1E3FE739251DF3F9 /* Pods-Revelation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.release.xcconfig"; sourceTree = "<group>"; };
 		D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationUI.xcodeproj; path = RevelationUI/RevelationUI.xcodeproj; sourceTree = "<group>"; };
 		D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationCoreData.xcodeproj; path = RevelationCoreData/RevelationCoreData.xcodeproj; sourceTree = "<group>"; };
 		D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revelation.entitlements; sourceTree = "<group>"; };
@@ -330,12 +326,8 @@
 		D9F2D19E21D25B3100CD3AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
-		D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-DevInfo.plist"; sourceTree = "<group>"; };
-		D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-ProdInfo.plist"; sourceTree = "<group>"; };
 		D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRouter.swift; sourceTree = "<group>"; };
-		D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvListRouter.swift; sourceTree = "<group>"; };
-		D9FD7C6621D4215C00F425D0 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
-		E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57FDC683F996EBCF21C0B10 /* Pods-Revelation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,7 +338,7 @@
 				D9B9DDF421D29B10004EB8A1 /* RevelationAPI.framework in Frameworks */,
 				D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */,
 				D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */,
-				B58CD682F5E82C60BEEF70BE /* Pods_Revelation.framework in Frameworks */,
+				837FB74FADF6921A63A7F2E5 /* Pods_Revelation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE32F2D984B93474004F10F1 /* Pods_RevelationTests.framework in Frameworks */,
+				916AA67A0B82CB7045D4BF1F /* Pods_RevelationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,34 +354,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A03117A0D6967117E4FAC6E /* Pods_RevelationUITests.framework in Frameworks */,
+				5FC59B44990F59A4D2B457A6 /* Pods_RevelationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A40CB154DDC35916A1FD9EF /* Frameworks */ = {
+		438EDE5683D26F5BAFC90C8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				37913F533D3F895BFC6F6776 /* Pods_Revelation.framework */,
-				474B521473F68367E67C84A0 /* Pods_RevelationTests.framework */,
-				E600BDF4976D16D349C58A12 /* Pods_RevelationUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76BD1F3FF853E3B464CBC117 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */,
-				52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */,
-				499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */,
-				B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */,
-				43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */,
-				7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */,
+				F57FDC683F996EBCF21C0B10 /* Pods-Revelation.debug.xcconfig */,
+				A05408EB1E3FE739251DF3F9 /* Pods-Revelation.release.xcconfig */,
+				1523FBA411557FCD3B3357E8 /* Pods-RevelationTests.debug.xcconfig */,
+				664129A1380AF814837A1624 /* Pods-RevelationTests.release.xcconfig */,
+				7DE0C48B83BCDF1A6F9B1330 /* Pods-RevelationUITests.debug.xcconfig */,
+				60351D4A80998A5A4A9C6E2D /* Pods-RevelationUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6CEC63EE39669638341F0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E7133941C323BA1515C6EEE /* Pods_Revelation.framework */,
+				731DC72C2A2C0CBD85E9E776 /* Pods_RevelationTests.framework */,
+				93BB921F2F638EBA8375FA11 /* Pods_RevelationUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D923744121D2D35A00B3FE6B /* Products */ = {
@@ -445,14 +437,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9C3F93621D4AAB300131D29 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				D9C3F93721D4AAB300131D29 /* AppProvider.swift */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
 		D9D0AD4121D38B1E00297E7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,23 +454,12 @@
 		D9D9F17821D25CCA00B34238 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9FD7B5A21D4131700F425D0 /* GoogleService-DevInfo.plist */,
-				D9FD7B7421D4131700F425D0 /* GoogleService-ProdInfo.plist */,
 				D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */,
 				D9F2D18521D25B3100CD3AAC /* LaunchScreen.storyboard */,
 				D9F2D18321D25B3100CD3AAC /* Assets.xcassets */,
 				D9F2D18821D25B3100CD3AAC /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D9D9F17C21D25D5400B34238 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */,
-				D9FD7C6621D4215C00F425D0 /* AppService.swift */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		D9F2D16D21D25B2F00CD3AAC = {
@@ -497,8 +470,8 @@
 				D9F2D19B21D25B3100CD3AAC /* RevelationUITests */,
 				D92E38C821D267CD0077FB8A /* Shared */,
 				D9F2D17721D25B2F00CD3AAC /* Products */,
-				76BD1F3FF853E3B464CBC117 /* Pods */,
-				2A40CB154DDC35916A1FD9EF /* Frameworks */,
+				438EDE5683D26F5BAFC90C8C /* Pods */,
+				B6CEC63EE39669638341F0B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -515,9 +488,8 @@
 		D9F2D17821D25B2F00CD3AAC /* Revelation */ = {
 			isa = PBXGroup;
 			children = (
-				D9D9F17C21D25D5400B34238 /* Application */,
+				D9FB97F621D7C774000B7F20 /* Application */,
 				D9FD7B1B21D3F43E00F425D0 /* Router */,
-				D9C3F93621D4AAB300131D29 /* Platform */,
 				D9D9F17821D25CCA00B34238 /* Supporting Files */,
 			);
 			path = Revelation;
@@ -541,13 +513,21 @@
 			path = RevelationUITests;
 			sourceTree = "<group>";
 		};
+		D9FB97F621D7C774000B7F20 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */,
+				D9C3F93721D4AAB300131D29 /* AppProvider.swift */,
+				D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		D9FD7B1B21D3F43E00F425D0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */,
 				D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */,
 				D9FD7B8D21D4181D00F425D0 /* MovieListRouter.swift */,
-				D9FD7B8F21D4182600F425D0 /* TvListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -559,12 +539,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F2D1A121D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "Revelation" */;
 			buildPhases = (
-				0EB86FF82F295963A862E74C /* [CP] Check Pods Manifest.lock */,
+				AF14D31E196C57E044E00C81 /* [CP] Check Pods Manifest.lock */,
 				D9F2D17221D25B2F00CD3AAC /* Sources */,
 				D9F2D17321D25B2F00CD3AAC /* Frameworks */,
 				D9F2D17421D25B2F00CD3AAC /* Resources */,
 				D9B9DDAA21D2991C004EB8A1 /* Embed Frameworks */,
-				809057FF8A15722828A16316 /* [CP] Embed Pods Frameworks */,
+				DFEC45C3317DD974BBA25ABF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -585,7 +565,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F2D1A421D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationTests" */;
 			buildPhases = (
-				B3ADE94FB1DC5E6D12485E58 /* [CP] Check Pods Manifest.lock */,
+				3B6480212DAAF5978C34B8DE /* [CP] Check Pods Manifest.lock */,
 				D9F2D18921D25B3100CD3AAC /* Sources */,
 				D9F2D18A21D25B3100CD3AAC /* Frameworks */,
 				D9F2D18B21D25B3100CD3AAC /* Resources */,
@@ -604,7 +584,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9F2D1A721D25B3100CD3AAC /* Build configuration list for PBXNativeTarget "RevelationUITests" */;
 			buildPhases = (
-				1E136DDFD1E768364DD10D92 /* [CP] Check Pods Manifest.lock */,
+				E1A114E915361D35D4F733BD /* [CP] Check Pods Manifest.lock */,
 				D9F2D19421D25B3100CD3AAC /* Sources */,
 				D9F2D19521D25B3100CD3AAC /* Frameworks */,
 				D9F2D19621D25B3100CD3AAC /* Resources */,
@@ -891,8 +871,6 @@
 			files = (
 				D9F2D18721D25B3100CD3AAC /* LaunchScreen.storyboard in Resources */,
 				D9F2D18421D25B3100CD3AAC /* Assets.xcassets in Resources */,
-				D9FD7B7621D4131700F425D0 /* GoogleService-ProdInfo.plist in Resources */,
-				D9FD7B7521D4131700F425D0 /* GoogleService-DevInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,91 +891,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0EB86FF82F295963A862E74C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Revelation-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1E136DDFD1E768364DD10D92 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RevelationUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		809057FF8A15722828A16316 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AnyCodable/AnyCodable.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyCodable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B3ADE94FB1DC5E6D12485E58 /* [CP] Check Pods Manifest.lock */ = {
+		3B6480212DAAF5978C34B8DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1019,6 +913,92 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AF14D31E196C57E044E00C81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Revelation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFEC45C3317DD974BBA25ABF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AnyCodable/AnyCodable.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RIBs/RIBs.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnyCodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RIBs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A114E915361D35D4F733BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1029,9 +1009,7 @@
 				D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */,
 				D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */,
 				D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */,
-				D9FD7C6721D4215C00F425D0 /* AppService.swift in Sources */,
 				D9FD7B8E21D4181D00F425D0 /* MovieListRouter.swift in Sources */,
-				D9FD7B9021D4182600F425D0 /* TvListRouter.swift in Sources */,
 				D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1227,7 +1205,7 @@
 		};
 		D9F2D1A221D25B3100CD3AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10C39B13FD160908672A3E2A /* Pods-Revelation.debug.xcconfig */;
+			baseConfigurationReference = F57FDC683F996EBCF21C0B10 /* Pods-Revelation.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1249,7 +1227,7 @@
 		};
 		D9F2D1A321D25B3100CD3AAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52A536AAE1B3D8D3B5FA7E98 /* Pods-Revelation.release.xcconfig */;
+			baseConfigurationReference = A05408EB1E3FE739251DF3F9 /* Pods-Revelation.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1271,7 +1249,7 @@
 		};
 		D9F2D1A521D25B3100CD3AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 499BC001C7988387AA19CE54 /* Pods-RevelationTests.debug.xcconfig */;
+			baseConfigurationReference = 1523FBA411557FCD3B3357E8 /* Pods-RevelationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1292,7 +1270,7 @@
 		};
 		D9F2D1A621D25B3100CD3AAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B01D352230956C247ACB7C71 /* Pods-RevelationTests.release.xcconfig */;
+			baseConfigurationReference = 664129A1380AF814837A1624 /* Pods-RevelationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1313,7 +1291,7 @@
 		};
 		D9F2D1A821D25B3100CD3AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43527B3F80D259F212FA483A /* Pods-RevelationUITests.debug.xcconfig */;
+			baseConfigurationReference = 7DE0C48B83BCDF1A6F9B1330 /* Pods-RevelationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1333,7 +1311,7 @@
 		};
 		D9F2D1A921D25B3100CD3AAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CD531CB8F582F95DACED05C /* Pods-RevelationUITests.release.xcconfig */;
+			baseConfigurationReference = 60351D4A80998A5A4A9C6E2D /* Pods-RevelationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

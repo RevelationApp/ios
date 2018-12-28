@@ -1,11 +1,12 @@
 - name: MovieDetails
   path: "{movieId}"
   configurable: Movie
+  coreDataSync: true
   response: ResultResponseModel<MovieDetailsModel>
   responseModel:
     - id|Int
     - adult|Bool
-    - belongsToCollection|String?
+    # - belongsToCollection|String?
     - backdropPath|String?
     - budget|Int
     - homepage|String?

@@ -6,12 +6,17 @@ target 'Revelation' do
   use_frameworks!
 
   # Pods for Revelation
+  pod "Firebase/Core"
   pod "Restofire", '~> 5.0.0-alpha.2'
   pod "AnyCodable"
-  pod "ReactiveCocoa"
+  
+  # Rx
+  pod "RxCocoa"
+  pod "RIBs"
+  
+  # UI
   pod "Reusable"
   pod "SnapKit"
-  pod "Firebase/Core"
 
   # Dev Tools
   pod "SwiftFormat/CLI"

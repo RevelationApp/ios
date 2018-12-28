@@ -17,9 +17,12 @@ properties:
   - queryModel|[ArgModel]?
   - tests|[RequestableTestModel]?
   - enums|[RFEnumModel]?
+  - coreDataSync|Bool!|false
 computedProperties:
   - initParams|String
+  - initExecParams|String
   - testInitParams|[String]?
+  - "pathParams|[[String: String]]"
   - paramsPath|String?
   - allCodables|[RFCodableModel]?
   - allProtocols|String?
