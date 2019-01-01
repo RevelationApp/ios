@@ -42,7 +42,7 @@ class MovieListRouter {
                 let component = MovieTableViewComponent(
                     items: items,
                     onSelectBlock: { item in
-                        let vc = _self.movieDetailViewController(movie: item)
+                        let vc = _self.movieContainerViewController(movie: item)
                         rootViewController.pushViewController(vc, animated: true)
                     }
                 )
