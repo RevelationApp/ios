@@ -1,0 +1,8 @@
+author: Rahul Katariya
+author_url: https://twitter.com/rahulkatariya91
+github_url: https://github.com/RahulKatariya/RevelationAPI
+root_url: https://RahulKatariya.github.io/RevelationAPI/
+module: RevelationAPI
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'RevelationAPI.xcworkspace', -scheme, 'RevelationAPI-iOS']

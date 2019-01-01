@@ -15,7 +15,7 @@ class AppProvider: ServiceProvider {
 }
 
 /// AarKayEnd: -
-import Firebase
+//import Firebase
 import RevelationAPI
 
 extension AppProvider {

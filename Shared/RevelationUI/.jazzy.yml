@@ -1,0 +1,8 @@
+author: Rahul Katariya
+author_url: https://twitter.com/rahulkatariya91
+github_url: https://github.com/RahulKatariya/RevelationUI
+root_url: https://RahulKatariya.github.io/RevelationUI/
+module: RevelationUI
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'RevelationUI.xcworkspace', -scheme, 'RevelationUI-iOS']

@@ -1,0 +1,8 @@
+author: Rahul Katariya
+author_url: https://twitter.com/rahulkatariya91
+github_url: https://github.com/RahulKatariya/RevelationCoreData
+root_url: https://RahulKatariya.github.io/RevelationCoreData/
+module: RevelationCoreData
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'RevelationCoreData.xcworkspace', -scheme, 'RevelationCoreData-iOS']

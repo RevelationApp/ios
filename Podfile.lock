@@ -1,55 +1,5 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
-  - AnyCodable (1.2.0)
-  - Firebase/Core (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseAnalytics (= 5.4.0)
-  - Firebase/CoreOnly (5.15.0):
-    - FirebaseCore (= 5.1.10)
-  - FirebaseAnalytics (5.4.0):
-    - FirebaseCore (~> 5.1)
-    - FirebaseInstanceID (~> 3.3)
-    - GoogleAppMeasurement (= 5.4.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - nanopb (~> 0.3)
-  - FirebaseCore (5.1.10):
-    - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseInstanceID (3.3.0):
-    - FirebaseCore (~> 5.1)
-    - GoogleUtilities/Environment (~> 5.3)
-    - GoogleUtilities/UserDefaults (~> 5.3)
-  - GoogleAppMeasurement (5.4.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
-    - GoogleUtilities/MethodSwizzler (~> 5.2)
-    - GoogleUtilities/Network (~> 5.2)
-    - "GoogleUtilities/NSData+zlib (~> 5.2)"
-    - nanopb (~> 0.3)
-  - GoogleUtilities/AppDelegateSwizzler (5.3.6):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (5.3.6)
-  - GoogleUtilities/Logger (5.3.6):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (5.3.6):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/Network (5.3.6):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.3.6)"
-  - GoogleUtilities/Reachability (5.3.6):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (5.3.6):
-    - GoogleUtilities/Logger
-  - nanopb (0.3.901):
-    - nanopb/decode (= 0.3.901)
-    - nanopb/encode (= 0.3.901)
-  - nanopb/decode (0.3.901)
-  - nanopb/encode (0.3.901)
   - Restofire (5.0.0-alpha.2):
     - Restofire/Core (= 5.0.0-alpha.2)
   - Restofire/Core (5.0.0-alpha.2):
@@ -59,23 +9,18 @@ PODS:
     - Reusable/View (= 4.0.5)
   - Reusable/Storyboard (4.0.5)
   - Reusable/View (4.0.5)
-  - RIBs (0.9.1):
-    - RxSwift (~> 4.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - SnapKit (4.2.0)
-  - SwiftFormat/CLI (0.37.1)
+  - SwiftFormat/CLI (0.37.2)
   - SwiftLint (0.29.2)
 
 DEPENDENCIES:
-  - AnyCodable
-  - Firebase/Core
   - Restofire (~> 5.0.0-alpha.2)
   - Reusable
-  - RIBs
   - RxCocoa
   - SnapKit
   - SwiftFormat/CLI
@@ -84,17 +29,8 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - AnyCodable
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseInstanceID
-    - GoogleAppMeasurement
-    - GoogleUtilities
-    - nanopb
     - Restofire
     - Reusable
-    - RIBs
     - RxAtomic
     - RxCocoa
     - RxSwift
@@ -104,24 +40,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
-  AnyCodable: bb05e19c676899e0fd511652f2d83bfa044e2503
-  Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
-  FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
-  FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
-  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
-  GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
-  GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
-  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Restofire: b4c3405820271a21871dfc8ef05f229c3dbd05a0
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
-  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftFormat: 550bd718695b44b1f0cbb0185b8b713fa8c137ac
+  SwiftFormat: abbfb26dde4c6d683923cde153c88e10da9d7881
   SwiftLint: 47df60bdea6e7e902b193b6596db8683aafd86a3
 
-PODFILE CHECKSUM: 9efaf655d3ecdce061b8d183a80e24d9d078c6f9
+PODFILE CHECKSUM: 6de04cb551355d5b2a1560625b36b1421ca4bebb
 
 COCOAPODS: 1.5.3

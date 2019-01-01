@@ -1,0 +1,8 @@
+author: Rahul Katariya
+author_url: https://twitter.com/rahulkatariya91
+github_url: https://github.com/RahulKatariya/RevelationDomain
+root_url: https://RahulKatariya.github.io/RevelationDomain/
+module: RevelationDomain
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'RevelationDomain.xcworkspace', -scheme, 'RevelationDomain-iOS']

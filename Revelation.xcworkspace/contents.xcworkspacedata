@@ -22,4 +22,13 @@
    <FileRef
       location = "group:Podfile.lock">
    </FileRef>
+   <FileRef
+      location = "group:Shared/RevelationAPI/RevelationAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Shared/RevelationUI/RevelationUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Shared/RevelationCoreData/RevelationCoreData.xcodeproj">
+   </FileRef>
 </Workspace>
