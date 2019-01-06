@@ -10,51 +10,44 @@ import Foundation
 import AarKayKit
 import AarKayPlugin
 
-public class Mux: NSObject, Templatable {
+public class TableViewController: ViewController {
 
     private let datafile: Datafile
-    private var model: MuxModel
-    public var generatedfile: Generatedfile
+    private var model: TableViewControllerModel
 
     public required init?(datafile: Datafile, generatedfile: Generatedfile) throws {
         guard let contents = generatedfile.contents else { return nil }
         self.datafile = datafile
-        self.model = try contents.decode(type: MuxModel.self)
+        self.model = try contents.decode(type: TableViewControllerModel.self)
+        try super.init(datafile: datafile, generatedfile: generatedfile)
         var generatedfile = generatedfile
         generatedfile.contents = try Dictionary.encode(data: model)
         self.generatedfile = generatedfile
     }
 
-    public static func resource() -> String {
-        return #file
-    }
-
 }
 
-public class MuxModel: Codable {
-    public var name: String
-    public var root: String
+public class TableViewControllerModel: ViewControllerModel {
+    public var isStatic: Bool!
 
     private enum CodingKeys: String, CodingKey {
-        case name
-        case root
+        case isStatic
     }
 
-    public init(name: String, root: String) {
-        self.name = name
-        self.root = root
+    override public init(name: String) {
+        super.init(name: name)
     }
 
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.name = try container.decode(String.self, forKey: .name)
-        self.root = try container.decode(String.self, forKey: .root)
+        self.isStatic = try container.decodeIfPresent(Bool.self, forKey: .isStatic) ?? false 
+        try super.init(from: decoder)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(name, forKey: .name)
-        try container.encode(root, forKey: .root)
+        try container.encode(isStatic, forKey: .isStatic)
+        try super.encode(to: encoder)
     }
 
 }

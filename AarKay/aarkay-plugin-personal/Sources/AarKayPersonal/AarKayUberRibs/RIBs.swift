@@ -4,7 +4,7 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//
+//  
 
 import Foundation
 import AarKayKit
@@ -12,11 +12,13 @@ import AarKayPlugin
 
 public class RIBs: NSObject, Templatable {
 
+    private let datafile: Datafile
     private var model: RIBsModel
     public var generatedfile: Generatedfile
 
-    public required init?(generatedfile: Generatedfile) throws {
+    public required init?(datafile: Datafile, generatedfile: Generatedfile) throws {
         guard let contents = generatedfile.contents else { return nil }
+        self.datafile = datafile
         self.model = try contents.decode(type: RIBsModel.self)
         var generatedfile = generatedfile
         generatedfile.contents = try Dictionary.encode(data: model)
