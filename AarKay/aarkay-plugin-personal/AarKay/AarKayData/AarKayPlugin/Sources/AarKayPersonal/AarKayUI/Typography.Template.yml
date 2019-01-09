@@ -1,3 +1,4 @@
 name: Typography
 properties:
-  - font|String
+  - fontStyles|[ArgModel]
+  - fontSizes|[ArgModel]

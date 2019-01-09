@@ -1,0 +1,13 @@
+colors:
+  - successBackground|223|240|216
+  - successText|60|118|61
+  - successBorder|214|233|198
+  - infoBackground|217|237|247
+  - infoText|49|112|143
+  - infoBorder|188|232|241
+  - errorBackground|242|222|222
+  - errorText|169|68|66
+  - errorBorder|235|204|209
+  - warningBackground|252|248|227
+  - warningText|138|109|59
+  - warningBorder|250|235|204

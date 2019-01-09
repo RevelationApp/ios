@@ -5,6 +5,7 @@
   isTemplate: false
   customDecoder: true
   properties:
+    - name|String
     - red|Float
     - green|Float
     - blue|Float

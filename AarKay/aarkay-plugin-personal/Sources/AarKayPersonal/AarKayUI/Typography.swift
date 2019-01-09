@@ -30,23 +30,28 @@ public class Typography: NSObject, Templatable {
 }
 
 public class TypographyModel: Codable {
-    public var font: String
+    public var fontStyles: [ArgModel]
+    public var fontSizes: [ArgModel]
 
     private enum CodingKeys: String, CodingKey {
-        case font
+        case fontStyles
+        case fontSizes
     }
 
-    public init(font: String) {
-        self.font = font
+    public init(fontStyles: [ArgModel], fontSizes: [ArgModel]) {
+        self.fontStyles = fontStyles
+        self.fontSizes = fontSizes
     }
 
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.font = try container.decode(String.self, forKey: .font)
+        self.fontStyles = try container.decode([ArgModel].self, forKey: .fontStyles)
+        self.fontSizes = try container.decode([ArgModel].self, forKey: .fontSizes)
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(font, forKey: .font)
+        try container.encode(fontStyles, forKey: .fontStyles)
+        try container.encode(fontSizes, forKey: .fontSizes)
     }
 }

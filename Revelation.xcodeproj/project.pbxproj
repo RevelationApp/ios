@@ -1206,6 +1206,7 @@
 				DEVELOPMENT_TEAM = 38J456QQ7Z;
 				GOOGLE_SERVICE_INFO_PLIST = "GoogleService-DevInfo";
 				INFOPLIST_FILE = Revelation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1228,6 +1229,7 @@
 				DEVELOPMENT_TEAM = 38J456QQ7Z;
 				GOOGLE_SERVICE_INFO_PLIST = "GoogleService-ProdInfo";
 				INFOPLIST_FILE = Revelation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

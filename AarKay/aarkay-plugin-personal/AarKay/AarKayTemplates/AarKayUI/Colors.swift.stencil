@@ -1,0 +1,7 @@
+import UIKit
+
+public class Colors {
+    {% for color in colors %}
+    public static let {{ color.name }}Color = UIColor(red: {{ color.red }}.0/255.0, green: {{ color.green }}/255.0, blue: {{ color.blue }}/255.0, alpha: {{ color.alpha }})
+    {% endfor %}
+}
