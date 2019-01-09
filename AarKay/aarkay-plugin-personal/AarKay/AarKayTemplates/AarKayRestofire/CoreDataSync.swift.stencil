@@ -12,7 +12,7 @@
 import CoreData
 {% if apiModuleName %}import {{ apiModuleName }}{% endif %}
 
-struct {{ name }}Sync: CoreDataSyncable {
+struct CD{{ name }}Sync: CoreDataSyncable {
     typealias Response = {{ response }}
     typealias Request = {{ name }}{{ method|uppercase }}Service
 

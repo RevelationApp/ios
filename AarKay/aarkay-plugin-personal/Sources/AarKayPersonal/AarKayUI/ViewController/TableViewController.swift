@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class TableViewController: ViewController {
-
     private let datafile: Datafile
     private var model: TableViewControllerModel
 
@@ -24,7 +23,6 @@ public class TableViewController: ViewController {
         generatedfile.contents = try Dictionary.encode(data: model)
         self.generatedfile = generatedfile
     }
-
 }
 
 public class TableViewControllerModel: ViewControllerModel {
@@ -40,7 +38,7 @@ public class TableViewControllerModel: ViewControllerModel {
 
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.isStatic = try container.decodeIfPresent(Bool.self, forKey: .isStatic) ?? false 
+        self.isStatic = try container.decodeIfPresent(Bool.self, forKey: .isStatic) ?? false
         try super.init(from: decoder)
     }
 
@@ -49,5 +47,4 @@ public class TableViewControllerModel: ViewControllerModel {
         try container.encode(isStatic, forKey: .isStatic)
         try super.encode(to: encoder)
     }
-
 }

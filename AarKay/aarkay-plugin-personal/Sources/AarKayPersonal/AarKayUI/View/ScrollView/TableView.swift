@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class TableView: View {
-
     private let datafile: Datafile
     private var model: TableViewModel
 
@@ -24,7 +23,6 @@ public class TableView: View {
         generatedfile.contents = try Dictionary.encode(data: model)
         self.generatedfile = generatedfile
     }
-
 }
 
 public class TableViewModel: ViewModel {}

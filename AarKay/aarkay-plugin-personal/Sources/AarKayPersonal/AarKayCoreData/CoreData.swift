@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class CoreData: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: CoreDataModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class CoreData: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class CoreDataModel: Codable {
@@ -71,7 +69,7 @@ public class CoreDataModel: Codable {
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
-        self.version = try container.decodeIfPresent(Int.self, forKey: .version) ?? 1 
+        self.version = try container.decodeIfPresent(Int.self, forKey: .version) ?? 1
         self.entities = try container.decode([EntityModel].self, forKey: .entities)
     }
 
@@ -82,7 +80,6 @@ public class CoreDataModel: Codable {
         try container.encode(entities, forKey: .entities)
         try container.encode(allEntities, forKey: .allEntities)
     }
-
 }
 
 /// AarKayEnd: -

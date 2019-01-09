@@ -4,11 +4,11 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class EntityModel: Codable {
     public var name: String
@@ -72,9 +72,9 @@ public class EntityModel: Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.domainModel = try container.decodeIfPresent(String.self, forKey: .domainModel)
         self.parentEntity = try container.decodeIfPresent(String.self, forKey: .parentEntity)
-        self.attributes = try container.decodeIfPresent([AttributeModel].self, forKey: .attributes) ?? [] 
-        self.relationships = try container.decodeIfPresent([RelationshipModel].self, forKey: .relationships) ?? [] 
-        self.children = try container.decodeIfPresent([EntityModel].self, forKey: .children) ?? [] 
+        self.attributes = try container.decodeIfPresent([AttributeModel].self, forKey: .attributes) ?? []
+        self.relationships = try container.decodeIfPresent([RelationshipModel].self, forKey: .relationships) ?? []
+        self.children = try container.decodeIfPresent([EntityModel].self, forKey: .children) ?? []
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -91,5 +91,4 @@ public class EntityModel: Codable {
         try container.encode(singleRelationships, forKey: .singleRelationships)
         try container.encode(collectionRelationships, forKey: .collectionRelationships)
     }
-
 }

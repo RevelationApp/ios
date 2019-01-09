@@ -1,3 +1,4 @@
 projectName: Revelation
 apiModuleName: RevelationAPI
 domainModuleName: RevelationDomain
+coreDataSyncDir: ./../../RevelationCoreData/Sources

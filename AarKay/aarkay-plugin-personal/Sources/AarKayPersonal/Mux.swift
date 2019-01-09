@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class Mux: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: MuxModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class Mux: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class MuxModel: Codable {
@@ -56,5 +54,4 @@ public class MuxModel: Codable {
         try container.encode(name, forKey: .name)
         try container.encode(root, forKey: .root)
     }
-
 }

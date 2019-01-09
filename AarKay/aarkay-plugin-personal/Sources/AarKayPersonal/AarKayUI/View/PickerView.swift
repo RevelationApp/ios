@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class PickerView: View {
-
     private let datafile: Datafile
     private var model: PickerViewModel
 
@@ -24,7 +23,6 @@ public class PickerView: View {
         generatedfile.contents = try Dictionary.encode(data: model)
         self.generatedfile = generatedfile
     }
-
 }
 
 public class PickerViewModel: ViewModel {}

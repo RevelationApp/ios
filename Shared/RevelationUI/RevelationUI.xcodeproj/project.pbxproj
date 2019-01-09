@@ -30,6 +30,14 @@
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
 		D396FD8587747B35C460CE35 /* Pods_RevelationUI_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB3AF1EA18134E3B29A395D /* Pods_RevelationUI_iOS.framework */; };
+		D9290F0521E60E44007D2BD1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0421E60E44007D2BD1 /* Colors.swift */; };
+		D9290F0621E60E44007D2BD1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0421E60E44007D2BD1 /* Colors.swift */; };
+		D9290F0721E60E44007D2BD1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0421E60E44007D2BD1 /* Colors.swift */; };
+		D9290F0821E60E44007D2BD1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0421E60E44007D2BD1 /* Colors.swift */; };
+		D9290F0A21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
+		D9290F0B21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
+		D9290F0C21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
+		D9290F0D21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
 		D951351321D9114E0084F702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951351221D9114E0084F702 /* ViewController.swift */; };
 		D951352B21D91ECE0084F702 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951352A21D91ECE0084F702 /* GenericViewController.swift */; };
 		D951353321D9249C0084F702 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951353221D9249C0084F702 /* MovieDetailView.swift */; };
@@ -259,6 +267,8 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		D9290F0421E60E44007D2BD1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D9290F0921E60E4F007D2BD1 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		D951351221D9114E0084F702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D951352A21D91ECE0084F702 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		D951353221D9249C0084F702 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
@@ -376,6 +386,7 @@
 		3549BB161DA3890B00C63030 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D9290F0021E60E06007D2BD1 /* Style */,
 				D9D9374A21D3C26A008039ED /* Factories */,
 				D9D0ADBA21D3923D00297E7C /* Views */,
 				3549BB541DA38A4000C63030 /* Supporting Files */,
@@ -424,6 +435,15 @@
 				0CB3AF1EA18134E3B29A395D /* Pods_RevelationUI_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9290F0021E60E06007D2BD1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				D9290F0421E60E44007D2BD1 /* Colors.swift */,
+				D9290F0921E60E4F007D2BD1 /* Typography.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		D951352C21D923D70084F702 /* UIKit */ = {
@@ -916,6 +936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D951351321D9114E0084F702 /* ViewController.swift in Sources */,
+				D9290F0521E60E44007D2BD1 /* Colors.swift in Sources */,
 				D9D9374C21D3C27E008039ED /* StateVCFactory.swift in Sources */,
 				D951353821D9329A0084F702 /* MovieTableViewCell.swift in Sources */,
 				D9D9370A21D3B5A7008039ED /* StateViewController.swift in Sources */,
@@ -925,6 +946,7 @@
 				D951352B21D91ECE0084F702 /* GenericViewController.swift in Sources */,
 				D9D9372D21D3BF14008039ED /* LoadingView.swift in Sources */,
 				D9D9373721D3BF2D008039ED /* ErrorView.swift in Sources */,
+				D9290F0A21E60E4F007D2BD1 /* Typography.swift in Sources */,
 				D9FD7B9221D4195000F425D0 /* TvTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -934,6 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95135AA21D968CF0084F702 /* ViewController.swift in Sources */,
+				D9290F0821E60E44007D2BD1 /* Colors.swift in Sources */,
 				D9D9374F21D3C27E008039ED /* StateVCFactory.swift in Sources */,
 				D951353B21D9329A0084F702 /* MovieTableViewCell.swift in Sources */,
 				D9D9370D21D3B5A7008039ED /* StateViewController.swift in Sources */,
@@ -942,6 +965,7 @@
 				D9D9373521D3BF1C008039ED /* EmptyView.swift in Sources */,
 				D9D9373021D3BF14008039ED /* LoadingView.swift in Sources */,
 				D951353621D9249C0084F702 /* MovieDetailView.swift in Sources */,
+				D9290F0D21E60E4F007D2BD1 /* Typography.swift in Sources */,
 				D9D9373A21D3BF2D008039ED /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -951,6 +975,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95135A921D968CF0084F702 /* ViewController.swift in Sources */,
+				D9290F0621E60E44007D2BD1 /* Colors.swift in Sources */,
 				D9D9374D21D3C27E008039ED /* StateVCFactory.swift in Sources */,
 				D951353921D9329A0084F702 /* MovieTableViewCell.swift in Sources */,
 				D9D9370B21D3B5A7008039ED /* StateViewController.swift in Sources */,
@@ -959,6 +984,7 @@
 				D9D9373321D3BF1C008039ED /* EmptyView.swift in Sources */,
 				D9D9372E21D3BF14008039ED /* LoadingView.swift in Sources */,
 				D951353421D9249C0084F702 /* MovieDetailView.swift in Sources */,
+				D9290F0B21E60E4F007D2BD1 /* Typography.swift in Sources */,
 				D9D9373821D3BF2D008039ED /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -968,6 +994,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D95135A821D968CF0084F702 /* ViewController.swift in Sources */,
+				D9290F0721E60E44007D2BD1 /* Colors.swift in Sources */,
 				D9D9374E21D3C27E008039ED /* StateVCFactory.swift in Sources */,
 				D951353A21D9329A0084F702 /* MovieTableViewCell.swift in Sources */,
 				D9D9370C21D3B5A7008039ED /* StateViewController.swift in Sources */,
@@ -976,6 +1003,7 @@
 				D9D9373421D3BF1C008039ED /* EmptyView.swift in Sources */,
 				D9D9372F21D3BF14008039ED /* LoadingView.swift in Sources */,
 				D951353521D9249C0084F702 /* MovieDetailView.swift in Sources */,
+				D9290F0C21E60E4F007D2BD1 /* Typography.swift in Sources */,
 				D9D9373921D3BF2D008039ED /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1175,11 +1203,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1201,11 +1225,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1314,10 +1334,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1340,10 +1357,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1361,10 +1375,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
@@ -1379,10 +1390,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
@@ -1396,10 +1404,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
@@ -1415,10 +1420,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rahulkatariya.RevelationUITests;
@@ -1434,10 +1436,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -1454,10 +1453,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;

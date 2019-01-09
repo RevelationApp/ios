@@ -4,11 +4,11 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class SceneModel: Codable {
     public var name: String
@@ -72,14 +72,14 @@ public class SceneModel: Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.routeTypes = try container.decodeIfPresent([String].self, forKey: .routeTypes)
         self.children = try container.decodeIfPresent([SceneModel].self, forKey: .children)
-        self.viewable = try container.decodeIfPresent(Bool.self, forKey: .viewable) ?? true 
+        self.viewable = try container.decodeIfPresent(Bool.self, forKey: .viewable) ?? true
         self.vcable = try container.decodeIfPresent(String.self, forKey: .vcable)
-        self.deps = try container.decodeIfPresent([ArgModel].self, forKey: .deps) ?? [] 
-        self.create = try container.decodeIfPresent(Bool.self, forKey: .create) ?? true 
-        self.sb = try container.decodeIfPresent(Bool.self, forKey: .sb) ?? true 
+        self.deps = try container.decodeIfPresent([ArgModel].self, forKey: .deps) ?? []
+        self.create = try container.decodeIfPresent(Bool.self, forKey: .create) ?? true
+        self.sb = try container.decodeIfPresent(Bool.self, forKey: .sb) ?? true
         self.depsVC = try container.decodeIfPresent([ArgModel].self, forKey: .depsVC)
         self.depsIR = try container.decodeIfPresent([ArgModel].self, forKey: .depsIR)
-        self.vcType = try container.decodeIfPresent(String.self, forKey: .vcType) ?? "UIView" 
+        self.vcType = try container.decodeIfPresent(String.self, forKey: .vcType) ?? "UIView"
         self.imports = try container.decodeIfPresent([String].self, forKey: .imports)
     }
 
@@ -101,5 +101,4 @@ public class SceneModel: Codable {
         try container.encode(isPresentable, forKey: .isPresentable)
         try container.encodeIfPresent(allDeps, forKey: .allDeps)
     }
-
 }

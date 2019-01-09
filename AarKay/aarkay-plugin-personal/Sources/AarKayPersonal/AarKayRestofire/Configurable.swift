@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class Configurable: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: ConfigurableModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class Configurable: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class ConfigurableModel: Codable {
@@ -67,7 +65,6 @@ public class ConfigurableModel: Codable {
         try container.encodeIfPresent(host, forKey: .host)
         try container.encodeIfPresent(path, forKey: .path)
     }
-
 }
 
 /// AarKayEnd: -

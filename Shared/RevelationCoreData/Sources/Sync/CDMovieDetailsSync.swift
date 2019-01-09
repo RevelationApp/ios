@@ -12,7 +12,7 @@
 import CoreData
 import RevelationAPI
 
-struct MovieDetailsSync: CoreDataSyncable {
+struct CDMovieDetailsSync: CoreDataSyncable {
     typealias Response = ResultResponseModel<MovieDetailsModel>
     typealias Request = MovieDetailsGETService
 

@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class ViewController: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: ViewControllerModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class ViewController: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class ViewControllerModel: Codable {
@@ -49,7 +47,7 @@ public class ViewControllerModel: Codable {
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
-        self.prefix = try container.decodeIfPresent(String.self, forKey: .prefix) ?? "UI" 
+        self.prefix = try container.decodeIfPresent(String.self, forKey: .prefix) ?? "UI"
         self.type = try container.decodeIfPresent(String.self, forKey: .type)
     }
 
@@ -59,5 +57,4 @@ public class ViewControllerModel: Codable {
         try container.encode(prefix, forKey: .prefix)
         try container.encodeIfPresent(type, forKey: .type)
     }
-
 }

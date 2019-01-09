@@ -4,11 +4,11 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class AttributeModel: Codable {
     public var property: ArgModel
@@ -85,8 +85,8 @@ public class AttributeModel: Codable {
         self.maxValue = try container.decodeIfPresent(String.self, forKey: .maxValue)
         self.regex = try container.decodeIfPresent(String.self, forKey: .regex)
         self.fetchOrder = try container.decodeIfPresent(Bool.self, forKey: .fetchOrder)
-        self.isTransient = try container.decodeIfPresent(Bool.self, forKey: .isTransient) ?? false 
-        self.isUnique = try container.decodeIfPresent(Bool.self, forKey: .isUnique) ?? false 
+        self.isTransient = try container.decodeIfPresent(Bool.self, forKey: .isTransient) ?? false
+        self.isUnique = try container.decodeIfPresent(Bool.self, forKey: .isUnique) ?? false
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -101,5 +101,4 @@ public class AttributeModel: Codable {
         try container.encodeIfPresent(usesScalarValueType, forKey: .usesScalarValueType)
         try container.encode(cdType, forKey: .cdType)
     }
-
 }

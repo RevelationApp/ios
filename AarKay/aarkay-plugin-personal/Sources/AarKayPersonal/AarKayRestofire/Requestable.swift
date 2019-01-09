@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class Requestable: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: RequestableModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class Requestable: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class RequestableModel: Codable {
@@ -253,20 +251,20 @@ public class RequestableModel: Codable {
         self.protocols = try container.decodeIfPresent(String.self, forKey: .protocols)
         self.name = try container.decode(String.self, forKey: .name)
         self.configurable = try container.decodeIfPresent(String.self, forKey: .configurable)
-        self.response = try container.decodeIfPresent(String.self, forKey: .response) ?? "Any" 
-        self.method = try container.decodeIfPresent(String.self, forKey: .method) ?? "get" 
+        self.response = try container.decodeIfPresent(String.self, forKey: .response) ?? "Any"
+        self.method = try container.decodeIfPresent(String.self, forKey: .method) ?? "get"
         self.version = try container.decodeIfPresent(String.self, forKey: .version)
         self.path = try container.decode(String.self, forKey: .path)
-        self.parameters = try container.decodeIfPresent(Bool.self, forKey: .parameters) ?? false 
-        self.queryParameters = try container.decodeIfPresent(Bool.self, forKey: .queryParameters) ?? false 
-        self.isCollection = try container.decodeIfPresent(Bool.self, forKey: .isCollection) ?? false 
+        self.parameters = try container.decodeIfPresent(Bool.self, forKey: .parameters) ?? false
+        self.queryParameters = try container.decodeIfPresent(Bool.self, forKey: .queryParameters) ?? false
+        self.isCollection = try container.decodeIfPresent(Bool.self, forKey: .isCollection) ?? false
         self.requestModel = try container.decodeIfPresent([ArgModel].self, forKey: .requestModel)
         self.responseModel = try container.decodeIfPresent([ArgModel].self, forKey: .responseModel)
         self.subModels = try container.decodeIfPresent([RFCodableModel].self, forKey: .subModels)
         self.queryModel = try container.decodeIfPresent([ArgModel].self, forKey: .queryModel)
         self.tests = try container.decodeIfPresent([RequestableTestModel].self, forKey: .tests)
         self.enums = try container.decodeIfPresent([RFEnumModel].self, forKey: .enums)
-        self.coreDataSync = try container.decodeIfPresent(Bool.self, forKey: .coreDataSync) ?? false 
+        self.coreDataSync = try container.decodeIfPresent(Bool.self, forKey: .coreDataSync) ?? false
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -297,7 +295,6 @@ public class RequestableModel: Codable {
         try container.encodeIfPresent(allProtocols, forKey: .allProtocols)
         try container.encodeIfPresent(allTests, forKey: .allTests)
     }
-
 }
 
 /// MARK:- AarKayEnd
@@ -320,7 +317,7 @@ extension Requestable {
         if model.coreDataSync {
             var cdFile = rk_generatedfile()
             cdFile.template = "CoreDataSync"
-            cdFile.name = "\(model.name)Sync"
+            cdFile.name = "CD\(model.name)Sync"
             cdFile.directory = "Shared/RevelationCoreData/Sources/Sync"
             generatedFiles.append(cdFile)
         }

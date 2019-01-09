@@ -4,11 +4,11 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class RelationshipModel: Codable {
     public var property: ArgModel
@@ -50,5 +50,4 @@ public class RelationshipModel: Codable {
         try container.encode(strippedType, forKey: .strippedType)
         try container.encode(toMany, forKey: .toMany)
     }
-
 }

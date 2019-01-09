@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class RIBs: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: RIBsModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class RIBs: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class RIBsModel: Codable {
@@ -55,7 +53,6 @@ public class RIBsModel: Codable {
         try container.encode(root, forKey: .root)
         try container.encodeIfPresent(shared, forKey: .shared)
     }
-
 }
 
 /// MARK:- AarKayEnd

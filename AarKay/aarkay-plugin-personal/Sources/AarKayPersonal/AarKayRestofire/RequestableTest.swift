@@ -4,11 +4,11 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class RequestableTestModel: Codable {
     public var testPathParams: [String]?
@@ -45,5 +45,4 @@ public class RequestableTestModel: Codable {
         try container.encodeIfPresent(testRequestModel, forKey: .testRequestModel)
         try container.encodeIfPresent(testResponseModel, forKey: .testResponseModel)
     }
-
 }

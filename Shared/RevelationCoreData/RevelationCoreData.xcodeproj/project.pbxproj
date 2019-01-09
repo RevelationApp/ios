@@ -50,10 +50,10 @@
 		D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */; };
 		D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */; };
 		D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */; };
-		D99C1E9F21D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */; };
-		D99C1EA021D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */; };
-		D99C1EA121D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */; };
-		D99C1EA221D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */; };
+		D99C1E9F21D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
+		D99C1EA021D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
+		D99C1EA121D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
+		D99C1EA221D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
 		D9D0AD6C21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
 		D9D0AD6D21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
 		D9D0AD6E21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
@@ -70,10 +70,10 @@
 		D9EB076221D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
 		D9EB076321D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
 		D9EB076421D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
-		D9EB076521D82EDB0051B4A3 /* MovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */; };
-		D9EB076621D82EDC0051B4A3 /* MovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */; };
-		D9EB076721D82EDD0051B4A3 /* MovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */; };
-		D9EB076821D82EDD0051B4A3 /* MovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */; };
+		D9EB076521D82EDB0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
+		D9EB076621D82EDC0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
+		D9EB076721D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
+		D9EB076821D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
 		D9EB078421D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
 		D9EB078521D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
 		D9EB078621D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
@@ -348,10 +348,10 @@
 		D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncable.swift; sourceTree = "<group>"; };
 		D989DD0721D535FE00BD7771 /* CDModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModelable.swift; sourceTree = "<group>"; };
 		D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMovieSync.swift; sourceTree = "<group>"; };
+		D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDiscoverMovieSync.swift; sourceTree = "<group>"; };
 		D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestListener.swift; sourceTree = "<group>"; };
 		D9D0AD6B21D38BB600297E7C /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
-		D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsSync.swift; sourceTree = "<group>"; };
+		D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetailsSync.swift; sourceTree = "<group>"; };
 		D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetail.swift; sourceTree = "<group>"; };
 		D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocExtensions.swift; sourceTree = "<group>"; };
 		D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationPC.swift; sourceTree = "<group>"; };
@@ -538,8 +538,8 @@
 		D974B68D21D50FB6008E72D0 /* Sync */ = {
 			isa = PBXGroup;
 			children = (
-				D9EB074C21D7E5980051B4A3 /* MovieDetailsSync.swift */,
-				D99C1E9821D7954100DC8A86 /* DiscoverMovieSync.swift */,
+				D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */,
+				D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */,
 			);
 			path = Sync;
 			sourceTree = "<group>";
@@ -1053,7 +1053,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359649031FB18CC000FC7ADC /* RevelationCoreData.swift in Sources */,
-				D99C1E9F21D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */,
+				D99C1E9F21D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9521D4229800F425D0 /* CDMovie.swift in Sources */,
 				D99C1E8B21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9EB075221D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
@@ -1066,7 +1066,7 @@
 				D9FB97D321D7BA49000B7F20 /* CDDomainable.swift in Sources */,
 				D9FD7C9D21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9921D4229800F425D0 /* CoreDataProvider.swift in Sources */,
-				D9EB076521D82EDB0051B4A3 /* MovieDetailsSync.swift in Sources */,
+				D9EB076521D82EDB0051B4A3 /* CDMovieDetailsSync.swift in Sources */,
 				D989DD0821D535FE00BD7771 /* CDModelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1077,7 +1077,7 @@
 			files = (
 				359649061FB18CC000FC7ADC /* RevelationCoreData.swift in Sources */,
 				D9FB97D621D7BA51000B7F20 /* CDDomainable.swift in Sources */,
-				D99C1EA221D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */,
+				D99C1EA221D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9821D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075521D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
@@ -1089,7 +1089,7 @@
 				D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7CA021D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9C21D4229800F425D0 /* CoreDataProvider.swift in Sources */,
-				D9EB076821D82EDD0051B4A3 /* MovieDetailsSync.swift in Sources */,
+				D9EB076821D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */,
 				D989DD0B21D535FE00BD7771 /* CDModelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,7 +1100,7 @@
 			files = (
 				359649041FB18CC000FC7ADC /* RevelationCoreData.swift in Sources */,
 				D9FB97D421D7BA4E000B7F20 /* CDDomainable.swift in Sources */,
-				D99C1EA021D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */,
+				D99C1EA021D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9621D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
@@ -1112,7 +1112,7 @@
 				D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9E21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9A21D4229800F425D0 /* CoreDataProvider.swift in Sources */,
-				D9EB076621D82EDC0051B4A3 /* MovieDetailsSync.swift in Sources */,
+				D9EB076621D82EDC0051B4A3 /* CDMovieDetailsSync.swift in Sources */,
 				D989DD0921D535FE00BD7771 /* CDModelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1123,7 +1123,7 @@
 			files = (
 				359649051FB18CC000FC7ADC /* RevelationCoreData.swift in Sources */,
 				D9FB97D521D7BA4F000B7F20 /* CDDomainable.swift in Sources */,
-				D99C1EA121D7954100DC8A86 /* DiscoverMovieSync.swift in Sources */,
+				D99C1EA121D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9721D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
@@ -1135,7 +1135,7 @@
 				D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9F21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9B21D4229800F425D0 /* CoreDataProvider.swift in Sources */,
-				D9EB076721D82EDD0051B4A3 /* MovieDetailsSync.swift in Sources */,
+				D9EB076721D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */,
 				D989DD0A21D535FE00BD7771 /* CDModelable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

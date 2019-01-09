@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class View: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: ViewModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class View: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class ViewModel: Codable {
@@ -53,10 +51,10 @@ public class ViewModel: Codable {
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
-        self.prefix = try container.decodeIfPresent(String.self, forKey: .prefix) ?? "UI" 
-        self.presenter = try container.decodeIfPresent(Bool.self, forKey: .presenter) ?? false 
+        self.prefix = try container.decodeIfPresent(String.self, forKey: .prefix) ?? "UI"
+        self.presenter = try container.decodeIfPresent(Bool.self, forKey: .presenter) ?? false
         self.component = try container.decodeIfPresent([ArgModel].self, forKey: .component)
-        self.useNib = try container.decodeIfPresent(Bool.self, forKey: .useNib) ?? false 
+        self.useNib = try container.decodeIfPresent(Bool.self, forKey: .useNib) ?? false
     }
 
     public func encode(to encoder: Encoder) throws {
@@ -67,5 +65,4 @@ public class ViewModel: Codable {
         try container.encodeIfPresent(component, forKey: .component)
         try container.encode(useNib, forKey: .useNib)
     }
-
 }

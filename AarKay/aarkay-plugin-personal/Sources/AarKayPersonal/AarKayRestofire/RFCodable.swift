@@ -4,14 +4,13 @@
 //  /    |    \/ __ \|  | \/ |    |  \ / __ \\___  |
 //  \____|__  (____  /__|    |____|__ (____  / ____|
 //          \/     \/                \/    \/\/
-//  
+//
 
-import Foundation
 import AarKayKit
 import AarKayPlugin
+import Foundation
 
 public class RFCodable: NSObject, Templatable {
-
     private let datafile: Datafile
     private var model: RFCodableModel
     public var generatedfile: Generatedfile
@@ -28,7 +27,6 @@ public class RFCodable: NSObject, Templatable {
     public static func resource() -> String {
         return #file
     }
-
 }
 
 public class RFCodableModel: Codable {
@@ -60,7 +58,6 @@ public class RFCodableModel: Codable {
         try container.encodeIfPresent(generics, forKey: .generics)
         try container.encode(props, forKey: .props)
     }
-
 }
 
 /// AarKayEnd: -

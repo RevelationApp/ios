@@ -10,15 +10,15 @@ import AarKayKit
 import AarKayPlugin
 import Foundation
 
-public class RFEnum: NSObject, Templatable {
+public class Typography: NSObject, Templatable {
     private let datafile: Datafile
-    private var model: RFEnumModel
+    private var model: TypographyModel
     public var generatedfile: Generatedfile
 
     public required init?(datafile: Datafile, generatedfile: Generatedfile) throws {
         guard let contents = generatedfile.contents else { return nil }
         self.datafile = datafile
-        self.model = try contents.decode(type: RFEnumModel.self)
+        self.model = try contents.decode(type: TypographyModel.self)
         var generatedfile = generatedfile
         generatedfile.contents = try Dictionary.encode(data: model)
         self.generatedfile = generatedfile
@@ -29,43 +29,24 @@ public class RFEnum: NSObject, Templatable {
     }
 }
 
-public class RFEnumModel: Codable {
-    public var name: String
-    public var type: String
-    public var props: [ArgModel]
+public class TypographyModel: Codable {
+    public var font: String
 
     private enum CodingKeys: String, CodingKey {
-        case name
-        case type
-        case props
+        case font
     }
 
-    public init(name: String, type: String, props: [ArgModel]) {
-        self.name = name
-        self.type = type
-        self.props = props
+    public init(font: String) {
+        self.font = font
     }
 
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.name = try container.decode(String.self, forKey: .name)
-        self.type = try container.decode(String.self, forKey: .type)
-        self.props = try container.decode([ArgModel].self, forKey: .props)
+        self.font = try container.decode(String.self, forKey: .font)
     }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(name, forKey: .name)
-        try container.encode(type, forKey: .type)
-        try container.encode(props, forKey: .props)
+        try container.encode(font, forKey: .font)
     }
-}
-
-/// AarKayEnd: -
-extension RFEnum {
-
-    public func rk_directory() -> String? {
-        return "Shared/RevelationAPI/Sources/ResponseModels"
-    }
-
 }
