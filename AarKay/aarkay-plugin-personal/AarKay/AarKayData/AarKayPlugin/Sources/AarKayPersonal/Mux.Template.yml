@@ -1,4 +1,0 @@
-name: Mux
-properties:
-  - name|String
-  - root|String

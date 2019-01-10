@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/RahulKatariya/aarkay-plugin-coredata.git",
         "state": {
           "branch": null,
-          "revision": "c9dde3319f8f835efecf441d217f3a38b3a984e9",
+          "revision": "b780c92f448e65b6645820fb5bbbc65acdf69d8e",
           "version": "0.2.0"
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/Restofire/aarkay-plugin-restofire.git",
         "state": {
           "branch": null,
-          "revision": "c414c7aeeaef6d9bf132db896044ae6f9bb0b339",
+          "revision": "8fbc433e7f3e42ef3133330f42792e74a5ea2a6c",
           "version": "0.2.0"
         }
       },

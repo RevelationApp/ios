@@ -1,5 +1,0 @@
-public enum {{ name }}: {{type}}, Codable {
-    {% for property in props %}
-    case {{property.name}} = {{property.type}}
-    {% endfor %}
-}

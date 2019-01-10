@@ -1,4 +1,0 @@
-- name: HTTPBin
-  host: httpbin.org
-- name: Mocky
-  path: apis/mocky

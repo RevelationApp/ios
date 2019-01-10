@@ -1,8 +1,0 @@
-name: RequestableTest
-isTemplate: false
-properties:
-  - testPathParams|[String]?
-  - testInitParams|String?
-  - testQueryModel|String?
-  - testRequestModel|String?
-  - testResponseModel|String?

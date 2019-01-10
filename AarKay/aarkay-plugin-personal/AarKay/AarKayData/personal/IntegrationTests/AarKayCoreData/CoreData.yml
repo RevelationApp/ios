@@ -1,7 +1,0 @@
-name: Revelation
-entities:
-  - name: CDMovieDetail
-  - name: CDTvDetail
-  - name: CDString
-  - name: CDInt
-  - name: CDPerson
