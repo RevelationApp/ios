@@ -7,12 +7,16 @@ Pod::Spec.new do |s|
  s.social_media_url = 'https://twitter.com/rahulkatariya91'
  s.authors = { "Rahul Katariya" => "rahulkatariya@me.com" }
  s.source = { :git => "https://github.com/RahulKatariya/RevelationUI.git", :tag => "v"+s.version.to_s }
- s.platforms = { :ios => "9.0", :osx => "10.10", :tvos => "9.0", :watchos => "2.0" }
+ s.platforms = { :ios => "10.0", :osx => "10.11", :tvos => "10.0", :watchos => "3.0" }
  s.requires_arc = true
+ s.dependency 'RxCocoa'
+ s.dependency 'Reusable'
+ s.dependency 'SnapKit'
+ s.dependency 'RevelationDomain'
 
  s.default_subspec = "Core"
  s.subspec "Core" do |ss|
-     ss.source_files  = "Sources/**/*.swift"
-     ss.framework  = "Foundation"
+     ss.source_files = "Sources/**/*.swift", "External/**/*.swift"
+     ss.framework = "Foundation"
  end
 end

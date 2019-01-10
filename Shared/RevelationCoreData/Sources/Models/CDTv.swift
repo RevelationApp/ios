@@ -13,6 +13,6 @@ import Foundation
 import CoreData
 
 @objc(CDTv)
-class CDTv: CDMovie, CDModelable {
+class CDTv: CDMovie {
     typealias CDModel = CDTv
 }

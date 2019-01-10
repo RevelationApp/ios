@@ -10,12 +10,6 @@
 		5FC59B44990F59A4D2B457A6 /* Pods_RevelationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BB921F2F638EBA8375FA11 /* Pods_RevelationUITests.framework */; };
 		837FB74FADF6921A63A7F2E5 /* Pods_Revelation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7133941C323BA1515C6EEE /* Pods_Revelation.framework */; };
 		916AA67A0B82CB7045D4BF1F /* Pods_RevelationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731DC72C2A2C0CBD85E9E776 /* Pods_RevelationTests.framework */; };
-		D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; };
-		D923746121D2D37100B3FE6B /* RevelationUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D923745121D2D35B00B3FE6B /* RevelationUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */; };
-		D9B3A61A21D2DCB4006879DE /* RevelationCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9B9DDF421D29B10004EB8A1 /* RevelationAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */; };
-		D9B9DDF521D29B10004EB8A1 /* RevelationAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C3F93721D4AAB300131D29 /* AppProvider.swift */; };
 		D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */; };
 		D9F2D18421D25B3100CD3AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D18321D25B3100CD3AAC /* Assets.xcassets */; };
@@ -28,244 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D923745021D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB211DA389CD00C63030;
-			remoteInfo = "RevelationUI-iOS";
-		};
-		D923745221D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
-			remoteInfo = "RevelationUITests-iOS";
-		};
-		D923745421D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
-			remoteInfo = "RevelationUI-macOS";
-		};
-		D923745621D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
-			remoteInfo = "RevelationUITests-macOS";
-		};
-		D923745821D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB481DA389F300C63030;
-			remoteInfo = "RevelationUI-tvOS";
-		};
-		D923745A21D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
-			remoteInfo = "RevelationUITests-tvOS";
-		};
-		D923745C21D2D35B00B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
-			remoteInfo = "RevelationUI-watchOS";
-		};
-		D923745E21D2D36600B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationUI-iOS";
-		};
-		D923746221D2D37100B3FE6B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationUI-iOS";
-		};
-		D9B3A5FD21D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB211DA389CD00C63030;
-			remoteInfo = "RevelationCoreData-iOS";
-		};
-		D9B3A5FF21D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
-			remoteInfo = "RevelationCoreDataTests-iOS";
-		};
-		D9B3A60121D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
-			remoteInfo = "RevelationCoreData-macOS";
-		};
-		D9B3A60321D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
-			remoteInfo = "RevelationCoreDataTests-macOS";
-		};
-		D9B3A60521D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB481DA389F300C63030;
-			remoteInfo = "RevelationCoreData-tvOS";
-		};
-		D9B3A60721D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
-			remoteInfo = "RevelationCoreDataTests-tvOS";
-		};
-		D9B3A60921D2DC88006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
-			remoteInfo = "RevelationCoreData-watchOS";
-		};
-		D9B3A61721D2DCA4006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationCoreData-iOS";
-		};
-		D9B3A61B21D2DCB4006879DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationCoreData-iOS";
-		};
-		D9B9DDE421D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB211DA389CD00C63030;
-			remoteInfo = "RevelationAPI-iOS";
-		};
-		D9B9DDE621D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
-			remoteInfo = "RevelationAPITests-iOS";
-		};
-		D9B9DDE821D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
-			remoteInfo = "RevelationAPI-macOS";
-		};
-		D9B9DDEA21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
-			remoteInfo = "RevelationAPITests-macOS";
-		};
-		D9B9DDEC21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB481DA389F300C63030;
-			remoteInfo = "RevelationAPI-tvOS";
-		};
-		D9B9DDEE21D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
-			remoteInfo = "RevelationAPITests-tvOS";
-		};
-		D9B9DDF021D29AE4004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
-			remoteInfo = "RevelationAPI-watchOS";
-		};
-		D9B9DDF221D29B09004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationAPI-iOS";
-		};
-		D9B9DDF621D29B10004EB8A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationAPI-iOS";
-		};
-		D9D0AD5621D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB211DA389CD00C63030;
-			remoteInfo = "RevelationDomain-iOS";
-		};
-		D9D0AD5821D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
-			remoteInfo = "RevelationDomainTests-iOS";
-		};
-		D9D0AD5A21D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB3B1DA389E800C63030;
-			remoteInfo = "RevelationDomain-macOS";
-		};
-		D9D0AD5C21D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB7F1DA38B0000C63030;
-			remoteInfo = "RevelationDomainTests-macOS";
-		};
-		D9D0AD5E21D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB481DA389F300C63030;
-			remoteInfo = "RevelationDomain-tvOS";
-		};
-		D9D0AD6021D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB701DA38AEF00C63030;
-			remoteInfo = "RevelationDomainTests-tvOS";
-		};
-		D9D0AD6221D38B1E00297E7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
-			remoteInfo = "RevelationDomain-watchOS";
-		};
 		D9F2D18E21D25B3100CD3AAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9F2D16E21D25B2F00CD3AAC /* Project object */;
@@ -289,9 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9B3A61A21D2DCB4006879DE /* RevelationCoreData.framework in Embed Frameworks */,
-				D923746121D2D37100B3FE6B /* RevelationUI.framework in Embed Frameworks */,
-				D9B9DDF521D29B10004EB8A1 /* RevelationAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,12 +60,8 @@
 		7E7133941C323BA1515C6EEE /* Pods_Revelation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Revelation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BB921F2F638EBA8375FA11 /* Pods_RevelationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05408EB1E3FE739251DF3F9 /* Pods-Revelation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Revelation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Revelation/Pods-Revelation.release.xcconfig"; sourceTree = "<group>"; };
-		D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationUI.xcodeproj; path = RevelationUI/RevelationUI.xcodeproj; sourceTree = "<group>"; };
-		D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationCoreData.xcodeproj; path = RevelationCoreData/RevelationCoreData.xcodeproj; sourceTree = "<group>"; };
 		D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revelation.entitlements; sourceTree = "<group>"; };
-		D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationAPI.xcodeproj; path = RevelationAPI/RevelationAPI.xcodeproj; sourceTree = "<group>"; };
 		D9C3F93721D4AAB300131D29 /* AppProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
-		D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationDomain.xcodeproj; path = RevelationDomain/RevelationDomain.xcodeproj; sourceTree = "<group>"; };
 		D9F2D17621D25B2F00CD3AAC /* Revelation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revelation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F2D18321D25B3100CD3AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,9 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B9DDF421D29B10004EB8A1 /* RevelationAPI.framework in Frameworks */,
-				D923746021D2D37100B3FE6B /* RevelationUI.framework in Frameworks */,
-				D9B3A61921D2DCB4006879DE /* RevelationCoreData.framework in Frameworks */,
 				837FB74FADF6921A63A7F2E5 /* Pods_Revelation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,73 +130,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D923744121D2D35A00B3FE6B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D923745121D2D35B00B3FE6B /* RevelationUI.framework */,
-				D923745321D2D35B00B3FE6B /* RevelationUITests-iOS.xctest */,
-				D923745521D2D35B00B3FE6B /* RevelationUI.framework */,
-				D923745721D2D35B00B3FE6B /* RevelationUITests-macOS.xctest */,
-				D923745921D2D35B00B3FE6B /* RevelationUI.framework */,
-				D923745B21D2D35B00B3FE6B /* RevelationUITests-tvOS.xctest */,
-				D923745D21D2D35B00B3FE6B /* RevelationUI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D92E38C821D267CD0077FB8A /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */,
-				D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */,
-				D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */,
-				D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		D9B3A5EE21D2DC88006879DE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */,
-				D9B3A60021D2DC88006879DE /* RevelationCoreDataTests-iOS.xctest */,
-				D9B3A60221D2DC88006879DE /* RevelationCoreData.framework */,
-				D9B3A60421D2DC88006879DE /* RevelationCoreDataTests-macOS.xctest */,
-				D9B3A60621D2DC88006879DE /* RevelationCoreData.framework */,
-				D9B3A60821D2DC88006879DE /* RevelationCoreDataTests-tvOS.xctest */,
-				D9B3A60A21D2DC88006879DE /* RevelationCoreData.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D9B9DDDA21D29AE4004EB8A1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */,
-				D9B9DDE721D29AE4004EB8A1 /* RevelationAPITests-iOS.xctest */,
-				D9B9DDE921D29AE4004EB8A1 /* RevelationAPI.framework */,
-				D9B9DDEB21D29AE4004EB8A1 /* RevelationAPITests-macOS.xctest */,
-				D9B9DDED21D29AE4004EB8A1 /* RevelationAPI.framework */,
-				D9B9DDEF21D29AE4004EB8A1 /* RevelationAPITests-tvOS.xctest */,
-				D9B9DDF121D29AE4004EB8A1 /* RevelationAPI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D9D0AD4121D38B1E00297E7C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D9D0AD5721D38B1E00297E7C /* RevelationDomain.framework */,
-				D9D0AD5921D38B1E00297E7C /* RevelationDomainTests-iOS.xctest */,
-				D9D0AD5B21D38B1E00297E7C /* RevelationDomain.framework */,
-				D9D0AD5D21D38B1E00297E7C /* RevelationDomainTests-macOS.xctest */,
-				D9D0AD5F21D38B1E00297E7C /* RevelationDomain.framework */,
-				D9D0AD6121D38B1E00297E7C /* RevelationDomainTests-tvOS.xctest */,
-				D9D0AD6321D38B1E00297E7C /* RevelationDomain.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D9D9F17821D25CCA00B34238 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,7 +147,6 @@
 				D9F2D17821D25B2F00CD3AAC /* Revelation */,
 				D9F2D19021D25B3100CD3AAC /* RevelationTests */,
 				D9F2D19B21D25B3100CD3AAC /* RevelationUITests */,
-				D92E38C821D267CD0077FB8A /* Shared */,
 				D9F2D17721D25B2F00CD3AAC /* Products */,
 				438EDE5683D26F5BAFC90C8C /* Pods */,
 				B6CEC63EE39669638341F0B4 /* Frameworks */,
@@ -544,17 +222,11 @@
 				D9F2D17321D25B2F00CD3AAC /* Frameworks */,
 				D9F2D17421D25B2F00CD3AAC /* Resources */,
 				D9B9DDAA21D2991C004EB8A1 /* Embed Frameworks */,
-				DFEC45C3317DD974BBA25ABF /* [CP] Embed Pods Frameworks */,
+				4D944BF38A1F07522A96E0D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D9B3A61821D2DCA4006879DE /* PBXTargetDependency */,
-				D923745F21D2D36600B3FE6B /* PBXTargetDependency */,
-				D9B9DDF321D29B09004EB8A1 /* PBXTargetDependency */,
-				D9B9DDF721D29B10004EB8A1 /* PBXTargetDependency */,
-				D923746321D2D37100B3FE6B /* PBXTargetDependency */,
-				D9B3A61C21D2DCB4006879DE /* PBXTargetDependency */,
 			);
 			name = Revelation;
 			productName = Revelation;
@@ -638,24 +310,6 @@
 			mainGroup = D9F2D16D21D25B2F00CD3AAC;
 			productRefGroup = D9F2D17721D25B2F00CD3AAC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D9B9DDDA21D29AE4004EB8A1 /* Products */;
-					ProjectRef = D9B9DDD921D29AE4004EB8A1 /* RevelationAPI.xcodeproj */;
-				},
-				{
-					ProductGroup = D9B3A5EE21D2DC88006879DE /* Products */;
-					ProjectRef = D9B3A5ED21D2DC88006879DE /* RevelationCoreData.xcodeproj */;
-				},
-				{
-					ProductGroup = D9D0AD4121D38B1E00297E7C /* Products */;
-					ProjectRef = D9D0AD4021D38B1E00297E7C /* RevelationDomain.xcodeproj */;
-				},
-				{
-					ProductGroup = D923744121D2D35A00B3FE6B /* Products */;
-					ProjectRef = D923744021D2D35A00B3FE6B /* RevelationUI.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D9F2D17521D25B2F00CD3AAC /* Revelation */,
@@ -664,205 +318,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D923745121D2D35B00B3FE6B /* RevelationUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationUI.framework;
-			remoteRef = D923745021D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745321D2D35B00B3FE6B /* RevelationUITests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationUITests-iOS.xctest";
-			remoteRef = D923745221D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745521D2D35B00B3FE6B /* RevelationUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationUI.framework;
-			remoteRef = D923745421D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745721D2D35B00B3FE6B /* RevelationUITests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationUITests-macOS.xctest";
-			remoteRef = D923745621D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745921D2D35B00B3FE6B /* RevelationUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationUI.framework;
-			remoteRef = D923745821D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745B21D2D35B00B3FE6B /* RevelationUITests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationUITests-tvOS.xctest";
-			remoteRef = D923745A21D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D923745D21D2D35B00B3FE6B /* RevelationUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationUI.framework;
-			remoteRef = D923745C21D2D35B00B3FE6B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A5FE21D2DC88006879DE /* RevelationCoreData.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationCoreData.framework;
-			remoteRef = D9B3A5FD21D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60021D2DC88006879DE /* RevelationCoreDataTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationCoreDataTests-iOS.xctest";
-			remoteRef = D9B3A5FF21D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60221D2DC88006879DE /* RevelationCoreData.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationCoreData.framework;
-			remoteRef = D9B3A60121D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60421D2DC88006879DE /* RevelationCoreDataTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationCoreDataTests-macOS.xctest";
-			remoteRef = D9B3A60321D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60621D2DC88006879DE /* RevelationCoreData.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationCoreData.framework;
-			remoteRef = D9B3A60521D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60821D2DC88006879DE /* RevelationCoreDataTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationCoreDataTests-tvOS.xctest";
-			remoteRef = D9B3A60721D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B3A60A21D2DC88006879DE /* RevelationCoreData.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationCoreData.framework;
-			remoteRef = D9B3A60921D2DC88006879DE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDE521D29AE4004EB8A1 /* RevelationAPI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationAPI.framework;
-			remoteRef = D9B9DDE421D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDE721D29AE4004EB8A1 /* RevelationAPITests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationAPITests-iOS.xctest";
-			remoteRef = D9B9DDE621D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDE921D29AE4004EB8A1 /* RevelationAPI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationAPI.framework;
-			remoteRef = D9B9DDE821D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDEB21D29AE4004EB8A1 /* RevelationAPITests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationAPITests-macOS.xctest";
-			remoteRef = D9B9DDEA21D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDED21D29AE4004EB8A1 /* RevelationAPI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationAPI.framework;
-			remoteRef = D9B9DDEC21D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDEF21D29AE4004EB8A1 /* RevelationAPITests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationAPITests-tvOS.xctest";
-			remoteRef = D9B9DDEE21D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9B9DDF121D29AE4004EB8A1 /* RevelationAPI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationAPI.framework;
-			remoteRef = D9B9DDF021D29AE4004EB8A1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD5721D38B1E00297E7C /* RevelationDomain.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationDomain.framework;
-			remoteRef = D9D0AD5621D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD5921D38B1E00297E7C /* RevelationDomainTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationDomainTests-iOS.xctest";
-			remoteRef = D9D0AD5821D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD5B21D38B1E00297E7C /* RevelationDomain.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationDomain.framework;
-			remoteRef = D9D0AD5A21D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD5D21D38B1E00297E7C /* RevelationDomainTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationDomainTests-macOS.xctest";
-			remoteRef = D9D0AD5C21D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD5F21D38B1E00297E7C /* RevelationDomain.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationDomain.framework;
-			remoteRef = D9D0AD5E21D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD6121D38B1E00297E7C /* RevelationDomainTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RevelationDomainTests-tvOS.xctest";
-			remoteRef = D9D0AD6021D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D9D0AD6321D38B1E00297E7C /* RevelationDomain.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RevelationDomain.framework;
-			remoteRef = D9D0AD6221D38B1E00297E7C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D9F2D17421D25B2F00CD3AAC /* Resources */ = {
@@ -913,6 +368,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4D944BF38A1F07522A96E0D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationCoreData/RevelationCoreData.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationUI/RevelationUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationDomain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationCoreData.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AF14D31E196C57E044E00C81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -933,40 +430,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFEC45C3317DD974BBA25ABF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Revelation/Pods-Revelation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1A114E915361D35D4F733BD /* [CP] Check Pods Manifest.lock */ = {
@@ -1025,36 +488,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D923745F21D2D36600B3FE6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationUI-iOS";
-			targetProxy = D923745E21D2D36600B3FE6B /* PBXContainerItemProxy */;
-		};
-		D923746321D2D37100B3FE6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationUI-iOS";
-			targetProxy = D923746221D2D37100B3FE6B /* PBXContainerItemProxy */;
-		};
-		D9B3A61821D2DCA4006879DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationCoreData-iOS";
-			targetProxy = D9B3A61721D2DCA4006879DE /* PBXContainerItemProxy */;
-		};
-		D9B3A61C21D2DCB4006879DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationCoreData-iOS";
-			targetProxy = D9B3A61B21D2DCB4006879DE /* PBXContainerItemProxy */;
-		};
-		D9B9DDF321D29B09004EB8A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationAPI-iOS";
-			targetProxy = D9B9DDF221D29B09004EB8A1 /* PBXContainerItemProxy */;
-		};
-		D9B9DDF721D29B10004EB8A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationAPI-iOS";
-			targetProxy = D9B9DDF621D29B10004EB8A1 /* PBXContainerItemProxy */;
-		};
 		D9F2D18F21D25B3100CD3AAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D9F2D17521D25B2F00CD3AAC /* Revelation */;
