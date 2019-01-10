@@ -70,10 +70,6 @@ public class ConfigurableModel: Codable {
 /// AarKayEnd: -
 extension Configurable {
 
-    public func rk_directory() -> String? {
-        return "Shared/RevelationAPI/Sources/Configurables"
-    }
-    
     public func rk_filename() -> String {
         return model.name + "Configurable"
     }

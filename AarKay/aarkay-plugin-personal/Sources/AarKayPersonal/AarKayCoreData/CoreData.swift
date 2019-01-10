@@ -85,17 +85,13 @@ public class CoreDataModel: Codable {
 /// AarKayEnd: -
 extension CoreData {
     
-    public func rk_directory() -> String? {
-        return "Shared/RevelationCoreData/Sources/"
-    }
-    
     public func generatedfiles() -> [Generatedfile] {
         var generatedFiles: [Generatedfile] = []
         
         var currentVersionFile = rk_generatedfile()
         currentVersionFile.name = ".xccurrentversion"
         currentVersionFile.template = "xccurrentversion"
-        currentVersionFile.directory = rk_directory()! + "Revelation.xcdatamodeld"
+        currentVersionFile.directory = "\(model.name).xcdatamodeld"
         if model.version == 1 {
             currentVersionFile.contents = ["name" : model.name]
         } else {
@@ -104,16 +100,16 @@ extension CoreData {
         generatedFiles.append(currentVersionFile)
         
         let modelContentsDirectory = model.version == 1 ?
-            "Revelation.xcdatamodel" : "Revelation_\(model.version!).xcdatamodel"
+            "Revelation.xcdatamodel" : "\(model.name)_\(model.version!).xcdatamodel"
         var modelContentsFile = rk_generatedfile()
         modelContentsFile.name = "contents"
         modelContentsFile.template = "contents"
-        modelContentsFile.directory = rk_directory()! + "Revelation.xcdatamodeld/" + modelContentsDirectory
+        modelContentsFile.directory = "\(model.name).xcdatamodeld/" + modelContentsDirectory
         generatedFiles.append(modelContentsFile)
         
         model.allEntities.forEach { entity in
             var sourceFile = rk_generatedfile()
-            sourceFile.directory = rk_directory()! + "Models"
+            sourceFile.directory = "Models"
             sourceFile.template = "Entity"
             sourceFile.name = "CD" + entity.name
             sourceFile.contents = try! Dictionary.encode(data: entity)
@@ -122,5 +118,4 @@ extension CoreData {
         
         return generatedFiles
     }
-    
 }

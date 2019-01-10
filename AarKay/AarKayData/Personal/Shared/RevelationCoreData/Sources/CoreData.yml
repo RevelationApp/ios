@@ -12,6 +12,6 @@ entities:
   - name: MovieDetail
     domainModel: MovieDetail
     attributes:
-      - property: imdbId|String
+      - property: imdbId|String?
     relationships:
       - property: movie|Movie|detail

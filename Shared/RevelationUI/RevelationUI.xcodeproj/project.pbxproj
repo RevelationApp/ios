@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C562C86B37D31568823753 /* Pods_RevelationUITests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC81BADE984BDB0C569DA5EB /* Pods_RevelationUITests_iOS.framework */; };
 		3549BB501DA38A2000C63030 /* RevelationUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB511DA38A2000C63030 /* RevelationUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB521DA38A2100C63030 /* RevelationUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		D9290F0B21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
 		D9290F0C21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
 		D9290F0D21E60E4F007D2BD1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9290F0921E60E4F007D2BD1 /* Typography.swift */; };
+		D9462A7F21E753DB001BABC3 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2D7E321D38945003E78F8 /* RevelationDomain.framework */; };
 		D951351321D9114E0084F702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951351221D9114E0084F702 /* ViewController.swift */; };
 		D951352B21D91ECE0084F702 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951352A21D91ECE0084F702 /* GenericViewController.swift */; };
 		D951353321D9249C0084F702 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951353221D9249C0084F702 /* MovieDetailView.swift */; };
@@ -58,7 +60,6 @@
 		D95135AB21D968D20084F702 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951352A21D91ECE0084F702 /* GenericViewController.swift */; };
 		D95135AC21D968D20084F702 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951352A21D91ECE0084F702 /* GenericViewController.swift */; };
 		D95135AD21D968D20084F702 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951352A21D91ECE0084F702 /* GenericViewController.swift */; };
-		D9A2D7F221D38959003E78F8 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2D7E321D38945003E78F8 /* RevelationDomain.framework */; };
 		D9A2D7F521D38969003E78F8 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2D7E721D38945003E78F8 /* RevelationDomain.framework */; };
 		D9A2D7F821D38978003E78F8 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2D7EB21D38945003E78F8 /* RevelationDomain.framework */; };
 		D9A2D7FB21D38986003E78F8 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2D7EF21D38945003E78F8 /* RevelationDomain.framework */; };
@@ -126,6 +127,13 @@
 			remoteGlobalIDString = 3549BB3A1DA389E800C63030;
 			remoteInfo = "RevelationUI-macOS";
 		};
+		D934E47B21E753AB00D9981E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9A2D7D821D38945003E78F8 /* RevelationDomain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "RevelationDomain-iOS";
+		};
 		D9A2D7E221D38945003E78F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D9A2D7D821D38945003E78F8 /* RevelationDomain.xcodeproj */;
@@ -174,20 +182,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3549BB2E1DA389DB00C63030;
 			remoteInfo = "RevelationDomain-watchOS";
-		};
-		D9A2D7F021D38954003E78F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9A2D7D821D38945003E78F8 /* RevelationDomain.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB201DA389CD00C63030;
-			remoteInfo = "RevelationDomain-iOS";
-		};
-		D9A2D7F321D3895F003E78F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9A2D7D821D38945003E78F8 /* RevelationDomain.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3549BB3A1DA389E800C63030;
-			remoteInfo = "RevelationDomain-macOS";
 		};
 		D9A2D7F621D38971003E78F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -267,6 +261,9 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		4753450DADF1B0CB159A9C39 /* Pods-RevelationUITests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationUITests-iOS/Pods-RevelationUITests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BC81BADE984BDB0C569DA5EB /* Pods_RevelationUITests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationUITests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8428D7DC9A36A302D87A808 /* Pods-RevelationUITests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationUITests-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationUITests-iOS/Pods-RevelationUITests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D9290F0421E60E44007D2BD1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D9290F0921E60E4F007D2BD1 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		D951351221D9114E0084F702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,7 +289,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9A2D7F221D38959003E78F8 /* RevelationDomain.framework in Frameworks */,
+				D9462A7F21E753DB001BABC3 /* RevelationDomain.framework in Frameworks */,
 				D396FD8587747B35C460CE35 /* Pods_RevelationUI_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +326,7 @@
 				35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */,
 				35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */,
 				3549BB661DA38ADB00C63030 /* RevelationUI.framework in Frameworks */,
+				09C562C86B37D31568823753 /* Pods_RevelationUITests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +431,7 @@
 				354AD5851F8A659800B18FAE /* Nimble.framework */,
 				354AD5841F8A659800B18FAE /* Quick.framework */,
 				0CB3AF1EA18134E3B29A395D /* Pods_RevelationUI_iOS.framework */,
+				BC81BADE984BDB0C569DA5EB /* Pods_RevelationUITests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -533,6 +532,8 @@
 			children = (
 				026DCE988DE51F65D5927EF1 /* Pods-RevelationUI-iOS.debug.xcconfig */,
 				2C39173121A4C95242579B6C /* Pods-RevelationUI-iOS.release.xcconfig */,
+				4753450DADF1B0CB159A9C39 /* Pods-RevelationUITests-iOS.debug.xcconfig */,
+				D8428D7DC9A36A302D87A808 /* Pods-RevelationUITests-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -588,7 +589,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9A2D7F121D38954003E78F8 /* PBXTargetDependency */,
+				D934E47C21E753AB00D9981E /* PBXTargetDependency */,
 			);
 			name = "RevelationUI-iOS";
 			productName = "RevelationUI-iOS";
@@ -626,7 +627,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D9A2D7F421D3895F003E78F8 /* PBXTargetDependency */,
 			);
 			name = "RevelationUI-macOS";
 			productName = "RevelationUI-macOS";
@@ -656,10 +656,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "RevelationUITests-iOS" */;
 			buildPhases = (
+				8FB9A5FADDD5266053CB2114 /* [CP] Check Pods Manifest.lock */,
 				3549BB5D1DA38ADB00C63030 /* Sources */,
 				3549BB5E1DA38ADB00C63030 /* Frameworks */,
 				3549BB5F1DA38ADB00C63030 /* Resources */,
 				35B7422C1F82A2C700829B21 /* Embed Frameworks */,
+				89FCEBB7F1E2BC219412EE94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -906,6 +908,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		89FCEBB7F1E2BC219412EE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationUITests-iOS/Pods-RevelationUITests-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationDomain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationUITests-iOS/Pods-RevelationUITests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB9A5FADDD5266053CB2114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationUITests-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A532779F2EA8C090DAAC77AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1050,15 +1112,10 @@
 			target = 3549BB3A1DA389E800C63030 /* RevelationUI-macOS */;
 			targetProxy = 3549BB851DA38B0000C63030 /* PBXContainerItemProxy */;
 		};
-		D9A2D7F121D38954003E78F8 /* PBXTargetDependency */ = {
+		D934E47C21E753AB00D9981E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RevelationDomain-iOS";
-			targetProxy = D9A2D7F021D38954003E78F8 /* PBXContainerItemProxy */;
-		};
-		D9A2D7F421D3895F003E78F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RevelationDomain-macOS";
-			targetProxy = D9A2D7F321D3895F003E78F8 /* PBXContainerItemProxy */;
+			targetProxy = D934E47B21E753AB00D9981E /* PBXContainerItemProxy */;
 		};
 		D9A2D7F721D38971003E78F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1372,6 +1429,7 @@
 		};
 		3549BB6A1DA38ADB00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4753450DADF1B0CB159A9C39 /* Pods-RevelationUITests-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1387,6 +1445,7 @@
 		};
 		3549BB6B1DA38ADB00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8428D7DC9A36A302D87A808 /* Pods-RevelationUITests-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;

@@ -60,12 +60,3 @@ public class RFEnumModel: Codable {
         try container.encode(props, forKey: .props)
     }
 }
-
-/// AarKayEnd: -
-extension RFEnum {
-
-    public func rk_directory() -> String? {
-        return "Shared/RevelationAPI/Sources/ResponseModels"
-    }
-
-}

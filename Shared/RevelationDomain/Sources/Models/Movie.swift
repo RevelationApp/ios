@@ -27,9 +27,7 @@ public struct Movie: Codable {
 }
 
 public struct MovieDetail: Codable {
-    public let imdbId: String
+    public var imdbId: String?
 
-    public init(imdbId: String) {
-        self.imdbId = imdbId
-    }
+    public init() {}
 }

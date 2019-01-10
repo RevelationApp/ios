@@ -308,7 +308,7 @@ extension Requestable {
         var generatedFiles: [Generatedfile] = []
         
         var sourceFile = rk_generatedfile()
-        sourceFile.directory = "Shared/RevelationAPI/Sources/Requestables"
+        sourceFile.directory = "Sources/Requestables"
         if let configurable = model.configurable {
             sourceFile.directory = (sourceFile.directory ?? "") +  "/\(configurable)"
         }
@@ -318,7 +318,10 @@ extension Requestable {
             var cdFile = rk_generatedfile()
             cdFile.template = "CoreDataSync"
             cdFile.name = "CD\(model.name)Sync"
-            cdFile.directory = "Shared/RevelationCoreData/Sources/Sync"
+            cdFile.directory = "Sources/Sync"
+            if let coreDataDir = datafile.globalContext?["coreDataSyncDir"] as? String {
+                cdFile.directory = coreDataDir + "/Sync"
+            }
             generatedFiles.append(cdFile)
         }
         
@@ -326,7 +329,7 @@ extension Requestable {
             var specFile = rk_generatedfile()
             specFile.template = "RequestableSpec"
             specFile.name += "Spec"
-            specFile.directory = "Shared/RevelationAPI/Tests/Requestables"
+            specFile.directory = "Tests/Requestables"
             if let configurable = model.configurable {
                 specFile.directory = (specFile.directory ?? "") + "/\(configurable)"
             }

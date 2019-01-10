@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
 
  s.default_subspec = "Core"
  s.subspec "Core" do |ss|
-     ss.source_files = "Sources/**/*.swift", "External/**/*.swift"
-     ss.framework = "Foundation"
+    ss.source_files = "Sources/**/*.swift", "External/**/*.swift"
+    ss.resources = ["Sources/**/*.xib", "External/**/*.xib"]
+    ss.framework = "Foundation"
  end
 end

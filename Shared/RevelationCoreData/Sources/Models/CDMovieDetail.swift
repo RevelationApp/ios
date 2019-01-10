@@ -18,12 +18,13 @@ class CDMovieDetail: NSManagedObject, CDDomainable {
     typealias CDModel = CDMovieDetail
     typealias DomainModel = MovieDetail
 
-    @NSManaged var imdbId: String
+    @NSManaged var imdbId: String?
     @NSManaged var movie: CDMovie?
 
     static func asDomain(item: CDMovieDetail) -> MovieDetail {
         /// <aarkay asDomain>
-        let model = MovieDetail(imdbId: item.imdbId)
+        var model = MovieDetail()
+        model.imdbId = item.imdbId
         return model
         /// </aarkay>
     }

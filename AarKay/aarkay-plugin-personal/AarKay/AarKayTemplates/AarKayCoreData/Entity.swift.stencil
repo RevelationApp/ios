@@ -14,7 +14,7 @@ import CoreData
 {% if domainModel and domainModuleName %}import {{ domainModuleName }}{% endif %}
 
 @objc(CD{{ name }})
-class CD{{ name }}: {% if parentEntity %}CD{{ parentEntity }}{% else %}NSManagedObject{% endif %}, {% if domainModel %}CDDomainable{% else %}CDModelable{% endif %} {
+class CD{{ name }}: {% if parentEntity %}CD{{ parentEntity }}{% else %}NSManagedObject, {% if domainModel %}CDDomainable{% else %}CDModelable{% endif %}{% endif %} {
     typealias CDModel = CD{{ name }}
     {% if domainModel %}
     typealias DomainModel = {{ domainModel }}

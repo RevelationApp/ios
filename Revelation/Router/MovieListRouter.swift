@@ -14,7 +14,6 @@ import UIKit
 
 class MovieListRouter {
     let appService: ServiceProvider
-    var disposeBag = DisposeBag()
 
     init(appService: ServiceProvider) {
         self.appService = appService
@@ -71,8 +70,9 @@ class MovieListRouter {
                 guard let _self = self else { return }
                 listStateVC.state = .loading
                 _self.appService.movieService
-                    .fetchWithId(movie.id) { movie, _ in
+                    .fetchWithId(movie.id) { movie, error in
                         guard let item = movie else {
+                            print(error!)
                             listStateVC.state = .error
                             return
                         }
@@ -80,6 +80,7 @@ class MovieListRouter {
                         listStateVC.state = .content(vc)
                     }
             }
+            listStateVC.errorView.retryBlock = listStateVC.onViewDidLoad
             return listStateVC
         }
     }

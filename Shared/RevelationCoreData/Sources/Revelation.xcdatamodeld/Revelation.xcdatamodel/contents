@@ -12,7 +12,7 @@
         </uniquenessConstraints>
     </entity>
     <entity name="MovieDetail" representedClassName="CDMovieDetail" syncable="YES">
-        <attribute name="imdbId" attributeType="String" syncable="YES"/>
+        <attribute name="imdbId" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="movie" optional="YES" maxCount="1" destinationEntity="Movie" inverseName="detail" inverseEntity="Movie" deletionRule="Nullify" syncable="YES"/>
     </entity>
     <elements>

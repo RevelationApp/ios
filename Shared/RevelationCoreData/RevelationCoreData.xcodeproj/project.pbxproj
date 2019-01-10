@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3139C9BB40DDF3C2E5A365CD /* Pods_RevelationCoreDataTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F861834CFF790DE8C095714A /* Pods_RevelationCoreDataTests_iOS.framework */; };
 		3549BB501DA38A2000C63030 /* RevelationCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB511DA38A2000C63030 /* RevelationCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3549BB521DA38A2100C63030 /* RevelationCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3549BB181DA3890B00C63030 /* RevelationCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +35,10 @@
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
 		C2139283223CD7E84B881F87 /* Pods_RevelationCoreData_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD8E0FA34B79FC85B4FCD9B /* Pods_RevelationCoreData_iOS.framework */; };
+		D9462B1321E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
+		D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
+		D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
+		D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
 		D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
@@ -54,10 +59,6 @@
 		D99C1EA021D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
 		D99C1EA121D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
 		D99C1EA221D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */; };
-		D9D0AD6C21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
-		D9D0AD6D21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
-		D9D0AD6E21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
-		D9D0AD6F21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */; };
 		D9EB075221D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
 		D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
 		D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
@@ -343,14 +344,16 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		5BFBB1D6E27945A009039E79 /* Pods-RevelationCoreDataTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreDataTests-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6B6F53CB9AEDE87FFFDA64EA /* Pods-RevelationCoreData-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreData-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreData-iOS/Pods-RevelationCoreData-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8A35059C126B38B01DCBD7BD /* Pods-RevelationCoreDataTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreDataTests-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8D19CF57609DD5385B79F033 /* Pods-RevelationCoreData-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreData-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreData-iOS/Pods-RevelationCoreData-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
 		D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncable.swift; sourceTree = "<group>"; };
 		D989DD0721D535FE00BD7771 /* CDModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModelable.swift; sourceTree = "<group>"; };
 		D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDiscoverMovieSync.swift; sourceTree = "<group>"; };
 		D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestListener.swift; sourceTree = "<group>"; };
-		D9D0AD6B21D38BB600297E7C /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
 		D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetailsSync.swift; sourceTree = "<group>"; };
 		D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetail.swift; sourceTree = "<group>"; };
 		D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocExtensions.swift; sourceTree = "<group>"; };
@@ -362,6 +365,7 @@
 		D9FD7C8621D4229800F425D0 /* CoreDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		D9FD7C8721D4229800F425D0 /* CDMovieProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieProvider.swift; sourceTree = "<group>"; };
 		D9FD7CA521D422D500F425D0 /* RevelationAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationAPI.xcodeproj; path = ../RevelationAPI/RevelationAPI.xcodeproj; sourceTree = "<group>"; };
+		F861834CFF790DE8C095714A /* Pods_RevelationCoreDataTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationCoreDataTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +413,7 @@
 				35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */,
 				35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */,
 				3549BB661DA38ADB00C63030 /* RevelationCoreData.framework in Frameworks */,
+				3139C9BB40DDF3C2E5A365CD /* Pods_RevelationCoreDataTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +469,7 @@
 		3549BB161DA3890B00C63030 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */,
+				D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */,
 				359649011FB18CBF00FC7ADC /* Core */,
 				D9FD7C8021D4229800F425D0 /* Models */,
 				D974B68D21D50FB6008E72D0 /* Sync */,
@@ -514,6 +519,7 @@
 				354AD5851F8A659800B18FAE /* Nimble.framework */,
 				354AD5841F8A659800B18FAE /* Quick.framework */,
 				0FD8E0FA34B79FC85B4FCD9B /* Pods_RevelationCoreData_iOS.framework */,
+				F861834CFF790DE8C095714A /* Pods_RevelationCoreDataTests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -531,6 +537,8 @@
 			children = (
 				6B6F53CB9AEDE87FFFDA64EA /* Pods-RevelationCoreData-iOS.debug.xcconfig */,
 				8D19CF57609DD5385B79F033 /* Pods-RevelationCoreData-iOS.release.xcconfig */,
+				5BFBB1D6E27945A009039E79 /* Pods-RevelationCoreDataTests-iOS.debug.xcconfig */,
+				8A35059C126B38B01DCBD7BD /* Pods-RevelationCoreDataTests-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -736,10 +744,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "RevelationCoreDataTests-iOS" */;
 			buildPhases = (
+				5236CB84126569B532A3CBBC /* [CP] Check Pods Manifest.lock */,
 				3549BB5D1DA38ADB00C63030 /* Sources */,
 				3549BB5E1DA38ADB00C63030 /* Frameworks */,
 				3549BB5F1DA38ADB00C63030 /* Resources */,
 				35B7422C1F82A2C700829B21 /* Embed Frameworks */,
+				2143BFA08E20E07422642B97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1023,6 +1033,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2143BFA08E20E07422642B97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationDomain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FCFF31EE748A6AAB5B91A14 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1045,6 +1093,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5236CB84126569B532A3CBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationCoreDataTests-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1060,7 +1130,7 @@
 				D989DCF621D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
 				D9EB075C21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
 				D9794E1021D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
-				D9D0AD6C21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */,
+				D9462B1321E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076121D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9EB078421D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9FB97D321D7BA49000B7F20 /* CDDomainable.swift in Sources */,
@@ -1083,7 +1153,7 @@
 				D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9EB075F21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
 				D989DCF921D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
-				D9D0AD6F21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */,
+				D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076421D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9EB078721D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
@@ -1106,7 +1176,7 @@
 				D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9EB075D21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
 				D989DCF721D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
-				D9D0AD6D21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */,
+				D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076221D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9EB078521D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
@@ -1129,7 +1199,7 @@
 				D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9EB075E21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
 				D989DCF821D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
-				D9D0AD6E21D38BB700297E7C /* Revelation.xcdatamodeld in Sources */,
+				D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076321D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9EB078621D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
@@ -1522,6 +1592,7 @@
 		};
 		3549BB6A1DA38ADB00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFBB1D6E27945A009039E79 /* Pods-RevelationCoreDataTests-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1540,6 +1611,7 @@
 		};
 		3549BB6B1DA38ADB00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A35059C126B38B01DCBD7BD /* Pods-RevelationCoreDataTests-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1709,12 +1781,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D9D0AD6A21D38BB600297E7C /* Revelation.xcdatamodeld */ = {
+		D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D9D0AD6B21D38BB600297E7C /* Revelation.xcdatamodel */,
+				D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */,
 			);
-			currentVersion = D9D0AD6B21D38BB600297E7C /* Revelation.xcdatamodel */;
+			currentVersion = D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */;
 			path = Revelation.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

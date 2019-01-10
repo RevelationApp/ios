@@ -11,7 +11,7 @@
     - budget|Int
     - homepage|String?
     - genres|[GenreModel]
-    - imdbId|String
+    - imdbId|String?
     - originalLanguage|String
     - originalTitle|String
     - overview|String
@@ -21,7 +21,7 @@
     - spokenLanguages|[SpokenLanguageModel]
     - releaseDate|String
     - revenue|Int
-    - runtime|Int
+    - runtime|Int?
     - status|String
     - tagline|String
     - title|String

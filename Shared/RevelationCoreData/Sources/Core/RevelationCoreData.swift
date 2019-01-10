@@ -9,7 +9,10 @@
 import CoreData
 
 public class RevelationCoreData {
-    public static let `default` = CoreDataStack(
-        name: "Revelation", bundle: Bundle(for: RevelationCoreData.self)
-    )
+    public static let stack: CoreDataStack = {
+        return CoreDataStack(
+            name: "Revelation",
+            bundle: Bundle(for: RevelationCoreData.self)
+        )
+    }()
 }

@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
  s.default_subspec = "Core"
  s.subspec "Core" do |ss|
-     ss.source_files  = "Sources/**/*.swift"
-     ss.dependency "Restofire", "~> 5.0.0-alpha.1"
-     ss.framework  = "Foundation"
+    ss.source_files  = "Sources/**/*.swift"
+    ss.dependency "Restofire", "~> 5.0.0-alpha.1"
+    ss.framework  = "Foundation"
  end
 end

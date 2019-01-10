@@ -29,6 +29,7 @@
 		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
+		4176642736D4044C37A07F4F /* Pods_RevelationDomainTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01500ADDAF359F96B4EFC4B6 /* Pods_RevelationDomainTests_iOS.framework */; };
 		D9A2D7FD21D389AB003E78F8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2D7FC21D389AB003E78F8 /* Movie.swift */; };
 		D9A2D7FE21D389AB003E78F8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2D7FC21D389AB003E78F8 /* Movie.swift */; };
 		D9A2D7FF21D389AB003E78F8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A2D7FC21D389AB003E78F8 /* Movie.swift */; };
@@ -49,6 +50,7 @@
 		D9FD7B7E21D415C300F425D0 /* TvService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B7C21D415C300F425D0 /* TvService.swift */; };
 		D9FD7B7F21D415C300F425D0 /* TvService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B7C21D415C300F425D0 /* TvService.swift */; };
 		D9FD7B8021D415C300F425D0 /* TvService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B7C21D415C300F425D0 /* TvService.swift */; };
+		E3C67B6747BA6F9EBF5339B1 /* Pods_RevelationDomain_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DABB2E8491EAA44962E117 /* Pods_RevelationDomain_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01500ADDAF359F96B4EFC4B6 /* Pods_RevelationDomainTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationDomainTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31220F394458D9A12D1F6D81 /* Pods-RevelationDomain-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationDomain-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationDomain-iOS/Pods-RevelationDomain-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3549BB171DA3890B00C63030 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3549BB181DA3890B00C63030 /* RevelationDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevelationDomain.h; sourceTree = "<group>"; };
 		3549BB211DA389CD00C63030 /* RevelationDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RevelationDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +138,10 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		46EFCF6A5B576C4CA39AE7FD /* Pods-RevelationDomainTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationDomainTests-iOS.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationDomainTests-iOS/Pods-RevelationDomainTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6E3F4E83389F353EE85CFA57 /* Pods-RevelationDomainTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationDomainTests-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationDomainTests-iOS/Pods-RevelationDomainTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		76500280D255C054B6C90673 /* Pods-RevelationDomain-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationDomain-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationDomain-iOS/Pods-RevelationDomain-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A4DABB2E8491EAA44962E117 /* Pods_RevelationDomain_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevelationDomain_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A2D7FC21D389AB003E78F8 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D9FD7B3521D4000500F425D0 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		D9FD7B3A21D4001A00F425D0 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C67B6747BA6F9EBF5339B1 /* Pods_RevelationDomain_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				35B742311F82A5EC00829B21 /* Nimble.framework in Frameworks */,
 				35B742321F82A5EC00829B21 /* Quick.framework in Frameworks */,
 				3549BB661DA38ADB00C63030 /* RevelationDomain.framework in Frameworks */,
+				4176642736D4044C37A07F4F /* Pods_RevelationDomainTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +220,7 @@
 				3549BB191DA3890B00C63030 /* Tests */,
 				3549BB061DA387DB00C63030 /* Products */,
 				357D954B1DA3F2B400AEC55F /* Frameworks */,
+				F427DA77094C6528D0E5FD64 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +286,8 @@
 				35B7422E1F82A5E000829B21 /* Quick.framework */,
 				354AD5851F8A659800B18FAE /* Nimble.framework */,
 				354AD5841F8A659800B18FAE /* Quick.framework */,
+				A4DABB2E8491EAA44962E117 /* Pods_RevelationDomain_iOS.framework */,
+				01500ADDAF359F96B4EFC4B6 /* Pods_RevelationDomainTests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,6 +308,17 @@
 				D9FD7B7C21D415C300F425D0 /* TvService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F427DA77094C6528D0E5FD64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31220F394458D9A12D1F6D81 /* Pods-RevelationDomain-iOS.debug.xcconfig */,
+				76500280D255C054B6C90673 /* Pods-RevelationDomain-iOS.release.xcconfig */,
+				46EFCF6A5B576C4CA39AE7FD /* Pods-RevelationDomainTests-iOS.debug.xcconfig */,
+				6E3F4E83389F353EE85CFA57 /* Pods-RevelationDomainTests-iOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "RevelationDomain-iOS" */;
 			buildPhases = (
+				CEB2147FEB71DF4D59680B89 /* [CP] Check Pods Manifest.lock */,
 				3549BB1C1DA389CD00C63030 /* Sources */,
 				3549BB1D1DA389CD00C63030 /* Frameworks */,
 				3549BB1E1DA389CD00C63030 /* Headers */,
@@ -411,10 +436,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "RevelationDomainTests-iOS" */;
 			buildPhases = (
+				6D3EFBD5217C5680C2D1D79F /* [CP] Check Pods Manifest.lock */,
 				3549BB5D1DA38ADB00C63030 /* Sources */,
 				3549BB5E1DA38ADB00C63030 /* Frameworks */,
 				3549BB5F1DA38ADB00C63030 /* Resources */,
 				35B7422C1F82A2C700829B21 /* Embed Frameworks */,
+				A35823F169B5013996E19EC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -585,6 +612,91 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D3EFBD5217C5680C2D1D79F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationDomainTests-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A35823F169B5013996E19EC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationDomainTests-iOS/Pods-RevelationDomainTests-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Restofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevelationDomain.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationDomainTests-iOS/Pods-RevelationDomainTests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB2147FEB71DF4D59680B89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevelationDomain-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3549BB1C1DA389CD00C63030 /* Sources */ = {
@@ -803,6 +915,7 @@
 		};
 		3549BB271DA389CD00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31220F394458D9A12D1F6D81 /* Pods-RevelationDomain-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -824,6 +937,7 @@
 		};
 		3549BB281DA389CD00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76500280D255C054B6C90673 /* Pods-RevelationDomain-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -975,6 +1089,7 @@
 		};
 		3549BB6A1DA38ADB00C63030 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EFCF6A5B576C4CA39AE7FD /* Pods-RevelationDomainTests-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -993,6 +1108,7 @@
 		};
 		3549BB6B1DA38ADB00C63030 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3F4E83389F353EE85CFA57 /* Pods-RevelationDomainTests-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;

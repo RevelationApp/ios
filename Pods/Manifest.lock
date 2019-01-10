@@ -14,27 +14,9 @@ PODS:
     - RevelationAPI/Core (= 0.0.1)
   - RevelationAPI/Core (0.0.1):
     - Restofire (~> 5.0.0-alpha.1, ~> 5.0.0-alpha.2)
-  - RevelationCoreData (0.0.1):
-    - RevelationAPI
-    - RevelationCoreData/Core (= 0.0.1)
-    - RevelationDomain
-  - RevelationCoreData/Core (0.0.1):
-    - RevelationAPI
-    - RevelationDomain
   - RevelationDomain (0.0.1):
     - RevelationDomain/Core (= 0.0.1)
   - RevelationDomain/Core (0.0.1)
-  - RevelationUI (0.0.1):
-    - Reusable
-    - RevelationDomain
-    - RevelationUI/Core (= 0.0.1)
-    - RxCocoa
-    - SnapKit
-  - RevelationUI/Core (0.0.1):
-    - Reusable
-    - RevelationDomain
-    - RxCocoa
-    - SnapKit
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -48,9 +30,7 @@ DEPENDENCIES:
   - Restofire (~> 5.0.0-alpha.2)
   - Reusable
   - RevelationAPI (from `Shared/RevelationAPI`)
-  - RevelationCoreData (from `Shared/RevelationCoreData`)
   - RevelationDomain (from `Shared/RevelationDomain`)
-  - RevelationUI (from `Shared/RevelationUI`)
   - RxCocoa
   - SnapKit
   - SwiftFormat/CLI
@@ -71,21 +51,15 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   RevelationAPI:
     :path: Shared/RevelationAPI
-  RevelationCoreData:
-    :path: Shared/RevelationCoreData
   RevelationDomain:
     :path: Shared/RevelationDomain
-  RevelationUI:
-    :path: Shared/RevelationUI
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
   Restofire: b4c3405820271a21871dfc8ef05f229c3dbd05a0
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
-  RevelationAPI: 332e62abbcc9234cdc8e6c3a85f5a39bad8bb46e
-  RevelationCoreData: d9c465e32aea8863572489a8d932dd9eda9f9cf8
-  RevelationDomain: 6d87d0eb9be0018ee9884750e15c693fc367b743
-  RevelationUI: ece526be4e1024dfc1e3e4a48610737c8d32eef1
+  RevelationAPI: 167522c1c58fbf0f6dda01aca286fac8a58d8f38
+  RevelationDomain: 6a45ebf1c6c5f9af855f1601a0704533fda5fe96
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
@@ -93,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftFormat: abbfb26dde4c6d683923cde153c88e10da9d7881
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
 
-PODFILE CHECKSUM: abc8f660b268c649612ebdc704ac7a6bd360f61b
+PODFILE CHECKSUM: 483a19ca6d9dcfabf6e697adac4df22b5ef99a8b
 
 COCOAPODS: 1.5.3

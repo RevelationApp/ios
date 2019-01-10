@@ -31,4 +31,7 @@
    <FileRef
       location = "group:Shared/RevelationCoreData/RevelationCoreData.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Shared/RevelationDomain/RevelationDomain.xcodeproj">
+   </FileRef>
 </Workspace>

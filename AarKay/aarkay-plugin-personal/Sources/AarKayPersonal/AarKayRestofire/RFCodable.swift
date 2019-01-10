@@ -59,12 +59,3 @@ public class RFCodableModel: Codable {
         try container.encode(props, forKey: .props)
     }
 }
-
-/// AarKayEnd: -
-extension RFCodable {
-
-    public func rk_directory() -> String? {
-        return "Shared/RevelationAPI/Sources/ResponseModels"
-    }
-
-}

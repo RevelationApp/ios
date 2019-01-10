@@ -10,7 +10,7 @@ import Foundation
 import RevelationDomain
 
 public class CoreDataProvider {
-    private let stack = RevelationCoreData.default
+    private let stack = RevelationCoreData.stack
 
     public init() {}
 
