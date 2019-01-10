@@ -7,7 +7,10 @@ let package = Package(
     products: [
         .executable(name: "aarkay-cli", targets: ["aarkay-cli"])],
     dependencies: [
-        .package(url: "https://github.com/RahulKatariya/AarKay.git", .branch("master")),
+        .package(url: "https://github.com/RahulKatariya/AarKay.git", .upToNextMinor(from: "0.2.0")),
+        .package(url: "https://github.com/RahulKatariya/aarkay-plugin-coredata.git", .upToNextMinor(from: "0.2.0")),
+        .package(url: "https://github.com/RahulKatariya/aarkay-plugin-uberribs.git", .upToNextMinor(from: "0.2.0")),
+        .package(url: "https://github.com/Restofire/aarkay-plugin-restofire.git", .upToNextMinor(from: "0.2.0")),
     ],
     targets: [
         .target(
@@ -16,6 +19,9 @@ let package = Package(
                 "AarKayKit",
                 "AarKayPlugin",
                 "AarKay",
+                "aarkay-plugin-coredata",
+                "aarkay-plugin-uberribs",
+                "aarkay-plugin-restofire",
             ],
             path: "Sources/AarKayCLI"),],
     swiftLanguageVersions: [.v4, .v4_2]

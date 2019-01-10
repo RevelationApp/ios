@@ -5,9 +5,36 @@
         "package": "AarKay",
         "repositoryURL": "https://github.com/RahulKatariya/AarKay.git",
         "state": {
-          "branch": "master",
-          "revision": "7d8f09e21d9da9772619f55a8a87e069097b4bba",
-          "version": null
+          "branch": null,
+          "revision": "d1c3bfab023bfb67fdeb97553900d95cabd491df",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "AarKayCoreData",
+        "repositoryURL": "https://github.com/RahulKatariya/aarkay-plugin-coredata.git",
+        "state": {
+          "branch": null,
+          "revision": "c9dde3319f8f835efecf441d217f3a38b3a984e9",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "AarKayRestofire",
+        "repositoryURL": "https://github.com/Restofire/aarkay-plugin-restofire.git",
+        "state": {
+          "branch": null,
+          "revision": "c414c7aeeaef6d9bf132db896044ae6f9bb0b339",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "AarKayUberRIBs",
+        "repositoryURL": "https://github.com/RahulKatariya/aarkay-plugin-uberribs.git",
+        "state": {
+          "branch": null,
+          "revision": "f6de4207c15e625b3fe9e11c06b8a3db33302572",
+          "version": "0.2.0"
         }
       },
       {
