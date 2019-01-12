@@ -1,0 +1,6 @@
+framework module Pods_RevelationTests {
+  umbrella header "Pods-RevelationTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

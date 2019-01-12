@@ -1,0 +1,6 @@
+framework module RevelationAPI {
+  umbrella header "RevelationAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

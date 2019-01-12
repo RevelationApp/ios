@@ -1,0 +1,6 @@
+framework module Pods_RevelationCoreData_iOS {
+  umbrella header "Pods-RevelationCoreData-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

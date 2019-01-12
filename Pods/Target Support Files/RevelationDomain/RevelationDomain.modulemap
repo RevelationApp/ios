@@ -1,0 +1,6 @@
+framework module RevelationDomain {
+  umbrella header "RevelationDomain-umbrella.h"
+
+  export *
+  module * { export * }
+}

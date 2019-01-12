@@ -1,0 +1,6 @@
+framework module Pods_RevelationUI_iOS {
+  umbrella header "Pods-RevelationUI-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

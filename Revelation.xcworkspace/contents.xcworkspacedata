@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AarKay/aarkay-plugin-revelation/AarKayRevelation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Revelation.xcodeproj">
    </FileRef>
    <FileRef
@@ -12,9 +15,6 @@
    </FileRef>
    <FileRef
       location = "group:AarKay">
-   </FileRef>
-   <FileRef
-      location = "group:AarKay/aarkay-plugin-personal/AarKayPersonal.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Podfile">
