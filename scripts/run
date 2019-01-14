@@ -1,4 +1,4 @@
 #!bin/bash
 
-cd AarKay/aarkay-plugin-personal
+cd AarKay/aarkay-plugin-revelation
 sh scripts/run
