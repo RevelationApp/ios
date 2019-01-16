@@ -22,8 +22,7 @@ public class CoreDataStack {
         self.bundle = bundle
         self.fileManager = fileManager
         #if DEBUG
-        let sqlPath = storeUrl.path
-            .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        let sqlPath = storeUrl.path.replacingOccurrences(of: " ", with: "\\ ")
         print("sqlbrowser \(sqlPath)")
         #endif
     }
@@ -59,6 +58,6 @@ public class CoreDataStack {
     // MARK: - Core Data Background Child Context
 
     func newBackgroundContext() -> NSManagedObjectContext {
-        return self.viewContext
+        return persistentContainer.newBackgroundContext()
     }
 }

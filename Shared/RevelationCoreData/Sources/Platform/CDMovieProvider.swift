@@ -19,18 +19,19 @@ class CDMovieProvider: MovieService {
     }
 
     func fetchAll(completion: @escaping ([Movie]?, Error?) -> Void) {
-        CDDiscoverMovieSync(context: self.stack.newBackgroundContext()).sync { error in
-            if let error = error { completion(nil, error); return }
-            let context = self.stack.newBackgroundContext()
-            context.perform {
-                do {
-                    let results = try CDMovie.all(context: context)
-                    DispatchQueue.main.async { completion(results, error) }
-                } catch {
-                    DispatchQueue.main.async { completion(nil, error) }
+        CDDiscoverMovieSync(context: self.stack.newBackgroundContext())
+            .sync { error in
+                if let error = error { completion(nil, error); return }
+                let context = self.stack.newBackgroundContext()
+                context.perform {
+                    do {
+                        let results = try CDMovie.all(context: context)
+                        DispatchQueue.main.async { completion(results, error) }
+                    } catch {
+                        DispatchQueue.main.async { completion(nil, error) }
+                    }
                 }
             }
-        }
     }
 
     func fetchWithId(_ id: Int, completion: @escaping (Movie?, Error?) -> Void) {
