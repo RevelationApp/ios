@@ -1,30 +1,31 @@
 //
 //  Syncable.swift
-//  RevelationCoreData
+//  Restofire
 //
-//  Created by RahulKatariya on 30/12/18.
-//  Copyright © 2018 RahulKatariya. All rights reserved.
+//  Created by RahulKatariya on 31/12/18.
+//  Copyright © 2018 Restofire. All rights reserved.
 //
 
-import Restofire
+import Foundation
 
 public protocol Syncable {
     associatedtype Response
     associatedtype Request: Requestable where Request.Response == Response
-
+    
     func request() -> Request
-    func shouldSync(completion: (Bool) throws -> Void) throws
-    func insert(model: Response, completion: @escaping () throws -> Void) throws
+    func shouldSync(completion: (Bool) throws -> ()) throws
+    func insert(model: Response, completion: @escaping () throws -> ()) throws
 }
 
 extension Syncable {
-    public func shouldSync(completion: (Bool) throws -> Void) throws {
+    
+    public func shouldSync(completion: (Bool) throws -> ()) throws {
         try completion(true)
     }
-
-    public func sync(completion: ((Error?) -> Void)? = nil) {
+    
+    public func sync(completion: ((Error?) -> ())? = nil) {
         do {
-            try self.shouldSync { flag in
+            try self.shouldSync() { flag in
                 guard flag else {
                     DispatchQueue.main.async { completion?(nil) }
                     return
@@ -47,4 +48,5 @@ extension Syncable {
             DispatchQueue.main.async { completion?(error) }
         }
     }
+    
 }

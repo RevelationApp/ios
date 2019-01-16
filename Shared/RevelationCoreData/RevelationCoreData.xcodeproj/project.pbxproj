@@ -43,10 +43,6 @@
 		D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E1021D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
-		D989DCF621D5193200BD7771 /* CoreDataSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */; };
-		D989DCF721D5193200BD7771 /* CoreDataSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */; };
-		D989DCF821D5193200BD7771 /* CoreDataSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */; };
-		D989DCF921D5193200BD7771 /* CoreDataSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */; };
 		D989DD0821D535FE00BD7771 /* CDModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DD0721D535FE00BD7771 /* CDModelable.swift */; };
 		D989DD0921D535FE00BD7771 /* CDModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DD0721D535FE00BD7771 /* CDModelable.swift */; };
 		D989DD0A21D535FE00BD7771 /* CDModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D989DD0721D535FE00BD7771 /* CDModelable.swift */; };
@@ -63,10 +59,6 @@
 		D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
 		D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
 		D9EB075521D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */; };
-		D9EB075C21D7FCE30051B4A3 /* MocExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */; };
-		D9EB075D21D7FCE30051B4A3 /* MocExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */; };
-		D9EB075E21D7FCE30051B4A3 /* MocExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */; };
-		D9EB075F21D7FCE30051B4A3 /* MocExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */; };
 		D9EB076121D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
 		D9EB076221D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
 		D9EB076321D80D0B0051B4A3 /* RevelationPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */; };
@@ -75,10 +67,6 @@
 		D9EB076621D82EDC0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
 		D9EB076721D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
 		D9EB076821D82EDD0051B4A3 /* CDMovieDetailsSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */; };
-		D9EB078421D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
-		D9EB078521D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
-		D9EB078621D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
-		D9EB078721D8E74D0051B4A3 /* Syncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB078321D8E74D0051B4A3 /* Syncable.swift */; };
 		D9FB97D321D7BA49000B7F20 /* CDDomainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */; };
 		D9FB97D421D7BA4E000B7F20 /* CDDomainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */; };
 		D9FB97D521D7BA4F000B7F20 /* CDDomainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */; };
@@ -349,16 +337,13 @@
 		8A35059C126B38B01DCBD7BD /* Pods-RevelationCoreDataTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreDataTests-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8D19CF57609DD5385B79F033 /* Pods-RevelationCoreData-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreData-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreData-iOS/Pods-RevelationCoreData-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
-		D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncable.swift; sourceTree = "<group>"; };
 		D989DD0721D535FE00BD7771 /* CDModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModelable.swift; sourceTree = "<group>"; };
 		D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDiscoverMovieSync.swift; sourceTree = "<group>"; };
 		D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestListener.swift; sourceTree = "<group>"; };
 		D9EB074C21D7E5980051B4A3 /* CDMovieDetailsSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetailsSync.swift; sourceTree = "<group>"; };
 		D9EB075121D7E8F80051B4A3 /* CDMovieDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovieDetail.swift; sourceTree = "<group>"; };
-		D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocExtensions.swift; sourceTree = "<group>"; };
 		D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationPC.swift; sourceTree = "<group>"; };
-		D9EB078321D8E74D0051B4A3 /* Syncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syncable.swift; sourceTree = "<group>"; };
 		D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDDomainable.swift; sourceTree = "<group>"; };
 		D9FD7C6821D4224500F425D0 /* RevelationDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationDomain.xcodeproj; path = ../RevelationDomain/RevelationDomain.xcodeproj; sourceTree = "<group>"; };
 		D9FD7C8421D4229800F425D0 /* CDMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMovie.swift; sourceTree = "<group>"; };
@@ -555,24 +540,13 @@
 		D989DCFA21D5218A00BD7771 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				D9EB077621D8E70F0051B4A3 /* Restofire */,
 				D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */,
 				D989DD0721D535FE00BD7771 /* CDModelable.swift */,
 				D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */,
 				D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */,
-				D9EB075B21D7FCE30051B4A3 /* MocExtensions.swift */,
 				D9EB076021D80D0B0051B4A3 /* RevelationPC.swift */,
 			);
 			path = External;
-			sourceTree = "<group>";
-		};
-		D9EB077621D8E70F0051B4A3 /* Restofire */ = {
-			isa = PBXGroup;
-			children = (
-				D9EB078321D8E74D0051B4A3 /* Syncable.swift */,
-				D989DCF521D5193200BD7771 /* CoreDataSyncable.swift */,
-			);
-			path = Restofire;
 			sourceTree = "<group>";
 		};
 		D9FD7C6921D4224500F425D0 /* Products */ = {
@@ -1127,12 +1101,9 @@
 				D9FD7C9521D4229800F425D0 /* CDMovie.swift in Sources */,
 				D99C1E8B21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9EB075221D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
-				D989DCF621D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
-				D9EB075C21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
 				D9794E1021D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9462B1321E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076121D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
-				D9EB078421D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9FB97D321D7BA49000B7F20 /* CDDomainable.swift in Sources */,
 				D9FD7C9D21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9921D4229800F425D0 /* CoreDataProvider.swift in Sources */,
@@ -1151,11 +1122,8 @@
 				D9FD7C9821D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075521D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
-				D9EB075F21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
-				D989DCF921D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
 				D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076421D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
-				D9EB078721D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7CA021D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9C21D4229800F425D0 /* CoreDataProvider.swift in Sources */,
@@ -1174,11 +1142,8 @@
 				D9FD7C9621D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
-				D9EB075D21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
-				D989DCF721D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
 				D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076221D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
-				D9EB078521D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9E21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9A21D4229800F425D0 /* CoreDataProvider.swift in Sources */,
@@ -1197,11 +1162,8 @@
 				D9FD7C9721D4229800F425D0 /* CDMovie.swift in Sources */,
 				D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
-				D9EB075E21D7FCE30051B4A3 /* MocExtensions.swift in Sources */,
-				D989DCF821D5193200BD7771 /* CoreDataSyncable.swift in Sources */,
 				D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
 				D9EB076321D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
-				D9EB078621D8E74D0051B4A3 /* Syncable.swift in Sources */,
 				D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9F21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
 				D9FD7C9B21D4229800F425D0 /* CoreDataProvider.swift in Sources */,

@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
-  - Restofire (5.0.0-alpha.2):
-    - Restofire/Core (= 5.0.0-alpha.2)
-  - Restofire/Core (5.0.0-alpha.2):
+  - Restofire (5.0.0-alpha.3):
+    - Restofire/Core (= 5.0.0-alpha.3)
+  - Restofire/Core (5.0.0-alpha.3):
     - Alamofire (~> 5.0.0-beta.1)
   - Reusable (4.0.5):
     - Reusable/Storyboard (= 4.0.5)
@@ -56,7 +56,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
-  Restofire: b4c3405820271a21871dfc8ef05f229c3dbd05a0
+  Restofire: ad7f01651cf7680d71b89d8fc5b0cee92a3ebd30
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
   RevelationAPI: 167522c1c58fbf0f6dda01aca286fac8a58d8f38
   RevelationDomain: 6a45ebf1c6c5f9af855f1601a0704533fda5fe96
