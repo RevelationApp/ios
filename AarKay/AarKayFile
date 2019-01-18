@@ -1,5 +1,6 @@
-https://github.com/RahulKatariya/AarKay.git, ~> 0.3.0
-https://github.com/RahulKatariya/aarkay-plugin-coredata.git, b-master
-https://github.com/RahulKatariya/aarkay-plugin-uberribs.git, ~> 0.3.0
-https://github.com/Restofire/aarkay-plugin-restofire.git, ~> 0.3.0
+https://github.com/RahulKatariya/AarKay.git, ~> 0.4.0
+https://github.com/RahulKatariya/aarkay-plugin-coredata.git, ~> 0.4.0
+https://github.com/RahulKatariya/aarkay-plugin-uberribs.git, ~> 0.4.0
+https://github.com/Restofire/aarkay-plugin-restofire.git, ~> 0.4.0
+https://github.com/RahulKatariya/aarkay-plugin-personal.git, b-master
 ./aarkay-plugin-revelation, b-master
