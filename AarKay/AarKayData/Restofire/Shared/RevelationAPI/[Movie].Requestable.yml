@@ -1,7 +1,6 @@
 - name: MovieDetails
   path: "{movieId}"
   configurable: Movie
-  coreDataSync: true
   response: ResultResponseModel<MovieDetailsModel>
   responseModel:
     - id|Int

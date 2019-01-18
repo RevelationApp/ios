@@ -40,7 +40,9 @@ public class CoreDataStack {
     }()
 
     lazy var viewContext: NSManagedObjectContext = {
-        persistentContainer.viewContext
+        let vc = persistentContainer.viewContext
+        vc.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+        return vc
     }()
 
     // MARK: - Core Data Persistent Stores Setup
@@ -58,6 +60,6 @@ public class CoreDataStack {
     // MARK: - Core Data Background Child Context
 
     func newBackgroundContext() -> NSManagedObjectContext {
-        return persistentContainer.newBackgroundContext()
+        return viewContext
     }
 }

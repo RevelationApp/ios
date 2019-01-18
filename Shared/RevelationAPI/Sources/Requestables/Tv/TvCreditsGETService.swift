@@ -5,12 +5,18 @@ import Restofire
 public struct TvCreditsGETService: Requestable, TvConfigurable {
     public typealias Response = ResultResponseModel<TvCreditsModel>
 
+    public let pathModel: TvCreditsPathModel
     public let path: String?
     public let method: HTTPMethod = .get
 
     public init(tvId: String) {
+        self.pathModel = TvCreditsPathModel(tvId: tvId)
         self.path = "\(tvId)/credits"
     }
+}
+
+public struct TvCreditsPathModel {
+    public let tvId: String
 }
 
 public struct TvCreditsModel: Codable {

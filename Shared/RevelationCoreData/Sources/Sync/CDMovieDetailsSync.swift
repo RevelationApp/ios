@@ -2,37 +2,40 @@ import Restofire
 import CoreData
 import RevelationAPI
 
-struct CDMovieDetailsSync: CoreDataSyncable {
-    typealias Response = ResultResponseModel<MovieDetailsModel>
+struct CDMovieDetailsSync: RSyncable {
     typealias Request = MovieDetailsGETService
 
     let context: NSManagedObjectContext
-    let movieId: String
+    let request: MovieDetailsGETService
 
     init(context: NSManagedObjectContext, movieId: String) {
         self.context = context
-        self.movieId = movieId
+        self.request = MovieDetailsGETService(movieId: movieId)
     }
 
-    func request() -> Request {
-        return MovieDetailsGETService(movieId: movieId)
-    }
-
-    func shouldSync(completion: (Bool) throws -> ()) throws {
+    func shouldSync() throws -> Bool {
         /// <aarkay shouldSyncMovieDetailsSync>
-        let movie = try CDMovie.fetch(id: Int64(movieId)!, context: context)!
-        try completion(movie.detail == nil)
+        var shouldSync = false
+        let movieId = request.pathModel.movieId
+        try context.performAndWait {
+            let movie = try CDMovie.fetch(id: Int64(movieId)!, context: context)!
+            shouldSync = movie.detail == nil
+        }
+        return shouldSync
         /// </aarkay>
     }
 
-    func insert(model: Response, completion: () throws -> ()) throws {
+    func insert(model: Request.Response) throws {
         /// <aarkay insertMovieDetailsSync>
         guard let value = model.value else { throw model.error! }
-        let movie = try CDMovie.fetch(id: Int64(movieId)!, context: context)!
-        let detail = CDMovieDetail(context: context)
-        detail.imdbId = value.imdbId
-        detail.movie = movie
-        try completion()
+        let movieId = request.pathModel.movieId
+        try context.performAndWait {
+            let movie = try CDMovie.fetch(id: Int64(movieId)!, context: context)!
+            let detail = CDMovieDetail(context: context)
+            detail.imdbId = value.imdbId
+            detail.movie = movie
+        }
+        try context.save()
         /// </aarkay>
     }
 }

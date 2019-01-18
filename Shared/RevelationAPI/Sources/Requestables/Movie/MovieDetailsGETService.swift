@@ -5,12 +5,18 @@ import Restofire
 public struct MovieDetailsGETService: Requestable, MovieConfigurable {
     public typealias Response = ResultResponseModel<MovieDetailsModel>
 
+    public let pathModel: MovieDetailsPathModel
     public let path: String?
     public let method: HTTPMethod = .get
 
     public init(movieId: String) {
+        self.pathModel = MovieDetailsPathModel(movieId: movieId)
         self.path = "\(movieId)"
     }
+}
+
+public struct MovieDetailsPathModel {
+    public let movieId: String
 }
 
 public struct MovieDetailsModel: Codable {
