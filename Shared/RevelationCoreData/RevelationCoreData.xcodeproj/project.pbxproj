@@ -347,6 +347,7 @@
 		D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
 		D967D10A21F23ED1004FC6B8 /* RSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSyncable.swift; sourceTree = "<group>"; };
 		D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSyncable.swift; sourceTree = "<group>"; };
+		D967D1DE21F256D6004FC6B8 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
 		D989DD0721D535FE00BD7771 /* CDModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModelable.swift; sourceTree = "<group>"; };
 		D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDiscoverMovieSync.swift; sourceTree = "<group>"; };
@@ -541,6 +542,7 @@
 		D967D10321F23EBC004FC6B8 /* Restofire */ = {
 			isa = PBXGroup;
 			children = (
+				D967D1DE21F256D6004FC6B8 /* SyncManager.swift */,
 				D967D10A21F23ED1004FC6B8 /* RSyncable.swift */,
 				D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */,
 			);
@@ -1120,6 +1122,7 @@
 				D99C1E9F21D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9521D4229800F425D0 /* CDMovie.swift in Sources */,
 				D99C1E8B21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
+				D967D1DF21F256D6004FC6B8 /* SyncManager.swift in Sources */,
 				D9EB075221D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D9794E1021D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9462B1321E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
@@ -1142,6 +1145,7 @@
 				D9FB97D621D7BA51000B7F20 /* CDDomainable.swift in Sources */,
 				D99C1EA221D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9821D4229800F425D0 /* CDMovie.swift in Sources */,
+				D967D1E221F256D6004FC6B8 /* SyncManager.swift in Sources */,
 				D9EB075521D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
@@ -1164,6 +1168,7 @@
 				D9FB97D421D7BA4E000B7F20 /* CDDomainable.swift in Sources */,
 				D99C1EA021D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9621D4229800F425D0 /* CDMovie.swift in Sources */,
+				D967D1E021F256D6004FC6B8 /* SyncManager.swift in Sources */,
 				D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
@@ -1186,6 +1191,7 @@
 				D9FB97D521D7BA4F000B7F20 /* CDDomainable.swift in Sources */,
 				D99C1EA121D7954100DC8A86 /* CDDiscoverMovieSync.swift in Sources */,
 				D9FD7C9721D4229800F425D0 /* CDMovie.swift in Sources */,
+				D967D1E121F256D6004FC6B8 /* SyncManager.swift in Sources */,
 				D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
