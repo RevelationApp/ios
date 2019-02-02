@@ -3,27 +3,23 @@ import CoreData
 import RevelationAPI
 
 struct CDDiscoverMovieSync: RSyncable {
+    
     typealias Request = DiscoverMovieGETService
 
     let context: NSManagedObjectContext
     let request: DiscoverMovieGETService
 
-    init(context: NSManagedObjectContext) {
-        self.context = context
-        self.request = DiscoverMovieGETService()
-    }
-
-    func shouldSync() throws -> Bool {
-        /// <aarkay shouldSyncDiscoverMovieSync>
+    func shouldSync(completion: (Bool) throws -> ()) throws {
+        /// <aarkay shouldSyncMovieDetailsSync>
         var shouldSync = false
         try context.performAndWait {
             shouldSync = try CDMovie.count(context: context) == 0
         }
-        return shouldSync
+        try completion(shouldSync)
         /// </aarkay>
     }
 
-    func insert(model: Request.Response) throws {
+    func insert(model: Request.Response, completion: @escaping () throws -> ()) throws {
         /// <aarkay insertDiscoverMovieSync>
         try context.performAndWait {
             guard let value = model.value else { throw model.error! }
@@ -35,6 +31,7 @@ struct CDDiscoverMovieSync: RSyncable {
             }
         }
         try context.save()
+        try completion()
         /// </aarkay>
     }
 }
