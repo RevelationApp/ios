@@ -39,14 +39,6 @@
 		D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
 		D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
 		D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9462B1121E754B0001BABC3 /* Revelation.xcdatamodeld */; };
-		D967D10B21F23ED1004FC6B8 /* RSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10A21F23ED1004FC6B8 /* RSyncable.swift */; };
-		D967D10C21F23ED1004FC6B8 /* RSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10A21F23ED1004FC6B8 /* RSyncable.swift */; };
-		D967D10D21F23ED1004FC6B8 /* RSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10A21F23ED1004FC6B8 /* RSyncable.swift */; };
-		D967D10E21F23ED1004FC6B8 /* RSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10A21F23ED1004FC6B8 /* RSyncable.swift */; };
-		D967D11021F23EDC004FC6B8 /* CDSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */; };
-		D967D11121F23EDC004FC6B8 /* CDSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */; };
-		D967D11221F23EDC004FC6B8 /* CDSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */; };
-		D967D11321F23EDC004FC6B8 /* CDSyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */; };
 		D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
 		D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */; };
@@ -345,8 +337,6 @@
 		8A35059C126B38B01DCBD7BD /* Pods-RevelationCoreDataTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreDataTests-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreDataTests-iOS/Pods-RevelationCoreDataTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8D19CF57609DD5385B79F033 /* Pods-RevelationCoreData-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevelationCoreData-iOS.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-RevelationCoreData-iOS/Pods-RevelationCoreData-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D9462B1221E754B0001BABC3 /* Revelation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Revelation.xcdatamodel; sourceTree = "<group>"; };
-		D967D10A21F23ED1004FC6B8 /* RSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSyncable.swift; sourceTree = "<group>"; };
-		D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSyncable.swift; sourceTree = "<group>"; };
 		D989DD0721D535FE00BD7771 /* CDModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDModelable.swift; sourceTree = "<group>"; };
 		D99C1E8A21D771A400DC8A86 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D99C1E9821D7954100DC8A86 /* CDDiscoverMovieSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDiscoverMovieSync.swift; sourceTree = "<group>"; };
@@ -538,15 +528,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D967D10321F23EBC004FC6B8 /* Restofire */ = {
-			isa = PBXGroup;
-			children = (
-				D967D10A21F23ED1004FC6B8 /* RSyncable.swift */,
-				D967D10F21F23EDC004FC6B8 /* CDSyncable.swift */,
-			);
-			path = Restofire;
-			sourceTree = "<group>";
-		};
 		D974B68D21D50FB6008E72D0 /* Sync */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,7 +540,6 @@
 		D989DCFA21D5218A00BD7771 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				D967D10321F23EBC004FC6B8 /* Restofire */,
 				D9CD8E1121D55711006C3A24 /* FetchRequestListener.swift */,
 				D989DD0721D535FE00BD7771 /* CDModelable.swift */,
 				D9FB97D221D7BA49000B7F20 /* CDDomainable.swift */,
@@ -1123,8 +1103,6 @@
 				D9EB075221D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D9794E1021D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9462B1321E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
-				D967D10B21F23ED1004FC6B8 /* RSyncable.swift in Sources */,
-				D967D11021F23EDC004FC6B8 /* CDSyncable.swift in Sources */,
 				D9EB076121D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9FB97D321D7BA49000B7F20 /* CDDomainable.swift in Sources */,
 				D9FD7C9D21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
@@ -1145,8 +1123,6 @@
 				D9EB075521D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8E21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1621E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
-				D967D10E21F23ED1004FC6B8 /* RSyncable.swift in Sources */,
-				D967D11321F23EDC004FC6B8 /* CDSyncable.swift in Sources */,
 				D9EB076421D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9794E0F21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7CA021D4229800F425D0 /* CDMovieProvider.swift in Sources */,
@@ -1167,8 +1143,6 @@
 				D9EB075321D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8C21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1421E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
-				D967D10C21F23ED1004FC6B8 /* RSyncable.swift in Sources */,
-				D967D11121F23EDC004FC6B8 /* CDSyncable.swift in Sources */,
 				D9EB076221D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9794E0E21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9E21D4229800F425D0 /* CDMovieProvider.swift in Sources */,
@@ -1189,8 +1163,6 @@
 				D9EB075421D7E8F80051B4A3 /* CDMovieDetail.swift in Sources */,
 				D99C1E8D21D771A400DC8A86 /* CoreDataStack.swift in Sources */,
 				D9462B1521E754B1001BABC3 /* Revelation.xcdatamodeld in Sources */,
-				D967D10D21F23ED1004FC6B8 /* RSyncable.swift in Sources */,
-				D967D11221F23EDC004FC6B8 /* CDSyncable.swift in Sources */,
 				D9EB076321D80D0B0051B4A3 /* RevelationPC.swift in Sources */,
 				D9794E0D21D7B3C900A8C45D /* FetchRequestListener.swift in Sources */,
 				D9FD7C9F21D4229800F425D0 /* CDMovieProvider.swift in Sources */,

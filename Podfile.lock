@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
-  - Restofire (5.0.0-alpha.3):
-    - Restofire/Core (= 5.0.0-alpha.3)
-  - Restofire/Core (5.0.0-alpha.3):
+  - Restofire (5.0.0-alpha.4):
+    - Restofire/Core (= 5.0.0-alpha.4)
+  - Restofire/Core (5.0.0-alpha.4):
     - Alamofire (~> 5.0.0-beta.1)
   - Reusable (4.0.5):
     - Reusable/Storyboard (= 4.0.5)
@@ -13,7 +13,7 @@ PODS:
     - Restofire (~> 5.0.0-alpha.2)
     - RevelationAPI/Core (= 0.0.1)
   - RevelationAPI/Core (0.0.1):
-    - Restofire (~> 5.0.0-alpha.1, ~> 5.0.0-alpha.2)
+    - Restofire (~> 5.0.0-alpha.2, ~> 5.0.0-alpha.4)
   - RevelationDomain (0.0.1):
     - RevelationDomain/Core (= 0.0.1)
   - RevelationDomain/Core (0.0.1)
@@ -27,7 +27,7 @@ PODS:
   - SwiftLint (0.29.3)
 
 DEPENDENCIES:
-  - Restofire (from `https://github.com/Restofire/Restofire.git`, branch `develop`)
+  - Restofire (~> 5.0.0-alpha.4)
   - Reusable
   - RevelationAPI (from `Shared/RevelationAPI`)
   - RevelationDomain (from `Shared/RevelationDomain`)
@@ -39,6 +39,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Restofire
     - Reusable
     - RxAtomic
     - RxCocoa
@@ -48,25 +49,17 @@ SPEC REPOS:
     - SwiftLint
 
 EXTERNAL SOURCES:
-  Restofire:
-    :branch: develop
-    :git: https://github.com/Restofire/Restofire.git
   RevelationAPI:
     :path: Shared/RevelationAPI
   RevelationDomain:
     :path: Shared/RevelationDomain
 
-CHECKOUT OPTIONS:
-  Restofire:
-    :commit: 05a6581ce299e481dabeaa235ecbfaec54154ef1
-    :git: https://github.com/Restofire/Restofire.git
-
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
-  Restofire: ad7f01651cf7680d71b89d8fc5b0cee92a3ebd30
+  Restofire: 97270c9064379dcaab9210c7ca1af8d662bf728a
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
-  RevelationAPI: 167522c1c58fbf0f6dda01aca286fac8a58d8f38
-  RevelationDomain: 6a45ebf1c6c5f9af855f1601a0704533fda5fe96
+  RevelationAPI: 7fdf8ae61b046c530109f7df1465ba386001509a
+  RevelationDomain: 511346d0d587f4518861821ac3b5c695042036a5
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
@@ -74,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftFormat: abbfb26dde4c6d683923cde153c88e10da9d7881
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
 
-PODFILE CHECKSUM: 20d41a1581930ca169cb04f70651a8043591aa43
+PODFILE CHECKSUM: 9ca99c21a3737f38adeeaf65b2bccb928fc742c4
 
 COCOAPODS: 1.5.3

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 
 /// Represents a `Configurable` for Alamofire Services.
 /// `Configuration.default` by default.
@@ -26,7 +25,7 @@ import Alamofire
 ///
 /// }
 /// ```
-public protocol Configurable: Authenticable, Pollable, Reachable, Retryable, RequestDelegate, SessionManagable, Validatable, Queueable, QueuePriortizable {
+public protocol Configurable: Authenticable, Pollable, Reachable, Retryable, RequestDelegate, SessionManagable, Validatable, Qosable, Queueable, QueuePriortizable {
 
     /// The `configuration`.
     var configuration: Configuration { get }

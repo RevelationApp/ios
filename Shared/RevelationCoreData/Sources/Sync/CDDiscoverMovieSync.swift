@@ -2,7 +2,7 @@ import Restofire
 import CoreData
 import RevelationAPI
 
-struct CDDiscoverMovieSync: CDSyncable {
+struct CDDiscoverMovieSync: CoreDataSyncable {
     typealias Request = DiscoverMovieGETService
 
     let context: NSManagedObjectContext

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 
 /// Represents a `Queueable` that is associated with `Requestable`.
 public protocol Queueable {
@@ -15,8 +14,8 @@ public protocol Queueable {
     /// The `queues`.
     var queues: Queues { get }
     
-    /// The `callbackQueue`.
-    var callbackQueue: DispatchQueue { get }
+    /// The `completionQueue`.
+    var completionQueue: DispatchQueue { get }
     
     /// The `downloadProgressQueue`.
     var downloadProgressQueue: DispatchQueue { get }
@@ -42,9 +41,9 @@ public extension Queueable where Self: Configurable {
         return Queues.default
     }
     
-    /// `Queues.default.callbackQueue`
-    public var callbackQueue: DispatchQueue {
-        return queues.callbackQueue
+    /// `Queues.default.completionQueue`
+    public var completionQueue: DispatchQueue {
+        return queues.completionQueue
     }
     
     /// `Queues.default.downloadProgressQueue`
