@@ -41,7 +41,7 @@ target 'RevelationAPI-iOS' do
     project 'Shared/RevelationAPI/RevelationAPI.xcodeproj'
     use_frameworks!
     
-    pod "Restofire", '~> 5.0.0-alpha.2'
+    pod "Restofire", :git => 'https://github.com/Restofire/Restofire.git', :branch => 'develop'
     
     target 'RevelationAPITests-iOS' do
         inherit! :search_paths

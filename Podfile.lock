@@ -27,7 +27,7 @@ PODS:
   - SwiftLint (0.29.3)
 
 DEPENDENCIES:
-  - Restofire (~> 5.0.0-alpha.2)
+  - Restofire (from `https://github.com/Restofire/Restofire.git`, branch `develop`)
   - Reusable
   - RevelationAPI (from `Shared/RevelationAPI`)
   - RevelationDomain (from `Shared/RevelationDomain`)
@@ -39,7 +39,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Restofire
     - Reusable
     - RxAtomic
     - RxCocoa
@@ -49,10 +48,18 @@ SPEC REPOS:
     - SwiftLint
 
 EXTERNAL SOURCES:
+  Restofire:
+    :branch: develop
+    :git: https://github.com/Restofire/Restofire.git
   RevelationAPI:
     :path: Shared/RevelationAPI
   RevelationDomain:
     :path: Shared/RevelationDomain
+
+CHECKOUT OPTIONS:
+  Restofire:
+    :commit: 05a6581ce299e481dabeaa235ecbfaec54154ef1
+    :git: https://github.com/Restofire/Restofire.git
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
@@ -67,6 +74,6 @@ SPEC CHECKSUMS:
   SwiftFormat: abbfb26dde4c6d683923cde153c88e10da9d7881
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
 
-PODFILE CHECKSUM: 483a19ca6d9dcfabf6e697adac4df22b5ef99a8b
+PODFILE CHECKSUM: 20d41a1581930ca169cb04f70651a8043591aa43
 
 COCOAPODS: 1.5.3

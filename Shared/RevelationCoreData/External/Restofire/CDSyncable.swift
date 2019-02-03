@@ -1,12 +1,11 @@
 //
-//  CDSyncable.swift
-//  RevelationCoreData
+//  CoreDataSyncable.swift
+//  Restofire
 //
-//  Created by RahulKatariya on 18/01/19.
-//  Copyright © 2019 RahulKatariya. All rights reserved.
+//  Created by RahulKatariya on 27/12/18.
+//  Copyright © 2018 Restofire. All rights reserved.
 //
-/*
-import Foundation
+
 import CoreData
 
 public protocol CDSyncable: RSyncable {
@@ -53,4 +52,3 @@ extension CDSyncable {
     }
     
 }
-*/
