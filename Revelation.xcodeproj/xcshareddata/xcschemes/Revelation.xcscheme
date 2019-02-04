@@ -66,7 +66,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       enableASanStackUseAfterReturn = "YES"
-      enableThreadSanitizer = "YES"
+      disableMainThreadChecker = "YES"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -105,8 +105,18 @@
       </CommandLineArguments>
       <AdditionalOptions>
          <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
+            key = "MallocStackLogging"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "PrefersMallocStackLoggingLite"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "MallocScribble"
+            value = ""
             isEnabled = "YES">
          </AdditionalOption>
       </AdditionalOptions>

@@ -66,6 +66,8 @@ target 'RevelationDomain-iOS' do
     project 'Shared/RevelationDomain/RevelationDomain.xcodeproj'
     use_frameworks!
     
+    pod "RxSwift"
+    
     target 'RevelationDomainTests-iOS' do
         inherit! :search_paths
         # Pods for testing

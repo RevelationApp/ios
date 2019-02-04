@@ -8,12 +8,11 @@ struct CDMovieDetailsSync: CoreDataSyncable {
     let context: NSManagedObjectContext
     let request: Request
 
-    func shouldSync(completion: (Bool) throws -> ()) throws {
+    func shouldSync() throws -> Bool {
         /// <aarkay shouldSyncMovieDetailsSync>
         let movieId = request.pathModel.movieId
         let movie = try CDMovie.fetch(id: Int64(movieId)!, context: context)!
-        let shouldSync = movie.detail == nil
-        try completion(shouldSync)
+        return movie.detail == nil
         /// </aarkay>
     }
 

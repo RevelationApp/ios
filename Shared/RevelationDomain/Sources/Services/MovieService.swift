@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RxSwift
 
 public protocol MovieService {
-    func fetchAll(completion: @escaping ([Movie]?, Error?) -> Void)
-    func fetchWithId(_ id: Int, completion: @escaping (Movie?, Error?) -> Void)
+    func fetchAll() -> Single<[Movie]>
+    func fetchWithId(_ id: Int) -> Single<Movie>
 }

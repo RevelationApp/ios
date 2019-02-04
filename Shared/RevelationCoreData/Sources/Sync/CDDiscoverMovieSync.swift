@@ -8,10 +8,9 @@ struct CDDiscoverMovieSync: CoreDataSyncable {
     let context: NSManagedObjectContext
     let request: Request
 
-    func shouldSync(completion: (Bool) throws -> ()) throws {
+    func shouldSync() throws -> Bool {
         /// <aarkay shouldSyncDiscoverMovieSync>
-        let shouldSync = try CDMovie.count(context: context) == 0
-        try completion(shouldSync)
+        return try CDMovie.count(context: context) == 0
         /// </aarkay>
     }
 

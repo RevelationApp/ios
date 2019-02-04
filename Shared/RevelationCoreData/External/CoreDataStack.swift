@@ -60,6 +60,6 @@ public class CoreDataStack {
     // MARK: - Core Data Background Child Context
 
     func newBackgroundContext() -> NSManagedObjectContext {
-        return viewContext
+        return persistentContainer.newBackgroundContext()
     }
 }

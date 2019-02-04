@@ -420,6 +420,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D99FF632220839C600A0C896 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
 		D9D9F17821D25CCA00B34238 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +445,7 @@
 				D9F2D19021D25B3100CD3AAC /* RevelationTests */,
 				D9F2D19B21D25B3100CD3AAC /* RevelationUITests */,
 				D934E22921E7530900D9981E /* Shared */,
+				D99FF632220839C600A0C896 /* External */,
 				D9F2D17721D25B2F00CD3AAC /* Products */,
 				DCD46A7503D76DC6A5B3EE71 /* Pods */,
 				1E357C34FC768DE49B6038D0 /* Frameworks */,

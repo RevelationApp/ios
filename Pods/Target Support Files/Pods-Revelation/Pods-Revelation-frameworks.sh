@@ -150,10 +150,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework"
@@ -163,10 +167,14 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Restofire/Restofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevelationAPI/RevelationAPI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

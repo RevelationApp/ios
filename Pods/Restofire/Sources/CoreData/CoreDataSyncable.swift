@@ -17,42 +17,48 @@ extension CoreDataSyncable {
     public func sync(
         completionQueue: DispatchQueue = .main,
         completion: ((Error?) -> ())? = nil
-    ) {
-        self.context.perform {
+    ) -> NetworkOperation<Request>? {
+        var networkOperation: NetworkOperation<Request>? = nil
+        self.context.performAndWait {
             do {
-                try self.shouldSync() { flag in
-                    guard flag else {
-                        completionQueue.async { completion?(nil) }
-                        return
-                    }
-                    try self.request.execute { response in
-                        switch response.result {
-                        case .success(let value):
-                            self.context.perform {
-                                do {
-                                    try self.insert(model: value) {
-                                        self.context.perform {
-                                            do {
-                                                try self.context.save()
-                                                completionQueue.async { completion?(nil) }
-                                            } catch {
-                                                completionQueue.async { completion?(error) }
-                                            }
+                let flag = try self.shouldSync()
+                guard flag else {
+                    completionQueue.async { completion?(nil) }
+                    return
+                }
+                networkOperation = try self.request.operation() { response in
+                    switch response.result {
+                    case .success(let value):
+                        self.context.perform {
+                            do {
+                                try self.insert(model: value) {
+                                    if let operation = networkOperation,
+                                        operation.isCancelled {
+                                        return
+                                    }
+                                    self.context.perform {
+                                        do {
+                                            try self.context.save()
+                                            completionQueue.async { completion?(nil) }
+                                        } catch {
+                                            completionQueue.async { completion?(error) }
                                         }
                                     }
-                                } catch {
-                                    completionQueue.async { completion?(error) }
                                 }
+                            } catch {
+                                completionQueue.async { completion?(error) }
                             }
-                        case .failure(let error):
-                            completionQueue.async { completion?(error) }
                         }
+                    case .failure(let error):
+                        completionQueue.async { completion?(error) }
                     }
                 }
+                networkOperation?.start()
             } catch {
                 completionQueue.async { completion?(error) }
             }
         }
+        return networkOperation
     }
     
 }

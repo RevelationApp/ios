@@ -23,4 +23,5 @@ public class GenericViewController<View: UIView>: ViewController {
     public override func loadView() {
         view = self.rootView
     }
+    
 }

@@ -10,13 +10,15 @@ PODS:
   - Reusable/Storyboard (4.0.5)
   - Reusable/View (4.0.5)
   - RevelationAPI (0.0.1):
-    - Restofire (~> 5.0.0-alpha.2)
+    - Restofire (~> 5.0.0-alpha.4)
     - RevelationAPI/Core (= 0.0.1)
   - RevelationAPI/Core (0.0.1):
-    - Restofire (~> 5.0.0-alpha.2, ~> 5.0.0-alpha.4)
+    - Restofire (~> 5.0.0-alpha.4)
   - RevelationDomain (0.0.1):
     - RevelationDomain/Core (= 0.0.1)
-  - RevelationDomain/Core (0.0.1)
+    - RxSwift (= 4.4.0)
+  - RevelationDomain/Core (0.0.1):
+    - RxSwift (= 4.4.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -32,6 +34,7 @@ DEPENDENCIES:
   - RevelationAPI (from `Shared/RevelationAPI`)
   - RevelationDomain (from `Shared/RevelationDomain`)
   - RxCocoa
+  - RxSwift
   - SnapKit
   - SwiftFormat/CLI
   - SwiftLint
@@ -58,8 +61,8 @@ SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
   Restofire: 97270c9064379dcaab9210c7ca1af8d662bf728a
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
-  RevelationAPI: 7fdf8ae61b046c530109f7df1465ba386001509a
-  RevelationDomain: 511346d0d587f4518861821ac3b5c695042036a5
+  RevelationAPI: 280cd5cc626c17ada6591eb8051a279bc7069b9c
+  RevelationDomain: 834c7c97871459518b0a4186559477860bf58ad7
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
@@ -67,6 +70,6 @@ SPEC CHECKSUMS:
   SwiftFormat: abbfb26dde4c6d683923cde153c88e10da9d7881
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
 
-PODFILE CHECKSUM: 9ca99c21a3737f38adeeaf65b2bccb928fc742c4
+PODFILE CHECKSUM: 1070e18a76ccbee4d126d350b0862905fd6ab412
 
 COCOAPODS: 1.5.3
