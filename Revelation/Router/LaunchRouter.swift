@@ -12,19 +12,19 @@ import UIKit
 
 class LaunchRouter {
     let appService: ServiceProvider
-    let movieListRouter: MovieListRouter
+    let movieRouter: MovieRouter
 
     init(appService: ServiceProvider) {
         self.appService = appService
-        self.movieListRouter = MovieListRouter(appService: appService)
+        self.movieRouter = MovieRouter(appService: appService)
     }
 
     func rootViewController() -> UIViewController {
         let rootViewController = UITabBarController()
-        let movieListRootVC = movieListRouter.rootViewController()
-        movieListRootVC.tabBarItem = UITabBarItem(title: "Movies", image: nil, selectedImage: nil)
+        let movieRootVC = movieRouter.rootViewController()
+        movieRootVC.tabBarItem = UITabBarItem(title: "Movies", image: nil, selectedImage: nil)
         rootViewController.setViewControllers(
-            [movieListRootVC],
+            [movieRootVC],
             animated: false
         )
         return rootViewController

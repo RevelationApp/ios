@@ -1,5 +1,5 @@
 //
-//  MovieListRouter.swift
+//  MovieRouter.swift
 //  Revelation
 //
 //  Created by RahulKatariya on 27/12/18.
@@ -12,7 +12,7 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class MovieListRouter {
+class MovieRouter {
     let appService: ServiceProvider
 
     init(appService: ServiceProvider) {
