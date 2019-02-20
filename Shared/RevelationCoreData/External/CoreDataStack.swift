@@ -12,7 +12,7 @@ public class CoreDataStack {
     let name: String
     let bundle: Bundle
     let fileManager: FileManager
-
+    
     init(
         name: String,
         bundle: Bundle = Bundle.main,

@@ -2,35 +2,26 @@
 //  AppRouter.swift
 //  Revelation
 //
-//  Created by RahulKatariya on 26/12/18.
-//  Copyright © 2018 RahulKatariya. All rights reserved.
+//  Created by RahulKatariya on 20/02/19.
+//  Copyright © 2019 RahulKatariya. All rights reserved.
 //
 
-import RevelationDomain
 import UIKit
+import RevelationDomain
 
-class AppRouter {
-    let window: UIWindow
-    let launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-    let appService: ServiceProvider
-    let launchRouter: LaunchRouter
+class AppRouter: AppRoutable {
+    private let service: ServiceProvider
+    private lazy var launchRouter = LaunchRouter(service: service)
 
-    init(
-        window: UIWindow,
-        launchOptions: [UIApplication.LaunchOptionsKey: Any]?,
-        appService: ServiceProvider
-    ) {
-        self.window = window
-        self.launchOptions = launchOptions
-        self.appService = appService
-        self.launchRouter = LaunchRouter(appService: appService)
-        let viewController = UIStoryboard(name: "LaunchScreen", bundle: nil)
-            .instantiateInitialViewController()!
-        window.rootViewController = viewController
-        window.makeKeyAndVisible()
+    init(service: ServiceProvider) {
+        self.service = service
     }
 
-    func start() {
-        self.window.rootViewController = self.launchRouter.rootViewController()
+    func rootViewController() -> UIViewController {
+        return launchRouter.rootViewController()
+    }
+
+    func route(with components: URLComponents) {
+        print(components)
     }
 }

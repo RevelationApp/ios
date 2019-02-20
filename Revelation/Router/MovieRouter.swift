@@ -13,36 +13,37 @@ import RxSwift
 import UIKit
 
 class MovieRouter {
-    let appService: ServiceProvider
+    let service: ServiceProvider
 
-    init(appService: ServiceProvider) {
-        self.appService = appService
+    init(service: ServiceProvider) {
+        self.service = service
     }
 
     func rootViewController() -> UIViewController {
+        return UINavigationController(
+            rootViewController: moviesStateViewController()
+        )
+    }
+
+    private func moviesStateViewController() -> UIViewController {
         let disposeBag = DisposeBag()
         let listStateVC = StateVCFactory.build()
-        listStateVC.title = "Movies"
-        let rootViewController = UINavigationController(
-            rootViewController: listStateVC
-        )
-        listStateVC.onViewDidLoad = { [weak self, weak listStateVC] in
+        listStateVC.onDataLoad = { [weak self, weak listStateVC] in
             guard let _self = self else { return }
             listStateVC?.state = .loading
-            _self.appService.movieService.fetchAll()
+            _self.service.movieService.fetchAll()
                 .observeOn(MainScheduler.instance)
                 .subscribe { event in
                     switch event {
                     case .success(let movies):
-                        guard movies.count > 0 else { listStateVC?.state = .empty; return }
-                        let component = MovieTableViewComponent(
-                            items: movies,
-                            onSelectBlock: { item in
-                                let vc = _self.movieContainerViewController(movie: item)
-                                rootViewController.pushViewController(vc, animated: true)
-                            }
-                        )
-                        let vc = _self.moviesViewController(component: component)
+                        let vc = _self.moviesViewController(movies: movies)
+                        vc.rootView.rx.itemSelected.asDriver()
+                            .drive(onNext: { indexPath in
+                                let id = movies[indexPath.row].id
+                                let vc = _self.movieDetailStateViewController(id: id)
+                                listStateVC?.navigationController?
+                                    .pushViewController(vc, animated: true)
+                            }).disposed(by: disposeBag)
                         listStateVC?.state = .content(vc)
                     case .error(let error):
                         listStateVC?.state = .error
@@ -51,52 +52,56 @@ class MovieRouter {
                 }.disposed(by: disposeBag)
         }
 
-        listStateVC.errorView.retryBlock = listStateVC.onViewDidLoad
-
-        return rootViewController
+        listStateVC.errorView.retryBlock = listStateVC.onDataLoad
+        return listStateVC
     }
 
-    private func moviesViewController(component: MovieTableViewComponent) -> UIViewController {
-        let tableView = MovieTableViewBuilder.build(with: component)
-        return GenericViewController<MovieTableView>(view: tableView)
-    }
-
-    private func movieContainerViewController(movie: Movie) -> UIViewController {
-        if movie.detail != nil {
-            return self.movieDetailViewController(movie: movie)
-        } else {
-            let disposeBag = DisposeBag()
-            let listStateVC = StateVCFactory.build()
-            listStateVC.title = movie.title
-            listStateVC.onViewDidLoad = { [weak self, weak listStateVC] in
-                guard let _self = self else { return }
-                listStateVC?.state = .loading
-                _self.appService.movieService.fetchWithId(movie.id)
-                    .observeOn(MainScheduler.instance)
-                    .subscribe { event in
-                        switch event {
-                        case .success(let movie):
-                            let vc = _self.movieDetailViewController(movie: movie)
-                            listStateVC?.state = .content(vc)
-                        case .error(let error):
-                            listStateVC?.state = .error
-                            print(error)
-                        }
-                    }.disposed(by: disposeBag)
-            }
-            listStateVC.errorView.retryBlock = listStateVC.onViewDidLoad
-            return listStateVC
-        }
-    }
-
-    private func movieDetailViewController(movie: Movie) -> UIViewController {
+    private func moviesViewController(movies: [Movie]) -> GenericViewController<MovieTableView> {
         let component = MovieTableViewComponent(
-            items: [movie],
-            onSelectBlock: { item in
-                print(item)
-            }
+            items: movies
         )
-        let vc = moviesViewController(component: component)
+        let tableView = MovieTableViewBuilder.build(with: component)
+        let vc = GenericViewController<MovieTableView>(view: tableView)
+        vc.title = "Movies"
+        return vc
+    }
+
+    private func movieDetailStateViewController(id: Int) -> UIViewController {
+        let disposeBag = DisposeBag()
+        let listStateVC = StateVCFactory.build()
+        listStateVC.onDataLoad = { [weak self, weak listStateVC] in
+            guard let _self = self else { return }
+            listStateVC?.state = .loading
+            _self.service.movieService.fetchWithId(id)
+                .observeOn(MainScheduler.instance)
+                .subscribe { event in
+                    switch event {
+                    case .success(let movie):
+                        let vc = _self.movieDetailViewController(movie: movie)
+                        vc.rootView.rx.itemSelected.asDriver()
+                            .drive(onNext: { indexPath in
+                                let vc = _self.movieDetailStateViewController(id: movie.id)
+                                listStateVC?.navigationController?
+                                    .pushViewController(vc, animated: true)
+                            }).disposed(by: disposeBag)
+                        listStateVC?.state = .content(vc)
+                    case .error(let error):
+                        listStateVC?.state = .error
+                        print(error)
+                    }
+                }.disposed(by: disposeBag)
+        }
+
+        listStateVC.errorView.retryBlock = listStateVC.onDataLoad
+        return listStateVC
+    }
+
+    private func movieDetailViewController(movie: Movie) -> GenericViewController<MovieTableView> {
+        let component = MovieTableViewComponent(
+            items: [movie]
+        )
+        let tableView = MovieTableViewBuilder.build(with: component)
+        let vc = GenericViewController<MovieTableView>(view: tableView)
         vc.title = movie.title
         return vc
     }

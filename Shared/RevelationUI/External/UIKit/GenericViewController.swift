@@ -9,7 +9,7 @@
 import UIKit
 
 public class GenericViewController<View: UIView>: ViewController {
-    let rootView: View
+    public let rootView: View
 
     public init(view: View) {
         self.rootView = view

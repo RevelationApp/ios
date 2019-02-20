@@ -7,7 +7,6 @@ import Alamofire
 
 class TvImagesGETServiceSpec: RevelationAPISpec {
     override func spec() {
-        super.spec()
         describe("TvImagesGETService") {
             it("request should succeed") {
                 // Given
@@ -17,23 +16,19 @@ class TvImagesGETServiceSpec: RevelationAPISpec {
 
                     // When
                     do {
-                        let operation = try request.execute { value, response in
+                        let operation = try request.enqueue() { response in
                             defer { done() }
 
                             // Then
-                            if let statusCode = response.response?.statusCode,
-                                statusCode != 200 {
-                                fail("Response status code should be 200")
+                            guard let statusCode = response.response?.statusCode,
+                                statusCode >= 200 && statusCode < 300 else {
+                                    fail("Response status code should be 200"); return
                             }
-
-                            expect(value).toNot(beNil())
+                            expect(response.value).toNot(beNil())
                             expect(response.request).toNot(beNil())
                             expect(response.response).toNot(beNil())
                             expect(response.data).toNot(beNil())
                             expect(response.error).to(beNil())
-
-                            print(response.result.value ?? "None")
-
                         }
                     } catch {
                         fail(error.localizedDescription)
@@ -48,23 +43,19 @@ class TvImagesGETServiceSpec: RevelationAPISpec {
 
                     // When
                     do {
-                        let operation = try request.execute { value, response in
+                        let operation = try request.enqueue() { response in
                             defer { done() }
 
                             // Then
-                            if let statusCode = response.response?.statusCode,
-                                statusCode != 200 {
-                                fail("Response status code should be 200")
+                            guard let statusCode = response.response?.statusCode,
+                                statusCode >= 200 && statusCode < 300 else {
+                                    fail("Response status code should be 200"); return
                             }
-
-                            expect(value).toNot(beNil())
+                            expect(response.value).toNot(beNil())
                             expect(response.request).toNot(beNil())
                             expect(response.response).toNot(beNil())
                             expect(response.data).toNot(beNil())
                             expect(response.error).to(beNil())
-
-                            print(response.result.value ?? "None")
-
                         }
                     } catch {
                         fail(error.localizedDescription)
@@ -79,23 +70,19 @@ class TvImagesGETServiceSpec: RevelationAPISpec {
 
                     // When
                     do {
-                        let operation = try request.execute { value, response in
+                        let operation = try request.enqueue() { response in
                             defer { done() }
 
                             // Then
-                            if let statusCode = response.response?.statusCode,
-                                statusCode != 200 {
-                                fail("Response status code should be 200")
+                            guard let statusCode = response.response?.statusCode,
+                                statusCode >= 200 && statusCode < 300 else {
+                                    fail("Response status code should be 200"); return
                             }
-
-                            expect(value).toNot(beNil())
+                            expect(response.value).toNot(beNil())
                             expect(response.request).toNot(beNil())
                             expect(response.response).toNot(beNil())
                             expect(response.data).toNot(beNil())
                             expect(response.error).to(beNil())
-
-                            print(response.result.value ?? "None")
-
                         }
                     } catch {
                         fail(error.localizedDescription)
@@ -110,23 +97,19 @@ class TvImagesGETServiceSpec: RevelationAPISpec {
 
                     // When
                     do {
-                        let operation = try request.execute { value, response in
+                        let operation = try request.enqueue() { response in
                             defer { done() }
 
                             // Then
-                            if let statusCode = response.response?.statusCode,
-                                statusCode != 200 {
-                                fail("Response status code should be 200")
+                            guard let statusCode = response.response?.statusCode,
+                                statusCode >= 200 && statusCode < 300 else {
+                                    fail("Response status code should be 200"); return
                             }
-
-                            expect(value).toNot(beNil())
+                            expect(response.value).toNot(beNil())
                             expect(response.request).toNot(beNil())
                             expect(response.response).toNot(beNil())
                             expect(response.data).toNot(beNil())
                             expect(response.error).to(beNil())
-
-                            print(response.result.value ?? "None")
-
                         }
                     } catch {
                         fail(error.localizedDescription)

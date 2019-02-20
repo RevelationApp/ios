@@ -14,13 +14,17 @@
 		D9462B0821E7546C001BABC3 /* RevelationAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9462ADD21E7542B001BABC3 /* RevelationAPI.framework */; };
 		D9462B0921E7546C001BABC3 /* RevelationCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9462AC521E75422001BABC3 /* RevelationCoreData.framework */; };
 		D9462B0A21E7546C001BABC3 /* RevelationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9462AF521E75436001BABC3 /* RevelationDomain.framework */; };
+		D95EDE9F221D9D4000DF5DCB /* RevelationCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9462AC521E75422001BABC3 /* RevelationCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D95EDEC1221DA0C400DF5DCB /* AppBootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EDEC0221DA0C400DF5DCB /* AppBootstrapper.swift */; };
+		D95EDEC5221DA66B00DF5DCB /* AppRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EDEC4221DA66B00DF5DCB /* AppRoutable.swift */; };
+		D95EDEC7221DA7F300DF5DCB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EDEC6221DA7F300DF5DCB /* AppCoordinator.swift */; };
+		D95EDEC9221DA89900DF5DCB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95EDEC8221DA89900DF5DCB /* AppRouter.swift */; };
 		D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C3F93721D4AAB300131D29 /* AppProvider.swift */; };
 		D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */; };
 		D9F2D18421D25B3100CD3AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D18321D25B3100CD3AAC /* Assets.xcassets */; };
 		D9F2D18721D25B3100CD3AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F2D18521D25B3100CD3AAC /* LaunchScreen.storyboard */; };
 		D9F2D19221D25B3100CD3AAC /* RevelationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D19121D25B3100CD3AAC /* RevelationTests.swift */; };
 		D9F2D19D21D25B3100CD3AAC /* RevelationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */; };
-		D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */; };
 		D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */; };
 		D9FD7B8E21D4181D00F425D0 /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD7B8D21D4181D00F425D0 /* MovieRouter.swift */; };
 /* End PBXBuildFile section */
@@ -273,6 +277,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D95EDE9F221D9D4000DF5DCB /* RevelationCoreData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +298,10 @@
 		D9462ABA21E75422001BABC3 /* RevelationCoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationCoreData.xcodeproj; path = RevelationCoreData/RevelationCoreData.xcodeproj; sourceTree = "<group>"; };
 		D9462AD221E7542B001BABC3 /* RevelationAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationAPI.xcodeproj; path = RevelationAPI/RevelationAPI.xcodeproj; sourceTree = "<group>"; };
 		D9462AEA21E75436001BABC3 /* RevelationDomain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RevelationDomain.xcodeproj; path = RevelationDomain/RevelationDomain.xcodeproj; sourceTree = "<group>"; };
+		D95EDEC0221DA0C400DF5DCB /* AppBootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapper.swift; sourceTree = "<group>"; };
+		D95EDEC4221DA66B00DF5DCB /* AppRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoutable.swift; sourceTree = "<group>"; };
+		D95EDEC6221DA7F300DF5DCB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D95EDEC8221DA89900DF5DCB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		D9B3A66F21D2EEDE006879DE /* Revelation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Revelation.entitlements; sourceTree = "<group>"; };
 		D9C3F93721D4AAB300131D29 /* AppProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
 		D9F2D17621D25B2F00CD3AAC /* Revelation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Revelation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,7 +315,6 @@
 		D9F2D19821D25B3100CD3AAC /* RevelationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevelationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F2D19C21D25B3100CD3AAC /* RevelationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelationUITests.swift; sourceTree = "<group>"; };
 		D9F2D19E21D25B3100CD3AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		D9FD7B4D21D4092300F425D0 /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
 		D9FD7B8D21D4181D00F425D0 /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -423,6 +431,9 @@
 		D99FF632220839C600A0C896 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				D95EDEC0221DA0C400DF5DCB /* AppBootstrapper.swift */,
+				D95EDEC4221DA66B00DF5DCB /* AppRoutable.swift */,
+				D95EDEC6221DA7F300DF5DCB /* AppCoordinator.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -495,7 +506,7 @@
 			children = (
 				D9F2D17921D25B2F00CD3AAC /* AppDelegate.swift */,
 				D9C3F93721D4AAB300131D29 /* AppProvider.swift */,
-				D9FD7AFE21D3F1F600F425D0 /* AppRouter.swift */,
+				D95EDEC8221DA89900DF5DCB /* AppRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -991,10 +1002,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C3F93821D4AAB300131D29 /* AppProvider.swift in Sources */,
+				D95EDEC1221DA0C400DF5DCB /* AppBootstrapper.swift in Sources */,
 				D9FD7B4E21D4092300F425D0 /* LaunchRouter.swift in Sources */,
-				D9FD7AFF21D3F1F600F425D0 /* AppRouter.swift in Sources */,
+				D95EDEC5221DA66B00DF5DCB /* AppRoutable.swift in Sources */,
+				D95EDEC9221DA89900DF5DCB /* AppRouter.swift in Sources */,
 				D9FD7B8E21D4181D00F425D0 /* MovieRouter.swift in Sources */,
 				D9F2D17A21D25B2F00CD3AAC /* AppDelegate.swift in Sources */,
+				D95EDEC7221DA7F300DF5DCB /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

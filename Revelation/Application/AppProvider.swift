@@ -18,8 +18,8 @@ class AppProvider: ServiceProvider {
 //import Firebase
 import RevelationAPI
 
-extension AppProvider {
-    func setup(completion: @escaping () -> Void) {
+extension AppProvider: BootstrapService {
+    func bootstrap() {
         /*
         let resource = Bundle.main.infoDictionary!["FirebaseServiceInfoPlist"] as! String
         let filePath = Bundle.main.path(forResource: resource, ofType: "plist")!
@@ -36,7 +36,6 @@ extension AppProvider {
 
         dispatchGroup.enter()
         CoreDataProvider().setup { dispatchGroup.leave() }
-
-        dispatchGroup.notify(queue: .main, execute: completion)
+        dispatchGroup.wait()
     }
 }

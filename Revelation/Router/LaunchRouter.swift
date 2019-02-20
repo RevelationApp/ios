@@ -11,12 +11,12 @@ import RevelationUI
 import UIKit
 
 class LaunchRouter {
-    let appService: ServiceProvider
+    let service: ServiceProvider
     let movieRouter: MovieRouter
 
-    init(appService: ServiceProvider) {
-        self.appService = appService
-        self.movieRouter = MovieRouter(appService: appService)
+    init(service: ServiceProvider) {
+        self.service = service
+        self.movieRouter = MovieRouter(service: service)
     }
 
     func rootViewController() -> UIViewController {

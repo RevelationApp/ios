@@ -11,6 +11,7 @@ import UIKit
 public class ViewController: UIViewController {
     // Lifecycle
     public var onViewDidLoad: (() -> Void)?
+    public var onDataLoad: (() -> Void)?
     public var onViewWillLayoutSubviews: (() -> Void)?
     public var onViewDidLayoutSubviews: (() -> Void)?
     public var onViewWillAppear: ((Bool) -> Void)?
@@ -21,6 +22,7 @@ public class ViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.onViewDidLoad?()
+        self.onDataLoad?()
     }
 
     public override func viewWillLayoutSubviews() {

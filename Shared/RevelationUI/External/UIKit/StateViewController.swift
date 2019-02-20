@@ -60,6 +60,7 @@ public final class StateViewController<
     }
 
     public func addContentViewController(_ viewController: UIViewController) {
+        self.title = viewController.title
         self.removeContentView()
         addChild(viewController)
         self.addEdgesSubview(viewController.view)

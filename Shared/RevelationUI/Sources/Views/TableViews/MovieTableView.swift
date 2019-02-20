@@ -5,14 +5,11 @@ import UIKit
 
 public class MovieTableViewComponent {
     let items: [Movie]
-    let onSelectBlock: (Movie) -> Void
 
     public init(
-        items: [Movie],
-        onSelectBlock: @escaping (Movie) -> Void
+        items: [Movie]
     ) {
         self.items = items
-        self.onSelectBlock = onSelectBlock
     }
 }
 
@@ -25,7 +22,6 @@ public class MovieTableViewBuilder {
 
 public class MovieTableView: UITableView {
     let component: MovieTableViewComponent
-    var disposeBag = DisposeBag()
 
     init(component: MovieTableViewComponent) {
         self.component = component
@@ -42,10 +38,6 @@ public class MovieTableView: UITableView {
         register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         dataSource = self
         delegate = self
-        self.rx.itemSelected.bind { [unowned self] indexPath in
-            let item = self.component.items[indexPath.row]
-            self.component.onSelectBlock(item)
-        }.disposed(by: self.disposeBag)
         /// </aarkay>
     }
 }
