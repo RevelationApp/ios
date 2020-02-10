@@ -17,27 +17,28 @@ import Foundation
 ///     typealias Response = Data
 ///
 ///     var path: String? = "post"
-///     let url: URL = FileManager.url(forResource: "rainbow", withExtension: "jpg")
+///     let url: URL = FileManager.url(forResource: "rainbow", withExtension: "png")
 ///
 /// }
 /// ```
 public protocol FileUploadable: Uploadable {
-    
     /// The url.
     var url: URL { get }
-    
 }
 
-public extension FileUploadable {
-    
+extension FileUploadable {
     /// Creates a `UploadRequest` to retrieve the contents of a URL based on the specified `Requestable`
     ///
     /// - returns: The created `UploadRequest`.
-    func asRequest() throws -> UploadRequest {
-        return RestofireRequest.fileUploadRequest(
-            fromRequestable: self,
-            withUrlRequest: try asUrlRequest()
-        )
+    func asRequest<T: Encodable>(
+        parametersType: ParametersType<T>
+    ) throws -> () -> UploadRequest {
+        let urlRequest = try asUrlRequest(parametersType: parametersType)
+        return {
+            RestofireRequest.fileUploadRequest(
+                fromRequestable: self,
+                withUrlRequest: urlRequest
+            )
+        }
     }
-    
 }

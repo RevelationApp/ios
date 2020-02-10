@@ -26,31 +26,36 @@ public class RevelationAPI {
     }
 }
 
-extension Restofire.ResponseSerializable where Response == Any {
-    public var responseSerializer: AnyResponseSerializer<Result<Response>> {
-        return AnyResponseSerializer<Result<Response>>
-            .init(
-                dataSerializer: { (request, response, data, error) -> Result<Response> in
-                    Result { try JSONResponseSerializer().serialize(
-                        request: request, response: response, data: data, error: error
-                    ) }
+extension ResponseSerializable where Response == Any {
+    /// `Alamofire.DataRequest.dataResponseSerializer()`
+    public var responseSerializer: AnyResponseSerializer<RFResult<Response>> {
+        return AnyResponseSerializer<RFResult<Response>>
+            .init(dataSerializer: { (request, response, data, error) -> RFResult<Response> in
+                Result<Data, RFError>.serialize { try Alamofire.JSONResponseSerializer()
+                    .serialize(
+                        request: request,
+                        response: response,
+                        data: data,
+                        error: error
+                    )
                 }
-            )
+            })
     }
 }
 
-extension Restofire.ResponseSerializable where Response: Decodable {
-    public var responseSerializer: AnyResponseSerializer<Result<Response>> {
-        return AnyResponseSerializer<Result<Response>>
-            .init(
-                dataSerializer: { (request, response, data, error) -> Result<Response> in
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    let responseSerializer = DecodableResponseSerializer<Response>(decoder: decoder)
-                    return Result { try responseSerializer.serialize(
-                        request: request, response: response, data: data, error: error
-                    ) }
+extension ResponseSerializable where Response: Decodable {
+    /// `Alamofire.DataRequest.dataResponseSerializer()`
+    public var responseSerializer: AnyResponseSerializer<RFResult<Response>> {
+        return AnyResponseSerializer<RFResult<Response>>
+            .init(dataSerializer: { (request, response, data, error) -> RFResult<Response> in
+                Result<Data, RFError>.serialize { try Alamofire.DecodableResponseSerializer()
+                    .serialize(
+                        request: request,
+                        response: response,
+                        data: data,
+                        error: error
+                    )
                 }
-            )
+            })
     }
 }

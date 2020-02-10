@@ -7,15 +7,15 @@ public struct TvModel: Codable {
     public let id: Int
     public let name: String
     public let originCountry: [String]
-    public let originalLanguage: String
+    public let originalLanguage: String?
     public let originalName: String
     public let overview: String
     public let popularity: Float
     public let posterPath: String?
-    public let voteAverage: Float
-    public let voteCount: Int
+    public let voteAverage: Float?
+    public let voteCount: Int?
 
-    public init(backdropPath: String?, firstAirDate: String, genreIds: [Int], id: Int, name: String, originCountry: [String], originalLanguage: String, originalName: String, overview: String, popularity: Float, posterPath: String?, voteAverage: Float, voteCount: Int) {
+    public init(backdropPath: String?, firstAirDate: String, genreIds: [Int], id: Int, name: String, originCountry: [String], originalLanguage: String?, originalName: String, overview: String, popularity: Float, posterPath: String?, voteAverage: Float?, voteCount: Int?) {
         self.backdropPath = backdropPath
         self.firstAirDate = firstAirDate
         self.genreIds = genreIds

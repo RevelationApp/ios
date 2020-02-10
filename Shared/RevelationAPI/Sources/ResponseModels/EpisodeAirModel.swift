@@ -10,10 +10,10 @@ public struct EpisodeAirModel: Codable {
     public let showId: Int
     public let seasonNumber: Int
     public let stillPath: String?
-    public let voteAverage: Float
-    public let voteCount: Int
+    public let voteAverage: Float?
+    public let voteCount: Int?
 
-    public init(airDate: String, episodeNumber: Int, id: Int, name: String, overview: String, productionCode: String?, showId: Int, seasonNumber: Int, stillPath: String?, voteAverage: Float, voteCount: Int) {
+    public init(airDate: String, episodeNumber: Int, id: Int, name: String, overview: String, productionCode: String?, showId: Int, seasonNumber: Int, stillPath: String?, voteAverage: Float?, voteCount: Int?) {
         self.airDate = airDate
         self.episodeNumber = episodeNumber
         self.id = id

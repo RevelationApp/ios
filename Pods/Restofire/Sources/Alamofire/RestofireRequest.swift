@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 class RestofireRequest {
-    
     static func dataRequest<R: Requestable>(fromRequestable requestable: R, withUrlRequest urlRequest: URLRequest) -> DataRequest {
         let urlRequest = prepareRequest(urlRequest, requestable: requestable)
         let request = requestable.session.request(urlRequest)
@@ -95,8 +94,8 @@ class RestofireRequest {
         let urlRequest = prepareRequest(urlRequest, requestable: requestable)
         let request = requestable.session.upload(
             multipartFormData: requestable.multipartFormData,
-            usingThreshold: requestable.encodingMemoryThreshold,
-            with: urlRequest
+            with: urlRequest,
+            usingThreshold: requestable.encodingMemoryThreshold
         )
         authenticateRequest(request, usingCredential: requestable.credential)
         RestofireUploadValidation.validateUploadRequest(request: request, requestable: requestable)
@@ -115,9 +114,11 @@ class RestofireRequest {
         request.authenticate(with: credential)
     }
 
-    internal static func prepareRequest<R: _Requestable>(_ request: URLRequest, requestable: R) -> URLRequest {
-        precondition(requestable.session.startRequestsImmediately == false,
-                     "The session should always have startRequestsImmediately to false")
+    internal static func prepareRequest<R: BaseRequestable>(_ request: URLRequest, requestable: R) -> URLRequest {
+        precondition(
+            requestable.session.startRequestsImmediately == false,
+            "The session should always have startRequestsImmediately to false"
+        )
         var request = request
         requestable.delegates.forEach {
             request = $0.prepare(request, requestable: requestable)
@@ -125,15 +126,15 @@ class RestofireRequest {
         request = requestable.prepare(request, requestable: requestable)
         return request
     }
-    
-    internal static func willSendRequest<R: _Requestable>(_ request: Request, requestable: R) {
+
+    internal static func willSendRequest<R: BaseRequestable>(_ request: Request, requestable: R) {
         requestable.delegates.forEach {
             $0.willSend(request, requestable: requestable)
         }
         requestable.willSend(request, requestable: requestable)
     }
-    
-    internal static func didSendRequest<R: _Requestable>(_ request: Request, requestable: R) {
+
+    internal static func didSendRequest<R: BaseRequestable>(_ request: Request, requestable: R) {
         requestable.delegates.forEach {
             $0.didSend(request, requestable: requestable)
         }
@@ -148,5 +149,4 @@ class RestofireRequest {
         request = requestable.prepare(request, requestable: requestable)
         return request
     }
-    
 }

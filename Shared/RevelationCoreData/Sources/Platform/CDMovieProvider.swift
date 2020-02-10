@@ -27,15 +27,15 @@ class CDMovieProvider: MovieService {
                 request: request
             ).sync { error in
                 if let error = error { single(.error(error)) }
-                    let context = self.stack.newBackgroundContext()
-                    context.perform {
-                        do {
-                            let results = try CDMovie.all(context: context)
-                            single(.success(results))
-                        } catch {
-                            single(.error(error))
-                        }
+                let context = self.stack.newBackgroundContext()
+                context.perform {
+                    do {
+                        let results = try CDMovie.all(context: context)
+                        single(.success(results))
+                    } catch {
+                        single(.error(error))
                     }
+                }
             }
             return Disposables.create { cancellabe?.cancel() }
         }

@@ -9,22 +9,21 @@
 import Foundation
 
 /// An NSOperation base class for all request operations
-open class NetworkOperation<R: _Requestable>: Operation {
-    
-    let _requestable: R
+open class NetworkOperation<R: BaseRequestable>: Operation, Cancellable {
+    let baseRequestable: R
     let requestClosure: () -> Request
-    let downloadProgressHandler: ((Progress) -> Void)?
-    let uploadProgressHandler: ((Progress) -> Void)?
-    
+    let downloadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)?
+    let uploadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)?
+
     /// The underlying respect respective to requestable.
-    public private(set) var request: Request!
+    public private(set) var request: Request?
     var retryAttempts = 0
-    
+
     enum RequestType {
         case data
         case download
         case upload
-        
+
         init(request: Request) {
             if let _ = request as? UploadRequest {
                 self = .upload
@@ -37,23 +36,20 @@ open class NetworkOperation<R: _Requestable>: Operation {
             }
         }
     }
-    lazy var requestType: RequestType = {
-        RequestType(request: request)
-    }()
-    
+
     #if !os(watchOS)
     lazy var reachability: NetworkReachability = {
-        return NetworkReachability(configurable: _requestable)
+        NetworkReachability(configurable: baseRequestable)
     }()
     #endif
-    
+
     init(
         requestable: R,
         request: @escaping (() -> Request),
-        downloadProgressHandler: ((Progress) -> Void)? = nil,
-        uploadProgressHandler: ((Progress) -> Void)? = nil
+        downloadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)? = nil,
+        uploadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)? = nil
     ) {
-        self._requestable = requestable
+        self.baseRequestable = requestable
         self.requestClosure = request
         self.retryAttempts = requestable.maxRetryAttempts
         self.downloadProgressHandler = downloadProgressHandler
@@ -64,29 +60,30 @@ open class NetworkOperation<R: _Requestable>: Operation {
         self.qualityOfService = requestable.qos
         self.queuePriority = requestable.priority
     }
-    
+
     /// Starts the request.
-    override open func main() {
+    open override func main() {
         guard !isCancelled else { return }
         executeRequest()
     }
-    
+
     /// Cancels the request.
-    override open func cancel() {
+    open override func cancel() {
         guard !isCancelled else { return }
         super.cancel()
-        request.cancel()
+        request?.cancel()
     }
-    
+
     @objc func executeRequest() {
         guard !isCancelled else { return }
         request = requestClosure()
+        let requestType = RequestType(request: request!)
         switch requestType {
         case .data:
             let request = self.request as! DataRequest
             request
-                .downloadProgress(queue: _requestable.downloadProgressQueue) { [unowned self] progress in
-                    self.downloadProgressHandler?(progress)
+                .downloadProgress(queue: downloadProgressHandler?.1 ?? .main) { [unowned self] progress in
+                    self.downloadProgressHandler?.0(progress)
                 }
                 .response { [unowned self] in
                     if $0.error != nil {
@@ -99,8 +96,8 @@ open class NetworkOperation<R: _Requestable>: Operation {
         case .download:
             let request = self.request as! DownloadRequest
             request
-                .downloadProgress(queue: _requestable.downloadProgressQueue) { [unowned self] progress in
-                    self.downloadProgressHandler?(progress)
+                .downloadProgress(queue: downloadProgressHandler?.1 ?? .main) { [unowned self] progress in
+                    self.downloadProgressHandler?.0(progress)
                 }
                 .response { [unowned self] in
                     if $0.error != nil {
@@ -113,8 +110,8 @@ open class NetworkOperation<R: _Requestable>: Operation {
         case .upload:
             let request = self.request as! DataRequest
             request
-                .uploadProgress(queue: _requestable.uploadProgressQueue) { [unowned self] progress in
-                    self.uploadProgressHandler?(progress)
+                .uploadProgress(queue: uploadProgressHandler?.1 ?? .main) { [unowned self] progress in
+                    self.uploadProgressHandler?.0(progress)
                 }
                 .response { [unowned self] in
                     if $0.error != nil {
@@ -123,15 +120,15 @@ open class NetworkOperation<R: _Requestable>: Operation {
                         self.handleDataResponseIfNeeded($0)
                     }
                     request.logDataRequestIfNeeded(result: $0)
-            }
+                }
         }
-        request.logRequestIfNeeded()
+        request?.logRequestIfNeeded()
     }
-    
+
     open func copy() -> NetworkOperation {
         fatalError("override me")
     }
-    
+
     func retry(afterDelay: TimeInterval = 0.0) {
         perform(
             #selector(NetworkOperation<R>.executeRequest),
@@ -139,145 +136,148 @@ open class NetworkOperation<R: _Requestable>: Operation {
             afterDelay: afterDelay
         )
     }
-    
-    // MARK:- Data Response
+
+    // MARK: - Data Response
+
     func handleDataResponseIfNeeded(_ response: DataResponse<Data?>) {
+        guard let request = request else { fatalError("Request should not be nil") }
         let response = dataResponseResult(response: response)
-        if response.error != nil {
-            handleDataResponse(response)
-        } else if _requestable.shouldPoll(request, requestable: _requestable, response: response) {
-            retry(afterDelay: _requestable.pollingInterval)
+        if baseRequestable.shouldPoll(request, requestable: baseRequestable, response: response) {
+            retry(afterDelay: baseRequestable.pollingInterval)
         } else {
             handleDataResponse(response)
         }
     }
-    
+
     func handleDataResponse(_ response: DataResponse<R.Response>) {
         fatalError("override me")
     }
-    
+
     func handleDataRequestError(_ response: DataResponse<Data?>) {
-        if !handleRequestError(response.error!) {
+        guard let error = response.error else { fatalError("Error should not be nil") }
+        if handleRequestError(error) {
             handleDataResponseIfNeeded(response)
         } else {
             isFinished = true
         }
     }
-    
+
     func dataResponseResult(response: DataResponse<Data?>) -> DataResponse<R.Response> {
         fatalError("override me")
     }
-    
+
     // MARK: - Download Response
+
     func handleDownloadResponseIfNeeded(_ response: DownloadResponse<URL?>) {
+        guard let request = request else { fatalError("Request should not be nil") }
         let response = downloadResponseResult(response: response)
-        if response.error != nil {
-            handleDownloadResponse(response)
-        } else if _requestable.shouldPoll(request, requestable: _requestable, response: response) {
-            retry(afterDelay: _requestable.pollingInterval)
+        if baseRequestable.shouldPoll(request, requestable: baseRequestable, response: response) {
+            retry(afterDelay: baseRequestable.pollingInterval)
         } else {
             handleDownloadResponse(response)
         }
     }
-    
+
     func handleDownloadResponse(_ response: DownloadResponse<R.Response>) {
         fatalError("override me")
     }
-    
+
     func handleDownloadRequestError(_ response: DownloadResponse<URL?>) {
-        if !handleRequestError(response.error!) {
+        guard let error = response.error else { fatalError("Error should not be nil") }
+        if handleRequestError(error) {
             handleDownloadResponseIfNeeded(response)
         } else {
             isFinished = true
         }
     }
-    
+
     func downloadResponseResult(response: DownloadResponse<URL?>) -> DownloadResponse<R.Response> {
         fatalError("override me")
     }
-    
+
     // MARK: - Request Error
+
     func handleRequestError(_ error: Error) -> Bool {
-        var handledError = true
+        var handledError = false
         var isConnectivityError = false
         #if !os(watchOS)
-            if let error = error as? URLError, _requestable.waitsForConnectivity &&
-                error.code == .notConnectedToInternet {
-                isConnectivityError = true
-                _requestable.eventuallyOperationQueue.isSuspended = true
-                let eventuallyOperation: NetworkOperation = self.copy()
-                reachability.setupListener()
-                _requestable.eventuallyOperationQueue.addOperation(eventuallyOperation)
-            }
+        if let error = error as? URLError, baseRequestable.waitsForConnectivity &&
+            error.code == .notConnectedToInternet {
+            isConnectivityError = true
+            baseRequestable.eventuallyOperationQueue.isSuspended = true
+            let eventuallyOperation: NetworkOperation = self.copy()
+            reachability.setupListener()
+            baseRequestable.eventuallyOperationQueue.addOperation(eventuallyOperation)
+            handledError = true
+        }
         #endif
-        if isConnectivityError {
-           // No-op
-        } else if let error = error as? URLError, retryAttempts > 0 &&
-            _requestable.retryErrorCodes.contains(error.code) {
-            retryAttempts -= 1
-            retry(afterDelay: _requestable.retryInterval)
-        } else {
-            handledError = false
+        if let error = error as? URLError, !isConnectivityError {
+            if retryAttempts > 0 && baseRequestable.retryErrorCodes.contains(error.code) {
+                retryAttempts -= 1
+                retry(afterDelay: baseRequestable.retryInterval)
+            } else {
+                handledError = true
+            }
         }
         return handledError
     }
-    
+
     // MARK: - KVO overrides
+
     var _ready: Bool = false
     /// A Boolean value indicating whether the operation can be performed now. (read-only)
-    open override internal(set) var isReady: Bool {
+    open internal(set) override var isReady: Bool {
         get {
             return _ready
         }
-        set (newValue) {
+        set(newValue) {
             willChangeValue(forKey: "isReady")
             _ready = newValue
             didChangeValue(forKey: "isReady")
         }
     }
-    
+
     var _executing: Bool = false
     /// A Boolean value indicating whether the operation is currently executing. (read-only)
-    open override internal(set) var isExecuting: Bool {
+    open internal(set) override var isExecuting: Bool {
         get {
             return _executing
         }
-        set (newValue) {
+        set(newValue) {
             willChangeValue(forKey: "isExecuting")
             _executing = newValue
             didChangeValue(forKey: "isExecuting")
         }
     }
-    
+
     var _cancelled: Bool = false
     /// A Boolean value indicating whether the operation has been cancelled. (read-only)
-    open override internal(set) var isCancelled: Bool {
+    open internal(set) override var isCancelled: Bool {
         get {
             return _cancelled
         }
-        set (newValue) {
+        set(newValue) {
             willChangeValue(forKey: "isCancelled")
             _cancelled = newValue
             didChangeValue(forKey: "isCancelled")
         }
     }
-    
+
     var _finished: Bool = false
     /// A Boolean value indicating whether the operation has finished executing its task. (read-only)
-    open override internal(set) var isFinished: Bool {
+    open internal(set) override var isFinished: Bool {
         get {
             return _finished
         }
-        set (newValue) {
+        set(newValue) {
             willChangeValue(forKey: "isFinished")
             _finished = newValue
             didChangeValue(forKey: "isFinished")
         }
     }
-    
+
     /// A boolean value `true` indicating the operation executes its task asynchronously.
-    override open var isAsynchronous: Bool {
+    open override var isAsynchronous: Bool {
         return true
     }
-    
 }

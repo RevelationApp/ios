@@ -25,22 +25,23 @@ import Foundation
 /// }
 /// ```
 public protocol DataUploadable: Uploadable {
-    
     /// The data.
     var data: Data { get }
-    
 }
 
-public extension DataUploadable {
-    
+extension DataUploadable {
     /// Creates a `UploadRequest` to retrieve the contents of a URL based on the specified `Requestable`
     ///
     /// - returns: The created `UploadRequest`.
-    func asRequest() throws -> UploadRequest {
-        return RestofireRequest.dataUploadRequest(
-            fromRequestable: self,
-            withUrlRequest: try asUrlRequest()
-        )
+    func asRequest<T: Encodable>(
+        parametersType: ParametersType<T>
+    ) throws -> () -> UploadRequest {
+        let urlRequest = try asUrlRequest(parametersType: parametersType)
+        return {
+            RestofireRequest.dataUploadRequest(
+                fromRequestable: self,
+                withUrlRequest: urlRequest
+            )
+        }
     }
-    
 }

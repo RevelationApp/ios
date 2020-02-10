@@ -27,24 +27,24 @@ public struct MovieDetailsModel: Codable {
     public let homepage: String?
     public let genres: [GenreModel]
     public let imdbId: String?
-    public let originalLanguage: String
-    public let originalTitle: String
+    public let originalLanguage: String?
+    public let originalTitle: String?
     public let overview: String
     public let popularity: Float
-    public let posterPath: String
-    public let productionCompanies: [ProductionCompanyModel]
-    public let spokenLanguages: [SpokenLanguageModel]
-    public let releaseDate: String
+    public let posterPath: String?
+    public let productionCompanies: [ProductionCompanyModel]?
+    public let spokenLanguages: [SpokenLanguageModel]?
+    public let releaseDate: String?
     public let revenue: Int
     public let runtime: Int?
     public let status: String
     public let tagline: String
     public let title: String
     public let video: Bool
-    public let voteAverage: Float
-    public let voteCount: Int
+    public let voteAverage: Float?
+    public let voteCount: Int?
 
-    public init(id: Int, adult: Bool, backdropPath: String?, budget: Int, homepage: String?, genres: [GenreModel], imdbId: String?, originalLanguage: String, originalTitle: String, overview: String, popularity: Float, posterPath: String, productionCompanies: [ProductionCompanyModel], spokenLanguages: [SpokenLanguageModel], releaseDate: String, revenue: Int, runtime: Int?, status: String, tagline: String, title: String, video: Bool, voteAverage: Float, voteCount: Int) {
+    public init(id: Int, adult: Bool, backdropPath: String?, budget: Int, homepage: String?, genres: [GenreModel], imdbId: String?, originalLanguage: String?, originalTitle: String?, overview: String, popularity: Float, posterPath: String?, productionCompanies: [ProductionCompanyModel]?, spokenLanguages: [SpokenLanguageModel]?, releaseDate: String?, revenue: Int, runtime: Int?, status: String, tagline: String, title: String, video: Bool, voteAverage: Float?, voteCount: Int?) {
         self.id = id
         self.adult = adult
         self.backdropPath = backdropPath

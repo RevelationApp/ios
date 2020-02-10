@@ -24,7 +24,7 @@
   "requires_arc": true,
   "dependencies": {
     "RxSwift": [
-      "4.4.0"
+      "~> 5.0.0"
     ]
   },
   "default_subspecs": "Core",

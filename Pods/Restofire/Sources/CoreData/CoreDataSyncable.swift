@@ -13,12 +13,48 @@ public protocol CoreDataSyncable: Syncable {
 }
 
 extension CoreDataSyncable {
-    
     public func sync(
+        parameters: Any? = nil,
+        downloadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)? = nil,
         completionQueue: DispatchQueue = .main,
-        completion: ((Error?) -> ())? = nil
-    ) -> NetworkOperation<Request>? {
-        var networkOperation: NetworkOperation<Request>? = nil
+        immediate: Bool = false,
+        completion: ((Error?) -> Void)? = nil
+    ) -> Cancellable? {
+        let parametersType = ParametersType<EmptyCodable>.any(parameters)
+        return sync(
+            parametersType: parametersType,
+            downloadProgressHandler: downloadProgressHandler,
+            completionQueue: completionQueue,
+            immediate: immediate,
+            completion: completion
+        )
+    }
+
+    public func sync<T: Encodable>(
+        parameters: T,
+        downloadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)? = nil,
+        completionQueue: DispatchQueue = .main,
+        immediate: Bool = false,
+        completion: ((Error?) -> Void)? = nil
+    ) -> Cancellable? {
+        let parametersType = ParametersType<T>.encodable(parameters)
+        return sync(
+            parametersType: parametersType,
+            downloadProgressHandler: downloadProgressHandler,
+            completionQueue: completionQueue,
+            immediate: immediate,
+            completion: completion
+        )
+    }
+
+    public func sync<T: Encodable>(
+        parametersType: ParametersType<T>,
+        downloadProgressHandler: ((Progress) -> Void, queue: DispatchQueue?)? = nil,
+        completionQueue: DispatchQueue = .main,
+        immediate: Bool = false,
+        completion: ((Error?) -> Void)? = nil
+    ) -> Cancellable? {
+        var networkOperation: Cancellable?
         self.context.performAndWait {
             do {
                 let flag = try self.shouldSync()
@@ -26,7 +62,7 @@ extension CoreDataSyncable {
                     completionQueue.async { completion?(nil) }
                     return
                 }
-                networkOperation = try self.request.operation() { response in
+                let completionHandler = { (response: DataResponse<Self.Request.Response>) in
                     switch response.result {
                     case .success(let value):
                         self.context.perform {
@@ -53,12 +89,20 @@ extension CoreDataSyncable {
                         completionQueue.async { completion?(error) }
                     }
                 }
-                networkOperation?.start()
+                let operation = try self.request.operation(
+                    parametersType: parametersType,
+                    downloadProgressHandler: downloadProgressHandler,
+                    completionQueue: completionQueue,
+                    completionHandler: completionHandler
+                )
+                if immediate { operation.start() } else {
+                    request.requestQueue.addOperation(operation)
+                }
+                networkOperation = operation
             } catch {
                 completionQueue.async { completion?(error) }
             }
         }
         return networkOperation
     }
-    
 }

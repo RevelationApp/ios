@@ -631,6 +631,7 @@
 		D9B9DD6221D295C4004EB8A1 /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				D9B9DD6321D295C4004EB8A1 /* GenericResponseModel.swift */,
 				D9325DDA21D578060082595C /* TvDetailsModel.swift */,
 				D9D64C8721D2CCCD0023044B /* VideoModel.swift */,
 				D9D64C8821D2CCCD0023044B /* VideoModelItem.swift */,
@@ -640,7 +641,6 @@
 				D9D64C7221D2CAEF0023044B /* SeasonModel.swift */,
 				D9D64C7121D2CAEF0023044B /* TvModel.swift */,
 				D9D64C6921D2C8E70023044B /* CrewModel.swift */,
-				D9B9DD6321D295C4004EB8A1 /* GenericResponseModel.swift */,
 				D9D64BF021D2B2A40023044B /* MovieModel.swift */,
 				D9D64BD621D2B13E0023044B /* GenreModel.swift */,
 				D9D64BD421D2B13E0023044B /* ProductionCompanyModel.swift */,
@@ -906,6 +906,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3549BAFB1DA387DB00C63030;
@@ -1004,13 +1005,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationAPITests-iOS/Pods-RevelationAPITests-iOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RevelationAPITests-iOS/Pods-RevelationAPITests-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -1019,12 +1018,10 @@
 				"${BUILT_PRODUCTS_DIR}/RevelationDomain/RevelationDomain.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
@@ -1034,7 +1031,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-RevelationAPITests-iOS/Pods-RevelationAPITests-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RevelationAPITests-iOS/Pods-RevelationAPITests-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C03E786ED3AD8DEF27D98E82 /* [CP] Check Pods Manifest.lock */ = {

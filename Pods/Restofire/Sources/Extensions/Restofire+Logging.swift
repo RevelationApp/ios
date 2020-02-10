@@ -10,33 +10,32 @@ import Foundation
 import Alamofire
 
 extension Request {
-    
     func logRequestIfNeeded() {
         if let argumentIndex = ProcessInfo.processInfo.arguments
-            .index(of: "-org.restofire.Restofire.Debug") {
+            .firstIndex(of: "-org.restofire.Restofire.Debug") {
             underlyingQueue.sync { [unowned self] in
-                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex+1]
+                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex + 1]
                 if logLevel == "1" {
                     print("/**************************************** Request ****************************************/")
-                    print(self.debugDescription)
+                    print(self.cURLDescription())
                     print("/**************************************** RequestEnd ****************************************/")
                 }
             }
         }
     }
-    
+
     func logDataRequestIfNeeded(result: DataResponse<Data?>) {
         if let argumentIndex = ProcessInfo.processInfo.arguments
-            .index(of: "-org.restofire.Restofire.Debug") {
+            .firstIndex(of: "-org.restofire.Restofire.Debug") {
             underlyingQueue.sync { [unowned self] in
-                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex+1]
+                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex + 1]
                 if logLevel == "2" {
                     print("/**************************************** Response ****************************************/")
                     print(self.response.debugDescription)
                     print("/**************************************** ResponseEnd ****************************************/")
                 } else if logLevel == "3" {
                     print("/**************************************** Request ****************************************/")
-                    print(self.debugDescription)
+                    print(self.cURLDescription())
                     print("/**************************************** RequestEnd ****************************************/")
                     print("")
                     print("/**************************************** Response ****************************************/")
@@ -51,19 +50,19 @@ extension Request {
             }
         }
     }
-    
+
     func logDownloadRequestIfNeeded(result: DownloadResponse<URL?>) {
         if let argumentIndex = ProcessInfo.processInfo.arguments
-            .index(of: "-org.restofire.Restofire.Debug") {
+            .firstIndex(of: "-org.restofire.Restofire.Debug") {
             underlyingQueue.sync { [unowned self] in
-                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex+1]
+                let logLevel = ProcessInfo.processInfo.arguments[argumentIndex + 1]
                 if logLevel == "2" {
                     print("/**************************************** Response ****************************************/")
                     print(self.response.debugDescription)
                     print("/**************************************** ResponseEnd ****************************************/")
                 } else if logLevel == "3" {
                     print("/**************************************** Request ****************************************/")
-                    print(self.debugDescription)
+                    print(self.cURLDescription())
                     print("/**************************************** RequestEnd ****************************************/")
                     print("/**************************************** Response ****************************************/")
                     print(self.response.debugDescription)
@@ -75,5 +74,4 @@ extension Request {
             }
         }
     }
-    
 }

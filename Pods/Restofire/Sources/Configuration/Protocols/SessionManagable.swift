@@ -10,17 +10,13 @@ import Foundation
 
 /// Represents a `Alamofire.Session` that is associated with `Requestable`.
 public protocol SessionManagable {
-    
     /// The `session`.
     var session: Session { get }
-    
 }
 
-public extension SessionManagable where Self: Configurable {
-    
+extension SessionManagable where Self: Configurable {
     /// `Session.default`
     public var session: Session {
         return SessionManager.default.session
     }
-    
 }
